@@ -10,7 +10,7 @@ class Plugin extends PluginBase
         return [
             'name' => 'eliseontwerpt.brouwerbouwer::lang.component.name',
             'description' => 'eliseontwerpt.brouwerbouwer::lang.component.description',
-            'author' => 'Harm Jan Plat',
+            'author' => 'Eliseontwerpt',
             'icon' => 'icon-beer'
         ];
     }   
