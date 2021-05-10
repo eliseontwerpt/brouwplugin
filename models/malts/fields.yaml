@@ -6,11 +6,11 @@ fields:
         span: auto
         type: relation
     percentage:
-        label: 'hjp.brouwerbouwer::lang.percentage.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.percentage.name'
         span: auto
         type: number
     mash:
-        label: 'hjp.brouwerbouwer::lang.mash-in.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.mash-in.name'
         span: full
         default: 1
         required: 0

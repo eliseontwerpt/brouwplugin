@@ -1,32 +1,32 @@
 columns:
     name:
-        label: 'hjp.brouwerbouwer::lang.name.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.name.name'
         type: text
     description:
-        label: 'hjp.brouwerbouwer::lang.description.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.description.name'
         type: text
     calcium:
-        label: 'hjp.brouwerbouwer::lang.calcium.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.calcium.name'
         type: number
         default: '0'
     magnesium:
-        label: 'hjp.brouwerbouwer::lang.magnesium.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.magnesium.name'
         type: number
         default: '0'
     natrium:
-        label: 'hjp.brouwerbouwer::lang.natrium.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.natrium.name'
         type: number
         default: '0'
     chloride:
-        label: 'hjp.brouwerbouwer::lang.chloride.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.chloride.name'
         type: number
         default: '0'
     sulfate:
-        label: 'hjp.brouwerbouwer::lang.sulfate.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.sulfate.name'
         type: number
         default: '0'
     bicarbonate:
-        label: 'hjp.brouwerbouwer::lang.bicarbonate.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.bicarbonate.name'
         type: number
         default: '0'
     id:

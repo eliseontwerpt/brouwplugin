@@ -1,6 +1,6 @@
 fields:
     variety:
-        label: 'hjp.brouwerbouwer::lang.variety.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.variety.name'
         span: left
         required: 1
         type: text
@@ -9,12 +9,12 @@ fields:
         span: auto
         type: text
     alpha_min:
-        label: 'hjp.brouwerbouwer::lang.alpha-acid.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.alpha-acid.name'
         span: left
         required: 1
         type: number
     alpha_max:
-        label: 'hjp.brouwerbouwer::lang.alpha-acid.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.alpha-acid.name'
         span: auto
         required: 1
         type: number
@@ -28,7 +28,7 @@ fields:
         required: 1
         type: balloon-selector
     substitutions:
-        label: 'hjp.brouwerbouwer::lang.substitution.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.substitution.name'
         mode: array
         options: true
         separator: comma
@@ -37,7 +37,7 @@ fields:
         span: auto
         type: taglist
     styles:
-        label: 'hjp.brouwerbouwer::lang.beerstyles.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.beerstyles.name'
         mode: string
         separator: comma
         customTags: 0
@@ -46,16 +46,16 @@ fields:
         span: right
         type: taglist
     test:
-        label: 'hjp.brouwerbouwer::lang.description.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.description.name'
         span: full
         type: section
     descriptions:
-        label: 'hjp.brouwerbouwer::lang.description.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.description.name'
         size: large
         span: auto
         type: textarea
     aroma:
-        label: 'hjp.brouwerbouwer::lang.aroma.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.aroma.name'
         size: large
         span: auto
         type: textarea

@@ -1,9 +1,9 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
 use Flash;
-use Hjp\Brouwerbouwer\Classes\Maltsprocessor;
-//use Hjp\Brouwerbouwer\Models\Recipes;
+use Eliseontwerpt\Brouwerbouwer\Classes\Maltsprocessor;
+//use Eliseontwerpt\Brouwerbouwer\Models\Recipes;
 /**
  * Model
  */
@@ -21,7 +21,7 @@ class Malts extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_malts';
+    public $table = 'Eliseontwerpt_brouwerbouwer_malts';
 
     /**
      * @var array Validation rules
@@ -31,7 +31,7 @@ class Malts extends Model
 
     public $belongsTo =[ 
         'malt_list' => [
-            'Hjp\Brouwerbouwer\Models\ListOfMalts',            
+            'Eliseontwerpt\Brouwerbouwer\Models\ListOfMalts',            
             'key' => 'malt_list_id',
             'otherKey'=>'id'
         ]
@@ -39,12 +39,12 @@ class Malts extends Model
 
     public $hasOne =[ 
         'recipe' => [
-            'Hjp\Brouwerbouwer\Models\Recipes',            
+            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
         'brewday' => [
-                'Hjp\Brouwerbouwer\Models\Brewday',            
+                'Eliseontwerpt\Brouwerbouwer\Models\Brewday',            
                 'key' => 'recipe_id',
                 'otherKey'=>'recipe_id'
         ],

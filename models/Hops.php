@@ -1,7 +1,7 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
-use Hjp\Brouwerbouwer\Classes\Hopprocessor;
+use Eliseontwerpt\Brouwerbouwer\Classes\Hopprocessor;
 
 /**
  * Model
@@ -20,7 +20,7 @@ class Hops extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_hops';
+    public $table = 'Eliseontwerpt_brouwerbouwer_hops';
 
     /**
      * @var array Validation rules
@@ -30,7 +30,7 @@ class Hops extends Model
 
     public $belongsTo =[ 
         'hop_list' => [
-            'Hjp\Brouwerbouwer\Models\ListOfHops',            
+            'Eliseontwerpt\Brouwerbouwer\Models\ListOfHops',            
             'key' => 'hop_list_id',
             'otherKey'=>'id'
         ],
@@ -38,7 +38,7 @@ class Hops extends Model
 
     public $hasOne =[ 
         'recipe' => [
-            'Hjp\Brouwerbouwer\Models\Recipes',            
+            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],

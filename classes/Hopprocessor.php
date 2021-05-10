@@ -1,6 +1,6 @@
-<?php namespace Hjp\Brouwerbouwer\Classes;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Classes;
 
-use Hjp\Brouwerbouwer\Models\Hops;
+use Eliseontwerpt\Brouwerbouwer\Models\Hops;
 
 class Hopprocessor {
 

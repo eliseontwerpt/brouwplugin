@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Controllers;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -13,6 +13,6 @@ class BjcpStyleGuide extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Hjp.Brouwerbouwer', 'main-menu-item');
+        BackendMenu::setContext('Eliseontwerpt.Brouwerbouwer', 'main-menu-item');
     }
 }

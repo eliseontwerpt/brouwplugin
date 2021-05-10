@@ -1,8 +1,8 @@
-<?php namespace Hjp\Brouwerbouwer\Classes;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Classes;
 
 use Db;
-use Hjp\Brouwerbouwer\Classes\Calculations;
-use Hjp\Brouwerbouwer\Models\Recipes;
+use Eliseontwerpt\Brouwerbouwer\Classes\Calculations;
+use Eliseontwerpt\Brouwerbouwer\Models\Recipes;
 
 
 

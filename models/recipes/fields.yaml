@@ -1,6 +1,6 @@
 fields:
     name:
-        label: 'hjp.brouwerbouwer::lang.plugin.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.plugin.name'
         span: auto
         required: 1
         type: text
@@ -11,7 +11,7 @@ fields:
         span: auto
         type: relation
     og:
-        label: 'hjp.brouwerbouwer::lang.og.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.og.name'
         span: auto
         required: 1
         type: number
@@ -19,23 +19,23 @@ fields:
         min: 1.001
         max: 1.2
     volume:
-        label: 'hjp.brouwerbouwer::lang.size.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.size.name'
         span: auto
         required: 1
         type: number
     boil_time:
-        label: 'hjp.brouwerbouwer::lang.boil_time.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.boil_time.name'
         span: auto
         required: 1
         type: number
     gear:
-        label: 'hjp.brouwerbouwer::lang.gear.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.gear.name'
         nameFrom: name
         descriptionFrom: description
         span: auto
         type: relation
     ibu:
-        label: 'hjp.brouwerbouwer::lang.ibu.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.ibu.name'
         span: left
         readOnly: 1
         required: 0
@@ -47,7 +47,7 @@ fields:
             - volume
         type: number
     ebc:
-        label: 'hjp.brouwerbouwer::lang.ebc.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.ebc.name'
         span: auto
         disabled: 0
         readOnly: 1

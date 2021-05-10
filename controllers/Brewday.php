@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Controllers;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;
@@ -17,6 +17,6 @@ class Brewday extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Hjp.Brouwerbouwer', 'main-menu-item', 'side-menu-item7');
+        BackendMenu::setContext('Eliseontwerpt.Brouwerbouwer', 'main-menu-item', 'side-menu-item7');
     }
 }

@@ -1,5 +1,5 @@
-list: $/hjp/brouwerbouwer/models/listofmalts/columns.yaml
-modelClass: Hjp\Brouwerbouwer\Models\ListOfMalts
+list: $/eliseontwerpt/brouwerbouwer/models/listofmalts/columns.yaml
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\ListOfMalts
 title: ListOfMalts
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'hjp/brouwerbouwer/listofmalts/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/listofmalts/update/:id'

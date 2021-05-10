@@ -1,5 +1,5 @@
-list: $/hjp/brouwerbouwer/models/bjcpstyleguide/columns.yaml
-modelClass: Hjp\Brouwerbouwer\Models\BjcpStyleGuide
+list: $/eliseontwerpt/brouwerbouwer/models/bjcpstyleguide/columns.yaml
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\BjcpStyleGuide
 title: BjcpStyleGuide
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'hjp/brouwerbouwer/bjcpstyleguide/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/bjcpstyleguide/update/:id'

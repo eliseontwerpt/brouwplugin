@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
 
@@ -19,7 +19,7 @@ class MashScheme extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_mash_scheme';
+    public $table = 'Eliseontwerpt_brouwerbouwer_mash_scheme';
 
     /**
      * @var array Validation rules
@@ -29,7 +29,7 @@ class MashScheme extends Model
 
     public $hasOne =[ 
         'recipe' => [
-            'Hjp\Brouwerbouwer\Models\Recipes',            
+            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],

@@ -1,11 +1,11 @@
 name: BjcpStyleGuide
-modelClass: Hjp\Brouwerbouwer\Models\BjcpStyleGuide
-form: $/hjp/brouwerbouwer/models/bjcpstyleguide/fields.yaml
-defaultRedirect: hjp/brouwerbouwer/bjcpstyleguide
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\BjcpStyleGuide
+form: $/eliseontwerpt/brouwerbouwer/models/bjcpstyleguide/fields.yaml
+defaultRedirect: eliseontwerpt/brouwerbouwer/bjcpstyleguide
 create:
-    redirect: 'hjp/brouwerbouwer/bjcpstyleguide/update/:id'
-    redirectClose: hjp/brouwerbouwer/bjcpstyleguide
+    redirect: 'eliseontwerpt/brouwerbouwer/bjcpstyleguide/update/:id'
+    redirectClose: eliseontwerpt/brouwerbouwer/bjcpstyleguide
 update:
-    redirect: hjp/brouwerbouwer/bjcpstyleguide
-    redirectClose: hjp/brouwerbouwer/bjcpstyleguide
+    redirect: eliseontwerpt/brouwerbouwer/bjcpstyleguide
+    redirectClose: eliseontwerpt/brouwerbouwer/bjcpstyleguide
 preview: {  }

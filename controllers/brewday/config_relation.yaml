@@ -3,11 +3,11 @@
 # ===================================
 
 recipes:
-    label: 'hjp.brouwerbouwer::lang.recipes.name'
+    label: 'eliseontwerpt.brouwerbouwer::lang.recipes.name'
     manage:
-        form: $/hjp/brouwerbouwer/models/recipes/fields.yaml
-        list:  $/hjp/brouwerbouwer/models/recipes/columns.yaml
+        form: $/eliseontwerpt/brouwerbouwer/models/recipes/fields.yaml
+        list:  $/eliseontwerpt/brouwerbouwer/models/recipes/columns.yaml
         
     view:
-        list: $/hjp/brouwerbouwer/models/recipes/columns.yaml
+        list: $/eliseontwerpt/brouwerbouwer/models/recipes/columns.yaml
         toolbarButtons: create|delete

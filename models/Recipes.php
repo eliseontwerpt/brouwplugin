@@ -1,11 +1,11 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
 use Flash;
 use Db;
-use Hjp\Brouwerbouwer\Classes\Waterprofiel;
-use Hjp\Brouwerbouwer\Classes\Calculations;
-use Hjp\Brouwerbouwer\Classes\Maltsprocessor;
+use Eliseontwerpt\Brouwerbouwer\Classes\Waterprofiel;
+use Eliseontwerpt\Brouwerbouwer\Classes\Calculations;
+use Eliseontwerpt\Brouwerbouwer\Classes\Maltsprocessor;
 
 /**
  * Model
@@ -24,7 +24,7 @@ class Recipes extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_recipes';
+    public $table = 'Eliseontwerpt_brouwerbouwer_recipes';
     
     /**
      * @var array Validation rules
@@ -34,30 +34,30 @@ class Recipes extends Model
 
     public $hasMany =[ 
         'malts' => [
-            'Hjp\Brouwerbouwer\Models\Malts',            
+            'Eliseontwerpt\Brouwerbouwer\Models\Malts',            
             'key'=>'recipe_id'
         ],
         'hops' => [
-            'Hjp\Brouwerbouwer\Models\Hops',
+            'Eliseontwerpt\Brouwerbouwer\Models\Hops',
             'key' => 'recipe_id'
         ],
         'mashscheme' =>[
-            'Hjp\Brouwerbouwer\Models\MashScheme',
+            'Eliseontwerpt\Brouwerbouwer\Models\MashScheme',
             'key' => 'recipe_id'
         ],
     ];
 
     public $belongsTo =[ 
         'gear' => [
-            'Hjp\Brouwerbouwer\Models\Gear'
+            'Eliseontwerpt\Brouwerbouwer\Models\Gear'
         ],        
         'bjcp' => [
-            'Hjp\Brouwerbouwer\Models\BjcpStyleGuide',            
+            'Eliseontwerpt\Brouwerbouwer\Models\BjcpStyleGuide',            
             'key' => 'bjcp_id',
             'otherKey'=>'id'
         ],   
         'waterprofile' => [
-            'Hjp\Brouwerbouwer\Models\WaterProfiles',            
+            'Eliseontwerpt\Brouwerbouwer\Models\WaterProfiles',            
             'key' => 'waterprofile_id',
             'otherKey'=>'id'
         ],
@@ -166,11 +166,11 @@ private function waterprofile($var1, $var2){
  */
     public function rgb($palette = null){
         if (isset($this->ebc)==true){
-            if (Db::table('hjp_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->exists()){
-                $palette = Db::table('hjp_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->first();        
+            if (Db::table('Eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->exists()){
+                $palette = Db::table('Eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->first();        
             }
             else {
-                $palette = Db::table('hjp_brouwerbouwer_color_palette')->where('ebc', 59)->first();
+                $palette = Db::table('Eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', 59)->first();
             }
             return $palette;
         }

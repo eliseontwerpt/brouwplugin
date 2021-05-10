@@ -1,5 +1,5 @@
-list: $/hjp/brouwerbouwer/models/listofhops/columns.yaml
-modelClass: Hjp\Brouwerbouwer\Models\ListOfHops
+list: $/eliseontwerpt/brouwerbouwer/models/listofhops/columns.yaml
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\ListOfHops
 title: ListOfHops
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'hjp/brouwerbouwer/listofhops/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/listofhops/update/:id'

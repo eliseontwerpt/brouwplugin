@@ -1,5 +1,5 @@
-list: $/hjp/brouwerbouwer/models/bjcpvalues/columns.yaml
-modelClass: Hjp\Brouwerbouwer\Models\BjcpValues
+list: $/eliseontwerpt/brouwerbouwer/models/bjcpvalues/columns.yaml
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\BjcpValues
 title: BjcpValues
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'hjp/brouwerbouwer/bjcpvalues/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/bjcpvalues/update/:id'

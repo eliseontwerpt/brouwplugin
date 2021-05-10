@@ -1,34 +1,34 @@
 fields:
     name:
-        label: 'hjp.brouwerbouwer::lang.name.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.name.name'
         span: auto
         type: text
     calcium:
-        label: 'hjp.brouwerbouwer::lang.calcium.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.calcium.name'
         span: auto
         type: number
     magnesium:
-        label: 'hjp.brouwerbouwer::lang.magnesium.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.magnesium.name'
         span: auto
         type: number
     natrium:
-        label: 'hjp.brouwerbouwer::lang.natrium.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.natrium.name'
         span: auto
         type: number
     chloride:
-        label: 'hjp.brouwerbouwer::lang.chloride.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.chloride.name'
         span: auto
         type: number
     sulfate:
-        label: 'hjp.brouwerbouwer::lang.sulfate.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.sulfate.name'
         span: auto
         type: number
     bicarbonate:
-        label: 'hjp.brouwerbouwer::lang.bicarbonate.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.bicarbonate.name'
         span: auto
         type: number
     description:
-        label: 'hjp.brouwerbouwer::lang.description.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.description.name'
         size: large
         span: full
         type: textarea

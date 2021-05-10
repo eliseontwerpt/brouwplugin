@@ -1,10 +1,10 @@
 name: MashScheme
-form: $/hjp/brouwerbouwer/models/mashscheme/fields.yaml
-modelClass: Hjp\Brouwerbouwer\Models\MashScheme
-defaultRedirect: hjp/brouwerbouwer/mashscheme
+form: $/eliseontwerpt/brouwerbouwer/models/mashscheme/fields.yaml
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\MashScheme
+defaultRedirect: eliseontwerpt/brouwerbouwer/mashscheme
 create:
-    redirect: 'hjp/brouwerbouwer/mashscheme/update/:id'
-    redirectClose: hjp/brouwerbouwer/mashscheme
+    redirect: 'eliseontwerpt/brouwerbouwer/mashscheme/update/:id'
+    redirectClose: eliseontwerpt/brouwerbouwer/mashscheme
 update:
-    redirect: hjp/brouwerbouwer/mashscheme
-    redirectClose: hjp/brouwerbouwer/mashscheme
+    redirect: eliseontwerpt/brouwerbouwer/mashscheme
+    redirectClose: eliseontwerpt/brouwerbouwer/mashscheme

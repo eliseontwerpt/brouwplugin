@@ -1,28 +1,28 @@
 columns:
     variety:
-        label: 'hjp.brouwerbouwer::lang.name.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.name.name'
         type: text
         select: variety
         relation: hop_list
     alpha:
-        label: 'hjp.brouwerbouwer::lang.alpha-acid.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.alpha-acid.name'
         type: number
         format: '%.1f%%'
     time:
-        label: 'hjp.brouwerbouwer::lang.time.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.time.name'
         type: number
         format: '%d min'
     ibu:
-        label: 'hjp.brouwerbouwer::lang.ibu.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.ibu.name'
         type: number
         format: '%.1f'
     grams:
-        label: 'hjp.brouwerbouwer::lang.mass.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.mass.name'
         type: number
         format: '%.0f gr'
     dryhop:
-        label: 'hjp.brouwerbouwer::lang.dryhop.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.dryhop.name'
         type: text
     hoptype:
-        label: 'hjp.brouwerbouwer::lang.hoptype.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.hoptype.name'
         type: text

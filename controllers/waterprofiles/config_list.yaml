@@ -1,7 +1,7 @@
 title: WaterProfiles
-modelClass: Hjp\Brouwerbouwer\Models\WaterProfiles
-list: $/hjp/brouwerbouwer/models/waterprofiles/columns.yaml
-recordUrl: 'hjp/brouwerbouwer/waterprofiles/update/:id'
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\WaterProfiles
+list: $/eliseontwerpt/brouwerbouwer/models/waterprofiles/columns.yaml
+recordUrl: 'eliseontwerpt/brouwerbouwer/waterprofiles/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 recordsPerPage: '10'
 showSetup: true

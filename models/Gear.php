@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
 
@@ -19,11 +19,11 @@ class Gear extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_brewing_gear';
+    public $table = 'Eliseontwerpt_brouwerbouwer_brewing_gear';
 
     public $belongsTo =[  
         'waterprofile' => [
-            'Hjp\Brouwerbouwer\Models\WaterProfiles',            
+            'Eliseontwerpt\Brouwerbouwer\Models\WaterProfiles',            
             'key' => 'waterprofile_id',
             'otherKey'=>'id'
         ],    

@@ -3,7 +3,7 @@ columns:
         label: id
         type: number
     recipename:
-        label: 'hjp.brouwerbouwer::lang.name.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.name.name'
         type: number
         select: name
         relation: recipe

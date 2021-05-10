@@ -1,10 +1,10 @@
 name: Hops
-modelClass: Hjp\Brouwerbouwer\Models\Hops
-form: $/hjp/brouwerbouwer/models/hops/fields.yaml
-defaultRedirect: hjp/brouwerbouwer/hops
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\Hops
+form: $/eliseontwerpt/brouwerbouwer/models/hops/fields.yaml
+defaultRedirect: eliseontwerpt/brouwerbouwer/hops
 create:
-    redirect: 'hjp/brouwerbouwer/hops/update/:id'
-    redirectClose: hjp/brouwerbouwer/hops
+    redirect: 'eliseontwerpt/brouwerbouwer/hops/update/:id'
+    redirectClose: eliseontwerpt/brouwerbouwer/hops
 update:
-    redirect: hjp/brouwerbouwer/hops
-    redirectClose: hjp/brouwerbouwer/hops
+    redirect: eliseontwerpt/brouwerbouwer/hops
+    redirectClose: eliseontwerpt/brouwerbouwer/hops

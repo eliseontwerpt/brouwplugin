@@ -1,5 +1,5 @@
-list: $/hjp/brouwerbouwer/models/gear/columns.yaml
-modelClass: Hjp\Brouwerbouwer\Models\Gear
+list: $/eliseontwerpt/brouwerbouwer/models/gear/columns.yaml
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\Gear
 title: Gear
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'hjp/brouwerbouwer/gear/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/gear/update/:id'

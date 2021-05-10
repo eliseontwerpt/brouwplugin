@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
 
@@ -19,7 +19,7 @@ class WaterProfiles extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_waterprofiles';
+    public $table = 'Eliseontwerpt_brouwerbouwer_waterprofiles';
 
     /**
      * @var array Validation rules

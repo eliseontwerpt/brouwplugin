@@ -1,7 +1,7 @@
 title: Malts
-modelClass: Hjp\Brouwerbouwer\Models\Malts
-list: $/hjp/brouwerbouwer/models/malts/columns.yaml
-recordUrl: 'hjp/brouwerbouwer/malts/update/:id'
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\Malts
+list: $/eliseontwerpt/brouwerbouwer/models/malts/columns.yaml
+recordUrl: 'eliseontwerpt/brouwerbouwer/malts/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 recordsPerPage: 20
 showSetup: true

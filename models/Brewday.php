@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Models;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
 
 use Model;
 use Recipe;
@@ -14,7 +14,7 @@ class Brewday extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'hjp_brouwerbouwer_brewday';
+    public $table = 'Eliseontwerpt_brouwerbouwer_brewday';
 
     /**
      * @var array Validation rules
@@ -24,7 +24,7 @@ class Brewday extends Model
 
     public $belongsTo =[ 
         'recipe' => [
-            'Hjp\Brouwerbouwer\Models\Recipes',            
+            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
             'key' => 'recipe_id',
             'otherKey'=>'id'
         ],

@@ -4,11 +4,11 @@ fields:
         span: auto
         type: text
     efficiency:
-        label: 'hjp.brouwerbouwer::lang.efficiency.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.efficiency.name'
         span: auto
         type: number
     evaporation:
-        label: 'hjp.brouwerbouwer::lang.evaporation.name'
+        label: 'eliseontwerpt.brouwerbouwer::lang.evaporation.name'
         span: auto
         type: number
     tubeloss:

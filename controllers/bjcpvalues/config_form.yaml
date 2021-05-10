@@ -1,11 +1,11 @@
 name: BjcpValues
-modelClass: Hjp\Brouwerbouwer\Models\BjcpValues
-form: $/hjp/brouwerbouwer/models/bjcpvalues/fields.yaml
-defaultRedirect: hjp/brouwerbouwer/bjcpvalues
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\BjcpValues
+form: $/eliseontwerpt/brouwerbouwer/models/bjcpvalues/fields.yaml
+defaultRedirect: eliseontwerpt/brouwerbouwer/bjcpvalues
 create:
-    redirect: 'hjp/brouwerbouwer/bjcpvalues/update/:id'
-    redirectClose: hjp/brouwerbouwer/bjcpvalues
+    redirect: 'eliseontwerpt/brouwerbouwer/bjcpvalues/update/:id'
+    redirectClose: eliseontwerpt/brouwerbouwer/bjcpvalues
 update:
-    redirect: hjp/brouwerbouwer/bjcpvalues
-    redirectClose: hjp/brouwerbouwer/bjcpvalues
+    redirect: eliseontwerpt/brouwerbouwer/bjcpvalues
+    redirectClose: eliseontwerpt/brouwerbouwer/bjcpvalues
 preview: {  }

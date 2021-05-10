@@ -1,7 +1,7 @@
 title: Recipes
-modelClass: Hjp\Brouwerbouwer\Models\Recipes
-list: $/hjp/brouwerbouwer/models/recipes/columns.yaml
-recordUrl: 'hjp/brouwerbouwer/recipes/update/:id'
+modelClass: Eliseontwerpt\Brouwerbouwer\Models\Recipes
+list: $/eliseontwerpt/brouwerbouwer/models/recipes/columns.yaml
+recordUrl: 'eliseontwerpt/brouwerbouwer/recipes/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
 recordsPerPage: 20
 showSetup: true

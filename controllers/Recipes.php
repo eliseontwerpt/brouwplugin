@@ -1,11 +1,11 @@
-<?php namespace Hjp\Brouwerbouwer\Controllers;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Controllers;
 
 use Backend\Classes\Controller;
 use Renatio\DynamicPDF\Classes\PDF; // import facade
 use BackendMenu;
 use Model;
 use Flash;
-use Hjp\Brouwerbouwer\Classes\Waterprofiel;
+use Eliseontwerpt\Brouwerbouwer\Classes\Waterprofiel;
 
 class Recipes extends Controller
 {
@@ -22,7 +22,7 @@ class Recipes extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Hjp.Brouwerbouwer', 'main-menu-item');
+        BackendMenu::setContext('Eliseontwerpt.Brouwerbouwer', 'main-menu-item');
     
     }
     

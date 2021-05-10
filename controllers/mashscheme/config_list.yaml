@@ -1,5 +1,5 @@
-list: $/hjp/brouwerbouwer/models/mashscheme/columns.yaml
-modelClass: Hjp\Brouwerbouwer\Models\MashScheme
+list: $/eliseontwerpt/brouwerbouwer/models/mashscheme/columns.yaml
+modelClass: eliseontwerpt\Brouwerbouwer\Models\MashScheme
 title: MashScheme
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'hjp/brouwerbouwer/mashscheme/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/mashscheme/update/:id'

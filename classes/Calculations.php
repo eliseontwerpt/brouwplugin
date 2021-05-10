@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Classes;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Classes;
 
 class Calculations {
     

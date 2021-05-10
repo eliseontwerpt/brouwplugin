@@ -1,8 +1,8 @@
-<?php namespace Hjp\Brouwerbouwer\Classes;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Classes;
 
 use DB;
 use Calculations;
-use Hjp\Brouwerbouwer\Models\Recipes;
+use Eliseontwerpt\Brouwerbouwer\Models\Recipes;
 
 class Waterprofiel{
 
