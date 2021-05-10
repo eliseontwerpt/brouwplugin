@@ -1,4 +1,4 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
 use Db;

@@ -1,11 +1,11 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Controllers;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Controllers;
 
 use Backend\Classes\Controller;
 use Renatio\DynamicPDF\Classes\PDF; // import facade
 use BackendMenu;
 use Model;
 use Flash;
-use Eliseontwerpt\Brouwerbouwer\Classes\Waterprofiel;
+use EliseOntwerpt\Brouwerbouwer\Classes\Waterprofiel;
 
 class Recipes extends Controller
 {

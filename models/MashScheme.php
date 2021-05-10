@@ -1,4 +1,4 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
 
@@ -29,7 +29,7 @@ class MashScheme extends Model
 
     public $hasOne =[ 
         'recipe' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
+            'EliseOntwerpt\Brouwerbouwer\Models\Recipes',            
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],

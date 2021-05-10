@@ -1,8 +1,8 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
 use Flash;
-use Eliseontwerpt\Brouwerbouwer\Classes\Maltsprocessor;
+use EliseOntwerpt\Brouwerbouwer\Classes\Maltsprocessor;
 //use Eliseontwerpt\Brouwerbouwer\Models\Recipes;
 /**
  * Model
@@ -31,7 +31,7 @@ class Malts extends Model
 
     public $belongsTo =[ 
         'malt_list' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\ListOfMalts',            
+            'EliseOntwerpt\Brouwerbouwer\Models\ListOfMalts',            
             'key' => 'malt_list_id',
             'otherKey'=>'id'
         ]

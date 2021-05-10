@@ -1,4 +1,4 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 use Db;
 use Model;
 
@@ -27,31 +27,31 @@ class BjcpStyleGuide extends Model
     public $rules = [
     ];
     
-    /** public $belongsTo =[ 
+    public $belongsTo =[ 
         'style_family' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\BjcpValues',            
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
             'key' => 'style_family_id',
             'otherKey'=>'id',
             'conditions' => 'subcategories = "style_family"',
         ],
         'style_history' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\BjcpValues',            
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
             'key' => 'style_history_id',
             'otherKey'=>'id',
             'conditions' => 'subcategories = "style_history"',
         ],
         'categories' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\BjcpValues',            
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
             'key' => 'categories_id',
             'otherKey'=>'id',
             'conditions' => 'subcategories = "categories"',
         ],
         'origin' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\BjcpValues',            
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
             'key' => 'origin_id',
             'otherKey'=>'id',
             'conditions' => 'subcategories = "origin"',
         ],
-    ];*/
+    ];
     
 }

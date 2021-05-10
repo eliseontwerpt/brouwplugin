@@ -1,7 +1,7 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
-use Eliseontwerpt\Brouwerbouwer\Classes\Hopprocessor;
+use EliseOntwerpt\Brouwerbouwer\Classes\Hopprocessor;
 
 /**
  * Model
@@ -30,7 +30,7 @@ class Hops extends Model
 
     public $belongsTo =[ 
         'hop_list' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\ListOfHops',            
+            'EliseOntwerpt\Brouwerbouwer\Models\ListOfHops',            
             'key' => 'hop_list_id',
             'otherKey'=>'id'
         ],

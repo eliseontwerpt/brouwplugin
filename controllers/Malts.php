@@ -1,4 +1,4 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Controllers;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Controllers;
 
 use Backend\Classes\Controller;
 use BackendMenu;

@@ -1,11 +1,11 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Models;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
 use Flash;
 use Db;
-use Eliseontwerpt\Brouwerbouwer\Classes\Waterprofiel;
-use Eliseontwerpt\Brouwerbouwer\Classes\Calculations;
-use Eliseontwerpt\Brouwerbouwer\Classes\Maltsprocessor;
+use EliseOntwerpt\Brouwerbouwer\Classes\Waterprofiel;
+use EliseOntwerpt\Brouwerbouwer\Classes\Calculations;
+use EliseOntwerpt\Brouwerbouwer\Classes\Maltsprocessor;
 
 /**
  * Model
@@ -34,30 +34,30 @@ class Recipes extends Model
 
     public $hasMany =[ 
         'malts' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Malts',            
+            'EliseOntwerpt\Brouwerbouwer\Models\Malts',            
             'key'=>'recipe_id'
         ],
         'hops' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Hops',
+            'EliseOntwerpt\Brouwerbouwer\Models\Hops',
             'key' => 'recipe_id'
         ],
         'mashscheme' =>[
-            'Eliseontwerpt\Brouwerbouwer\Models\MashScheme',
+            'EliseOntwerpt\Brouwerbouwer\Models\MashScheme',
             'key' => 'recipe_id'
         ],
     ];
 
     public $belongsTo =[ 
         'gear' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Gear'
+            'EliseOntwerpt\Brouwerbouwer\Models\Gear'
         ],        
         'bjcp' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\BjcpStyleGuide',            
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide',            
             'key' => 'bjcp_id',
             'otherKey'=>'id'
         ],   
         'waterprofile' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\WaterProfiles',            
+            'EliseOntwerpt\Brouwerbouwer\Models\WaterProfiles',            
             'key' => 'waterprofile_id',
             'otherKey'=>'id'
         ],
@@ -166,11 +166,11 @@ private function waterprofile($var1, $var2){
  */
     public function rgb($palette = null){
         if (isset($this->ebc)==true){
-            if (Db::table('Eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->exists()){
-                $palette = Db::table('Eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->first();        
+            if (Db::table('eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->exists()){
+                $palette = Db::table('eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->first();        
             }
             else {
-                $palette = Db::table('Eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', 59)->first();
+                $palette = Db::table('eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', 59)->first();
             }
             return $palette;
         }
