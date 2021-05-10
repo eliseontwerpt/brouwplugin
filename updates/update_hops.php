@@ -1,4 +1,4 @@
-<?php namespace Eliseonwerpt\Brouwerbouwer\Updates;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
