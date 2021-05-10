@@ -1,0 +1,61 @@
+fields:
+    variety:
+        label: 'hjp.brouwerbouwer::lang.variety.name'
+        span: left
+        required: 1
+        type: text
+    origin:
+        label: origin
+        span: auto
+        type: text
+    alpha_min:
+        label: 'hjp.brouwerbouwer::lang.alpha-acid.name'
+        span: left
+        required: 1
+        type: number
+    alpha_max:
+        label: 'hjp.brouwerbouwer::lang.alpha-acid.name'
+        span: auto
+        required: 1
+        type: number
+    purpose:
+        label: 'Hop purpose'
+        options:
+            Aroma: Aroma
+            Bittering: Bittering
+            'Dual Purpose': 'Dual purpose'
+        span: auto
+        required: 1
+        type: balloon-selector
+    substitutions:
+        label: 'hjp.brouwerbouwer::lang.substitution.name'
+        mode: array
+        options: true
+        separator: comma
+        customTags: 0
+        useKey: false
+        span: auto
+        type: taglist
+    styles:
+        label: 'hjp.brouwerbouwer::lang.beerstyles.name'
+        mode: string
+        separator: comma
+        customTags: 0
+        nameFrom: styles
+        useKey: false
+        span: right
+        type: taglist
+    test:
+        label: 'hjp.brouwerbouwer::lang.description.name'
+        span: full
+        type: section
+    descriptions:
+        label: 'hjp.brouwerbouwer::lang.description.name'
+        size: large
+        span: auto
+        type: textarea
+    aroma:
+        label: 'hjp.brouwerbouwer::lang.aroma.name'
+        size: large
+        span: auto
+        type: textarea

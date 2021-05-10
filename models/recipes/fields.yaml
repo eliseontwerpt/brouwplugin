@@ -1,0 +1,244 @@
+fields:
+    name:
+        label: 'hjp.brouwerbouwer::lang.plugin.name'
+        span: auto
+        required: 1
+        type: text
+    bjcp:
+        label: bjcp_category
+        nameFrom: styles
+        descriptionFrom: description
+        span: auto
+        type: relation
+    og:
+        label: 'hjp.brouwerbouwer::lang.og.name'
+        span: auto
+        required: 1
+        type: number
+        step: 0.001
+        min: 1.001
+        max: 1.2
+    volume:
+        label: 'hjp.brouwerbouwer::lang.size.name'
+        span: auto
+        required: 1
+        type: number
+    boil_time:
+        label: 'hjp.brouwerbouwer::lang.boil_time.name'
+        span: auto
+        required: 1
+        type: number
+    gear:
+        label: 'hjp.brouwerbouwer::lang.gear.name'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    ibu:
+        label: 'hjp.brouwerbouwer::lang.ibu.name'
+        span: left
+        readOnly: 1
+        required: 0
+        context:
+            - update
+            - preview
+        dependsOn:
+            - hops
+            - volume
+        type: number
+    ebc:
+        label: 'hjp.brouwerbouwer::lang.ebc.name'
+        span: auto
+        disabled: 0
+        readOnly: 1
+        required: 0
+        context:
+            - update
+            - preview
+        dependsOn:
+            - malt_list
+            - volume
+            - og
+        type: number
+    colorpalette:
+        span: right
+        path: colorpalette
+        context:
+            - update
+            - preview
+        type: partial
+    plato:
+        label: Plato
+        span: auto
+        disabled: 1
+        hidden: 1
+        dependsOn:
+            - volume
+        type: number
+tabs:
+    fields:
+        totalpercentage:
+            label: Percentage
+            span: left
+            disabled: 1
+            hidden: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - malts
+                - og
+                - volume
+            type: number
+            tab: Adjuncts
+        bugu:
+            span: auto
+            path: bugu
+            context:
+                - update
+                - preview
+            type: partial
+            tab: Adjuncts
+        malts:
+            span: auto
+            path: malts
+            context:
+                - update
+                - preview
+            type: partial
+            tab: Adjuncts
+        maltwarning:
+            span: left
+            path: maltwarning
+            context:
+                - update
+                - preview
+            type: partial
+            tab: Adjuncts
+        hops:
+            span: left
+            path: hops
+            context:
+                - update
+                - preview
+            type: partial
+            tab: Adjuncts
+        mashscheme:
+            span: left
+            path: mashscheme
+            context:
+                - update
+                - preview
+            type: partial
+            tab: Adjuncts
+        mash_ratio:
+            label: mashratio
+            span: left
+            required: 1
+            context:
+                - update
+                - preview
+            type: number
+            tab: WaterTab
+        sgboil:
+            label: 'SG boil'
+            span: auto
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - mash_ratio
+            type: number
+            tab: WaterTab
+        mashwater:
+            label: mash
+            span: left
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - malts
+                - og
+                - volume
+                - mash_ratio
+            type: number
+            tab: WaterTab
+        sgmash:
+            label: 'SG mash'
+            span: auto
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - mash_ratio
+            type: number
+            tab: WaterTab
+        spargewater:
+            label: sparge
+            span: auto
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - malts
+                - og
+                - volume
+                - mash_ratio
+            type: number
+            tab: WaterTab
+        waterratio:
+            span: auto
+            path: waterratio
+            context:
+                - update
+                - preview
+            type: partial
+            tab: WaterTab
+        waterprofile:
+            label: Waterprofile
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            context:
+                - update
+                - preview
+            type: relation
+            tab: WaterprofileTab
+        calciumsulfaat:
+            label: CaSO4
+            span: auto
+            default: '0.0000'
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - waterprofile
+            type: number
+            tab: WaterprofileTab
+        kaliumchloride:
+            label: KaCl
+            span: right
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - waterprofile
+            type: number
+            tab: WaterprofileTab
+        bakingsoda:
+            label: NaHCO3
+            span: right
+            disabled: 1
+            context:
+                - update
+                - preview
+            dependsOn:
+                - waterprofile
+            type: number
+            tab: WaterprofileTab

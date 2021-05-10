@@ -1,0 +1,11 @@
+name: WaterProfiles
+modelClass: Hjp\Brouwerbouwer\Models\WaterProfiles
+form: $/hjp/brouwerbouwer/models/waterprofiles/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/waterprofiles
+create:
+    redirect: 'hjp/brouwerbouwer/waterprofiles/update/:id'
+    redirectClose: hjp/brouwerbouwer/waterprofiles
+update:
+    redirect: hjp/brouwerbouwer/waterprofiles
+    redirectClose: hjp/brouwerbouwer/waterprofiles
+preview: {  }

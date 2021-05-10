@@ -1,0 +1,164 @@
+fields:
+    graph:
+        span: right
+        path: graph_data
+        type: partial
+    styles:
+        label: 'hjp.brouwerbouwer::lang.style.name'
+        span: auto
+        type: text
+    style_history:
+        label: 'hjp.brouwerbouwer::lang.style_history.name'
+        nameFrom: value
+        descriptionFrom: description
+        span: left
+        type: relation
+    origin:
+        label: 'hjp.brouwerbouwer::lang.origin.name'
+        nameFrom: value
+        descriptionFrom: description
+        span: left
+        type: relation
+    style_family:
+        label: 'hjp.brouwerbouwer::lang.style_family.name'
+        nameFrom: value
+        descriptionFrom: description
+        span: left
+        type: relation
+tabs:
+    fields:
+        overall_impression:
+            label: 'hjp.brouwerbouwer::lang.overall_impression.name'
+            size: large
+            span: auto
+            type: textarea
+            comment: 'hjp.brouwerbouwer::lang.overall_impression.description'
+            tab: 'hjp.brouwerbouwer::lang.overall_impression.name'
+        aroma:
+            label: 'hjp.brouwerbouwer::lang.aroma.name'
+            size: large
+            span: auto
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.aroma.name'
+        appearance:
+            label: 'hjp.brouwerbouwer::lang.appearance.name'
+            size: large
+            span: auto
+            type: textarea
+            comment: 'hjp.brouwerbouwer::lang.appearance.description'
+            tab: 'hjp.brouwerbouwer::lang.appearance.name'
+        flavor:
+            label: 'hjp.brouwerbouwer::lang.flavor.name'
+            size: large
+            span: auto
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.flavor.name'
+        mouthfeel:
+            label: 'hjp.brouwerbouwer::lang.mouthfeel.name'
+            size: large
+            span: auto
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.mouthfeel.name'
+        comments:
+            label: 'hjp.brouwerbouwer::lang.comments.name'
+            size: large
+            span: auto
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.comments.name'
+        history:
+            label: 'hjp.brouwerbouwer::lang.history.name'
+            size: large
+            span: auto
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.history.name'
+        characteristic_ingredients:
+            label: 'hjp.brouwerbouwer::lang.characteristic_ingredients.name'
+            size: large
+            span: auto
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.characteristic_ingredients.name'
+        style_comparison:
+            label: 'hjp.brouwerbouwer::lang.style_comparison.name'
+            size: large
+            span: auto
+            type: textarea
+            comment: 'hjp.brouwerbouwer::lang.style_comparison.description'
+            tab: 'hjp.brouwerbouwer::lang.style_comparison.name'
+        commercial_examples:
+            label: 'hjp.brouwerbouwer::lang.commercial_examples.name'
+            mode: string
+            separator: comma
+            customTags: true
+            useKey: false
+            span: auto
+            disabled: 0
+            type: taglist
+            comment: 'hjp.brouwerbouwer::lang.commercial_examples.description'
+            tab: 'hjp.brouwerbouwer::lang.commercial_examples.name'
+        notes:
+            label: 'hjp.brouwerbouwer::lang.notes.name'
+            size: large
+            span: auto
+            type: textarea
+            comment: 'hjp.brouwerbouwer::lang.notes.description'
+            tab: 'hjp.brouwerbouwer::lang.notes.name'
+        abv_min:
+            label: 'hjp.brouwerbouwer::lang.abv-min.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        abv_max:
+            label: 'hjp.brouwerbouwer::lang.abv-max.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        ibu_min:
+            label: 'hjp.brouwerbouwer::lang.ibu-min.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        ibu_max:
+            label: 'hjp.brouwerbouwer::lang.ibu-max.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        ebc_min:
+            label: 'hjp.brouwerbouwer::lang.ebc-min.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        ebc_max:
+            label: 'hjp.brouwerbouwer::lang.ebc-max.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        og_min:
+            label: 'hjp.brouwerbouwer::lang.og-min.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        og_max:
+            label: 'hjp.brouwerbouwer::lang.og-max.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        fg_min:
+            label: 'hjp.brouwerbouwer::lang.fg-min.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        fg_max:
+            label: 'hjp.brouwerbouwer::lang.fg-max.name'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        bugu_min:
+            label: 'BU/GU min'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'
+        bugu_max:
+            label: 'BU/GU max'
+            span: auto
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.values.name'

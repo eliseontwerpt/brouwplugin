@@ -1,0 +1,33 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+malts:
+    label: 'hjp.brouwerbouwer::lang.malts.name'
+    manage:
+        form: $/hjp/brouwerbouwer/models/malts/fields.yaml
+        list:  $/hjp/brouwerbouwer/models/malts/columns.yaml
+        
+    view:
+        list: $/hjp/brouwerbouwer/models/malts/columns.yaml
+        toolbarButtons: create|delete
+
+hops:
+    label: 'hjp.brouwerbouwer::lang.hops.name'
+    manage:
+        form: $/hjp/brouwerbouwer/models/hops/fields.yaml
+        list:  $/hjp/brouwerbouwer/models/hops/columns.yaml
+        
+    view:
+        list: $/hjp/brouwerbouwer/models/hops/columns.yaml
+        toolbarButtons: create|delete
+
+mashscheme:
+    label: 'hjp.brouwerbouwer::lang.mashscheme.name'
+    manage:
+        form: $/hjp/brouwerbouwer/models/mashscheme/fields.yaml
+        list:  $/hjp/brouwerbouwer/models/mashscheme/columns.yaml
+        
+    view:
+        list: $/hjp/brouwerbouwer/models/mashscheme/columns.yaml
+        toolbarButtons: create|delete

@@ -1,0 +1,10 @@
+name: Hops
+modelClass: Hjp\Brouwerbouwer\Models\Hops
+form: $/hjp/brouwerbouwer/models/hops/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/hops
+create:
+    redirect: 'hjp/brouwerbouwer/hops/update/:id'
+    redirectClose: hjp/brouwerbouwer/hops
+update:
+    redirect: hjp/brouwerbouwer/hops
+    redirectClose: hjp/brouwerbouwer/hops

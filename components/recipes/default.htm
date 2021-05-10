@@ -1,0 +1,14 @@
+{% set posts = __SELF__.recipes %}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Hello World!</h1>
+                {% for  post in posts %}
+                    <p><a href="{{ post.name }}">{{ post.name }}</a></p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

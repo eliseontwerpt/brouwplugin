@@ -1,0 +1,22 @@
+<div class="control-list" >
+    <table class="table data" data-control="rowlink">
+        <thead>
+            <tr>
+                <th><span>Variety</span></th>
+                <th class="sort-desc"><span>Massa</span></th>
+                <th><span>Time</span></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php 
+            foreach ($model->recipe->hops as $hops){
+            echo '<tr class="frozen">
+                    <td>'. $hops->hop_list->variety .'</td>                   
+                    <td>' . $hops->mass  . ' gr</td>
+                    <td >'. $hops->time .' min</td>
+                </tr>';
+            };
+        ?>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,119 @@
+<?php if ($partialpart == 'bugus') { 
+    $og = ($data->og * 1000) - 1000 ;
+    $bugu = round($data->ibu / $og, 2 ) * 100;
+    if ($data->bjcp->bugu_min == null){ 
+        $bugu_min = round($data->bjcp->ibu_min / (($data->bjcp->og_min * 1000) - 1000),2) *100  ;
+    }else{      
+        $bugu_min = $data->bjcp->bugu_min *100 ;  
+    }   
+    if ($data->bjcp->bugu_max == null){ 
+        $bugu_max = round($data->bjcp->ibu_max / (($data->bjcp->og_max * 1000) - 1000),2) *100 ;    
+    }else{      
+        $bugu_max =   $data->bjcp->bugu_max * 100;       
+    }
+    $zoom = 1 / 1.45;
+    ?>
+        <svg width="90%" height="200px" cx="100px" cy="100px"> 
+                     
+            <rect width="100%" height="100%" style="fill:rgba(255,255,255,0.9);stroke-width:1;stroke:rgb(0,0,0)" />
+            <rect width="<?php echo ($bugu_max - $bugu_min) * $zoom ?>%" height="85%" y="15%" x="<?php echo $bugu_min * $zoom ?>%" style="fill:rgba(0, 0, 0,0.2);stroke-width:0;stroke:rgb(0,0,0)" />                      
+            <line x1="<?php echo $bugu * $zoom ?>%" y1="15%" x2="<?php echo $bugu * $zoom ?>%" y2="100%" style="stroke:rgb(200, 0, 0);stroke-width:2" />
+            <line x1="0%" y1="50%" x2="100%" y2="50%" style="stroke:rgb(150, 150, 150);stroke-width:2" />
+            <text x="10" y="20" fill="rgb(150, 150, 150)"><?php echo 'Bitterness ratio: ' . $bugu_max ?></text>
+            
+            <?php 
+            $i = 5;
+            $limit = 100 / $zoom; 
+            while ($i < $limit) { 
+                $a = $i / 100;
+                echo '<line x1="'.$i * $zoom .'%" y1="45%" x2="'.$i * $zoom .'%" y2="55%" style="stroke:rgb(150, 150, 150);stroke-width:2" />' ;
+                
+                echo '<text x="'. $i * $zoom  .'%" y="40%" dx="-10px" fill="rgb(150, 150, 150)">'.$a.'</text>' ;                 
+                $i = $i + 5;
+            }  ?>
+            
+        </svg>
+<?php } ?>
+
+<?php if ($partialpart == 'bugu') { 
+    
+    $og = ($data->og * 1000) - 1000 ;
+    $og_min = ($data->bjcp->og_min * 1000) -1000;
+    $og_max = ($data->bjcp->og_max *1000) - 1000 ;
+
+    $ibu = $data->ibu;
+    $ibu_min = $data->bjcp->ibu_min;
+    $ibu_max = $data->bjcp->ibu_max;
+
+    $ebc = $data->ebc;
+    $ebc_min = $data->bjcp->ebc_min;
+    $ebc_max = $data->bjcp->ebc_max;
+
+    $bugu = round($data->ibu / $og, 2 ) * 100;
+    if ($data->bjcp->bugu_min == null){ 
+        $bugu_min = round($data->bjcp->ibu_min / (($data->bjcp->og_min * 1000) - 1000),2) *100  ;
+    }else{      
+        $bugu_min = $data->bjcp->bugu_min *100 ;  
+    }   
+    if ($data->bjcp->bugu_max == null){ 
+        $bugu_max = round($data->bjcp->ibu_max / (($data->bjcp->og_max * 1000) - 1000),2) *100 ;    
+    }else{      
+        $bugu_max =   $data->bjcp->bugu_max * 100;       
+    }    
+    $zoom = 1 / 1.00;
+
+    function set_grid($y, $min, $div, $zoom){
+        
+        $i = 5;
+        $limit = 100 / $zoom;                
+        $svg = '';
+        while ($i < $limit) { 
+            $a = $min + $i / $div;
+            $tmp = $i * $zoom;
+            $tmp2 = $y + 5;
+            $tmp3 = $y - 5;
+            $tmp4 = $y - 6;
+            $dx =  strlen($a) * -2.5 ; 
+            $svg .= '<line x1="'. $tmp .'%" y1="'. $tmp2  .'%" x2="'. $tmp .'%" y2="'. $tmp3 .'%" style="stroke:rgb(150, 150, 150);stroke-width:1" />' ;
+            $svg .= '<text x="'. $tmp  .'%" y="'. $tmp4  .'%"  dx="'. $dx .'" style="font-size:0.8rem" fill="rgb(150, 150, 150)">'.$a.'</text>' ;                 
+            $i = $i + 5;
+        }
+        return $svg;
+    }  
+
+    ?>
+        <svg width="90%" height="500px" cx="100px" cy="100px">                     
+            <!-- ABV -->
+            <rect width="100%" height="20%" y="0%" style="fill:rgba(255,255,255,0.9);stroke-width:0;stroke:rgb(0,0,0)" />
+            <line x1="0%" y1="10%" x2="100%" y2="10%" style="stroke:rgb(150, 150, 150);stroke-width:1" />
+            <?php echo set_grid(10, 1, 1000, $zoom)?>
+            <line x1="<?php echo $og * $zoom ?>%" y1="0%" x2="<?php echo $og * $zoom ?>%" y2="20%" style="stroke:rgb(200, 0, 0);stroke-width:2" />
+            <text x="10" y="18%" fill="rgb(150, 150, 150)" style="font-size:1.0rem"><?php echo 'Specific Gravity (mg/l): ' . $data->og ?></text>
+            <rect width="<?php echo ($og_max - $og_min) * $zoom ?>%" height="20%" y="0%" x="<?php echo $og_min * $zoom ?>%" style="fill:rgba(0, 0, 0,0.2);stroke-width:0;stroke:rgb(0,0,0)" />
+
+            <!-- IBU -->
+            <rect width="100%" height="20%" y="25%" style="fill:rgba(255,255,255,0.9);stroke-width:0;stroke:rgb(0,0,0)" />
+            <line x1="0%" y1="35%" x2="100%" y2="35%" style="stroke:rgb(150, 150, 150);stroke-width:1" />
+            <?php echo set_grid(35, 0, 1, $zoom); ?>
+            <line x1="<?php echo $ibu * $zoom ?>%" y1="25%" x2="<?php echo $ibu * $zoom ?>%" y2="45%" style="stroke:rgb(200, 0, 0);stroke-width:2" />
+            <text x="10px" y="43%" fill="rgb(150, 150, 150) " style="font-size:1.0rem"><?php echo 'IBU (tinseth):: ' . $data->ibu ?></text>
+            <rect width="<?php echo ($ibu_max - $ibu_min) * $zoom ?>%" height="20%" y="25%" x="<?php echo $ibu_min * $zoom ?>%" style="fill:rgba(0, 0, 0,0.2);stroke-width:0;stroke:rgb(0,0,0)" />
+            
+            <!-- EBC -->
+            <rect width="100%" height="20%" y="50%" style="fill:rgba(255,255,255,0.9);stroke-width:0;stroke:rgb(0,0,0)" />
+            <line x1="0%" y1="60%" x2="100%" y2="60%" style="stroke:rgb(150, 150, 150);stroke-width:1" />
+            <?php echo set_grid(60, 0, 1, $zoom); ?>
+            <line x1="<?php echo $ebc * $zoom ?>%" y1="50%" x2="<?php echo $ebc * $zoom ?>%" y2="70%" style="stroke:rgb(200, 0, 0);stroke-width:2" />
+            <text x="10px" y="68%" fill="rgb(150, 150, 150)" style="font-size:1.0rem"><?php echo 'Color (EBC): ' . $data->ebc ?></text>
+            <rect width="<?php echo ($ebc_max - $ebc_min) * $zoom ?>%" height="20%" y="50%" x="<?php echo $ebc_min * $zoom ?>%" style="fill:rgba(0, 0, 0,0.2);stroke-width:0;stroke:rgb(0,0,0)" />
+            
+                <!-- BU:GU -->
+            <rect width="100%" height="20%" y="75%" style="fill:rgba(255,255,255,0.9);stroke-width:0;stroke:rgb(0,0,0)" />
+            <line x1="0%" y1="85%" x2="100%" y2="85%" style="stroke:rgb(150, 150, 150);stroke-width:1" />
+            <?php echo set_grid(85, 0, 100,$zoom); ?>
+            <line x1="<?php echo $bugu  * $zoom ?>%" y1="75%" x2="<?php echo $bugu * $zoom ?>%" y2="95%" style="stroke:rgb(200, 0, 0);stroke-width:2" />
+            <text x="10px" y="93%" fill="rgb(150, 150, 150)" style="font-size:1.0rem"><?php echo 'Bitterness Ratio:' . $bugu /100 ?></text>
+            <rect width="<?php echo ($og_max - $og_min) * $zoom ?>%" height="20%" y="75%" x="<?php echo $bugu_min * $zoom ?>%" style="fill:rgba(0, 0, 0,0.2);stroke-width:0;stroke:rgb(0,0,0)" />
+        </svg>
+
+<?php } ?>

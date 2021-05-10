@@ -1,0 +1,13 @@
+columns:
+    name:
+        label: name
+        type: text
+    temperature:
+        label: temperature
+        type: number
+        sortable: true
+        format: '%d °C'
+    time:
+        label: time
+        type: number
+        format: '%d min'

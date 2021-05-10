@@ -1,0 +1,34 @@
+columns:
+    variety:
+        label: variety
+        type: text
+        searchable: true
+    alpha_min:
+        label: alpha_min
+        type: text
+    alpha_max:
+        label: alpha_max
+        type: text
+    origin:
+        label: origin
+        type: text
+        searchable: true
+    aroma:
+        label: aroma
+        type: text
+    substitutions:
+        label: substitutions
+        type: text
+    styles:
+        label: styles
+        type: text
+    description:
+        label: description
+        type: text
+    id:
+        label: id
+        type: number
+    purpose:
+        label: purpose
+        type: text
+        searchable: true

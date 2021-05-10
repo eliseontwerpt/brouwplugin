@@ -1,0 +1,11 @@
+name: ListOfMalts
+modelClass: Hjp\Brouwerbouwer\Models\ListOfMalts
+form: $/hjp/brouwerbouwer/models/listofmalts/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/listofmalts
+create:
+    redirect: 'hjp/brouwerbouwer/listofmalts/update/:id'
+    redirectClose: hjp/brouwerbouwer/listofmalts
+update:
+    redirect: hjp/brouwerbouwer/listofmalts
+    redirectClose: hjp/brouwerbouwer/listofmalts
+preview: {  }

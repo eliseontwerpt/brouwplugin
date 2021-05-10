@@ -1,0 +1,10 @@
+name: Brewday
+modelClass: Hjp\Brouwerbouwer\Models\Brewday
+form: $/hjp/brouwerbouwer/models/brewday/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/brewday
+create:
+    redirect: 'hjp/brouwerbouwer/brewday/update/:id'
+    redirectClose: hjp/brouwerbouwer/brewday
+update:
+    redirect: hjp/brouwerbouwer/brewday
+    redirectClose: hjp/brouwerbouwer/brewday

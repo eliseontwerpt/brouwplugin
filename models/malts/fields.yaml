@@ -1,0 +1,18 @@
+fields:
+    malt_list:
+        label: Relation
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    percentage:
+        label: 'hjp.brouwerbouwer::lang.percentage.name'
+        span: auto
+        type: number
+    mash:
+        label: 'hjp.brouwerbouwer::lang.mash-in.name'
+        span: full
+        default: 1
+        required: 0
+        attributes: {  }
+        type: switch

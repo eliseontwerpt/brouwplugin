@@ -1,0 +1,22 @@
+<div class="control-list" >
+    <table class="table data" data-control="rowlink">
+        <thead>
+            <tr>
+                <th><span>Name</span></th>
+                <th class="sort-desc"><span>Massa</span></th>
+                <th><span>Toevoegen aan maisch?</span></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php 
+            foreach ($model->recipe->malts as $malt){
+            echo '<tr class="frozen">
+                    <td>'. $malt->malt_list->name .'</td>
+                    <td >'. round($malt->massa) .' gr</td>
+                    <td>' . $malt->mash  . '</td>
+                </tr>';
+            } ;
+        ?>
+        </tbody>
+    </table>
+</div>

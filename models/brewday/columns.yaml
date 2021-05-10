@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: id
+        type: number
+    recipename:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        type: number
+        select: name
+        relation: recipe
+    date_brewday:
+        label: date_brewday
+        type: date
+        sortable: true
+        format: 'd   F,   Y'
+    abv:
+        label: abv
+        type: text
+        sortable: true
+    score:
+        label: score
+        type: number
+        sortable: true

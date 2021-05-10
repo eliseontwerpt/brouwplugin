@@ -1,0 +1,23 @@
+columns:
+    name:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        type: text
+    efficiency:
+        label: 'hjp.brouwerbouwer::lang.efficiency.name'
+        type: text
+        format: '%d%%'
+    evaporation:
+        label: 'hjp.brouwerbouwer::lang.evaporation.name'
+        type: number
+        format: '%d ml/min'
+    tubeloss:
+        label: tubeloss
+        type: number
+    id:
+        label: id
+        type: number
+    waterprofile:
+        label: waterprofile
+        type: number
+        select: name
+        relation: waterprofile

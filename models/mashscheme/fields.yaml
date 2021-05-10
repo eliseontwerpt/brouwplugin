@@ -1,0 +1,13 @@
+fields:
+    name:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        span: auto
+        type: text
+    temperature:
+        label: 'hjp.brouwerbouwer::lang.temperature.name'
+        span: auto
+        type: number
+    time:
+        label: 'hjp.brouwerbouwer::lang.mash_time.name'
+        span: auto
+        type: number

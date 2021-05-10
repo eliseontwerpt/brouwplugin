@@ -1,0 +1,11 @@
+name: Recipes
+modelClass: Hjp\Brouwerbouwer\Models\Recipes
+form: $/hjp/brouwerbouwer/models/recipes/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/recipes
+create:
+    redirect: 'hjp/brouwerbouwer/recipes/update/:id'
+    redirectClose: hjp/brouwerbouwer/recipes
+update:
+    redirect: 'hjp/brouwerbouwer/recipes/update/:id'
+    redirectClose: hjp/brouwerbouwer/recipes
+

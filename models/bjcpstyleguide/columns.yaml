@@ -1,0 +1,33 @@
+columns:
+    bjcp_categories_id:
+        label: id
+        type: text
+    styles:
+        label: styles
+        type: text
+        searchable: true
+    style_family:
+        label: 'Style family'
+        type: text
+        searchable: true
+        select: value
+        relation: style_family
+    'style history':
+        label: 'Style history'
+        type: text
+        searchable: true
+        select: value
+        relation: style_history
+    category:
+        label: Category
+        type: text
+        searchable: true
+        select: value
+        relation: categories
+    country:
+        label: Country
+        type: text
+        searchable: true
+        sortable: true
+        select: value
+        relation: origin

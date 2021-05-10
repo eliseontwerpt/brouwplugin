@@ -1,0 +1,20 @@
+columns:
+    name:
+        label: name
+        type: text
+        searchable: true
+    ebc:
+        label: ebc
+        type: number
+    yield:
+        label: yield
+        type: text
+        format: '%1.3f sg'
+    extraction:
+        label: extraction
+        type: text
+        format: '%1.1f %%'
+    max:
+        label: max
+        type: text
+        format: '%.d %%'

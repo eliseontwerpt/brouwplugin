@@ -1,0 +1,26 @@
+columns:
+    naam:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        type: text
+        select: name
+        relation: malt_list
+    percentage:
+        label: 'hjp.brouwerbouwer::lang.percentage.name'
+        type: number
+        format: '%1.2f%%'
+    massa:
+        label: 'hjp.brouwerbouwer::lang.mass.name'
+        type: number
+        format: '%d gr'
+    ebc:
+        label: 'hjp.brouwerbouwer::lang.ebc.name'
+        type: number
+        select: ebc
+        relation: malt_list
+    mash:
+        label: 'hjp.brouwerbouwer::lang.mash-in.name'
+        type: switch
+    percentageweight:
+        label: 'percentage by Weight'
+        type: number
+        format: '%.2f%%'

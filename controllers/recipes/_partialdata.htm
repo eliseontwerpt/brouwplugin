@@ -1,0 +1,46 @@
+    <!--
+        Partial Maltwarning
+    -->
+<?php if ($partialpart == 'maltwarning') { ?>
+    <?php if (round($perc) > 100) { ?>
+        <div class="callout fade in callout-danger no-subheader text-center">        
+            <div class="header">
+                <i class="icon-warning"></i>
+                <h3>Percentage of malts have exceeded 100%. Percentage Now; <?= $perc ?>%.</h3> 
+            </div>
+        </div> 
+    <?php } elseif (round($perc) < 100){  ?>
+        <div class="callout fade in callout-info no-subheader text-center">
+            <div class="header">
+                <i class="icon-info"></i>
+                <h3><?= $perc ?>% of the recipe completed!</h3>
+            </div>
+        </div>
+    <?php } else {  ?>   
+        <div class="control-status-list">
+            <ul>
+                <li>
+                    <span class="status-icon success"><i class="icon-check"></i></span>
+                    <span class="status-text success">Completed (<?= $perc ?>%) </span>
+                </li>
+            </ul>
+        </div>   
+    <?php } ?>
+    <!--
+        Partial Waterratio
+    -->
+<?php } elseif ($partialpart == 'waterratio') { ?>
+    <div class="control-chart centered wrap-legend" data-control="chart-pie" data-size="200" data-center-text="100">
+        <ul>
+            <li>Mashwater<span><?= $water['mash'] ?></span></li>
+            <li>Spargewater<span><?= $water['sparge']   ?></span></li>
+        </ul>
+    </div>
+    
+    <!--
+        Partial Color palette
+    -->
+<?php } elseif ($partialpart == 'colorpalette') { ?>
+    <?php $color = sprintf("#%02x%02x%02x", $rgb->rgb_r, $rgb->rgb_g, $rgb->rgb_b); // #0d00ff ?>
+    <img src="/storage/app/media/bierglas.png" style="background-color: <?php echo $color ?>;height:150px; border:1px solid black;" />
+<?php } ?>

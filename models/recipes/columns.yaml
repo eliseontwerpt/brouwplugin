@@ -1,0 +1,17 @@
+columns:
+    id:
+        label: id
+        type: number
+    name:
+        label: name
+        type: text
+    bjcp:
+        label: bjcp
+        type: text
+        select: styles
+        relation: bjcp
+    waterprofile:
+        label: waterprofile
+        type: number
+        select: name
+        relation: waterprofile

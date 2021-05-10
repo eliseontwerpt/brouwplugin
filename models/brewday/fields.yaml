@@ -1,0 +1,194 @@
+fields:
+    date_brewday:
+        label: 'hjp.brouwerbouwer::lang.date_brewday.name'
+        mode: date
+        yearRange: '[2020,2050]'
+        format: d-m-Y
+        span: right
+        required: 1
+        type: datepicker
+    section1:
+        label: Name
+        span: full
+        type: section
+    recipe:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        nameFrom: name
+        descriptionFrom: description
+        span: left
+        readOnly: 0
+        hidden: 0
+        required: 1
+        type: relation
+    beercategory:
+        label: 'hjp.brouwerbouwer::lang.category.name'
+        span: right
+        disabled: 1
+        type: text
+    section2:
+        label: Basics
+        span: full
+        type: section
+    og:
+        label: 'hjp.brouwerbouwer::lang.og.name'
+        span: auto
+        default: '1.000'
+        context:
+            - update
+            - preview
+        type: number
+    ogrecipe:
+        label: 'hjp.brouwerbouwer::lang.og.name'
+        span: auto
+        disabled: 1
+        required: 0
+        context:
+            - update
+            - preview
+        type: number
+    abv:
+        label: 'hjp.brouwerbouwer::lang.abv.name'
+        span: auto
+        context:
+            - update
+            - preview
+        type: number
+    score:
+        label: 'hjp.brouwerbouwer::lang.score.name'
+        span: auto
+        default: '7'
+        context:
+            - update
+            - preview
+        type: number
+    photos:
+        label: 'File upload'
+        mode: image
+        prompt: 'Upload Foto'
+        imageWidth: '1280'
+        fileTypes: 'png,jpg'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        context:
+            - update
+            - preview
+        type: fileupload
+secondaryTabs:
+    fields:
+        calciumsulfaat:
+            label: CaSO4
+            span: left
+            disabled: 1
+            context:
+                - update
+                - preview
+            type: text
+            tab: 'hjp.brouwerbouwer::lang.preperations.name'
+        kaliumchloride:
+            label: KaCl
+            span: left
+            disabled: 1
+            context:
+                - update
+                - preview
+            type: text
+            tab: 'hjp.brouwerbouwer::lang.preperations.name'
+        bakingsoda:
+            label: NaHCO3
+            span: left
+            disabled: 1
+            context:
+                - update
+                - preview
+            type: text
+            tab: 'hjp.brouwerbouwer::lang.preperations.name'
+        comment_malts:
+            label: 'hjp.brouwerbouwer::lang.comment.name'
+            size: small
+            span: full
+            context:
+                - update
+                - preview
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.preperations.name'
+        malts:
+            span: full
+            path: malts
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'hjp.brouwerbouwer::lang.mash.name'
+        og_masch:
+            label: 'hjp.brouwerbouwer::lang.og-masch.name'
+            span: auto
+            default: '1.000'
+            context:
+                - update
+                - preview
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.mash.name'
+        ogmashrecipe:
+            label: 'hjp.brouwerbouwer::lang.og-masch.name'
+            span: right
+            disabled: 1
+            required: 0
+            context:
+                - update
+                - preview
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.mash.name'
+        comment_mash:
+            label: 'hjp.brouwerbouwer::lang.comment.name'
+            size: huge
+            span: full
+            context:
+                - update
+                - preview
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.mash.name'
+        hops:
+            span: full
+            path: hops
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'hjp.brouwerbouwer::lang.boiling.name'
+        comment_boil:
+            label: 'hjp.brouwerbouwer::lang.comment.name'
+            size: huge
+            span: full
+            context:
+                - update
+                - preview
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.boiling.name'
+        yeast:
+            label: 'hjp.brouwerbouwer::lang.yeast.name'
+            span: auto
+            context:
+                - update
+                - preview
+            type: text
+            tab: 'hjp.brouwerbouwer::lang.fermentation.name'
+        comment_fermentation:
+            label: 'hjp.brouwerbouwer::lang.comment.name'
+            size: large
+            span: full
+            context:
+                - update
+                - preview
+            type: textarea
+            tab: 'hjp.brouwerbouwer::lang.fermentation.name'
+        fg:
+            label: 'hjp.brouwerbouwer::lang.fg-max.name'
+            span: auto
+            context:
+                - update
+                - preview
+            type: number
+            tab: 'hjp.brouwerbouwer::lang.fermentation.name'

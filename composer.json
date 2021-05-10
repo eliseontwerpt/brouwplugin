@@ -1,0 +1,9 @@
+{
+    "name": "hjp/brouwbouw-plugin",
+    "type": "october-plugin",
+    "description": "My plugin for my homebrewing website",
+    "license": "proprietary",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

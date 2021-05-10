@@ -1,0 +1,11 @@
+name: ListOfHops
+modelClass: Hjp\Brouwerbouwer\Models\ListOfHops
+form: $/hjp/brouwerbouwer/models/listofhops/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/listofhops
+create:
+    redirect: 'hjp/brouwerbouwer/listofhops/update/:id'
+    redirectClose: hjp/brouwerbouwer/listofhops
+update:
+    redirect: hjp/brouwerbouwer/listofhops
+    redirectClose: hjp/brouwerbouwer/listofhops
+preview: {  }

@@ -1,0 +1,11 @@
+name: Gear
+modelClass: Hjp\Brouwerbouwer\Models\Gear
+form: $/hjp/brouwerbouwer/models/gear/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/gear
+create:
+    redirect: 'hjp/brouwerbouwer/gear/update/:id'
+    redirectClose: hjp/brouwerbouwer/gear
+update:
+    redirect: hjp/brouwerbouwer/gear
+    redirectClose: hjp/brouwerbouwer/gear
+preview: {  }

@@ -1,0 +1,11 @@
+name: Malts
+modelClass: Hjp\Brouwerbouwer\Models\Malts
+form: $/hjp/brouwerbouwer/models/malts/fields.yaml
+defaultRedirect: hjp/brouwerbouwer/malts
+create:
+    redirect: 'hjp/brouwerbouwer/malts/update/:id'
+    redirectClose: hjp/brouwerbouwer/malts
+update:
+    redirect: hjp/brouwerbouwer/malts
+    redirectClose: hjp/brouwerbouwer/malts
+preview: {  }

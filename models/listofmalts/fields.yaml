@@ -1,0 +1,25 @@
+fields:
+    name:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        span: auto
+        type: text
+    ebc:
+        label: 'hjp.brouwerbouwer::lang.ebc.name'
+        span: auto
+        type: number
+    extraction:
+        label: 'hjp.brouwerbouwer::lang.extraction.name'
+        span: auto
+        dependsOn: {  }
+        type: number
+    yield:
+        label: 'hjp.brouwerbouwer::lang.yield.name'
+        span: auto
+        disabled: 1
+        dependsOn:
+            - extraction
+        type: text
+    max:
+        label: 'hjp.brouwerbouwer::lang.max.name'
+        span: auto
+        type: number

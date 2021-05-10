@@ -1,0 +1,23 @@
+fields:
+    name:
+        label: Text
+        span: auto
+        type: text
+    efficiency:
+        label: 'hjp.brouwerbouwer::lang.efficiency.name'
+        span: auto
+        type: number
+    evaporation:
+        label: 'hjp.brouwerbouwer::lang.evaporation.name'
+        span: auto
+        type: number
+    tubeloss:
+        label: TubeLoss
+        span: auto
+        type: number
+    waterprofile:
+        label: Waterprofile
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

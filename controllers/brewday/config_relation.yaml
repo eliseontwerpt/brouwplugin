@@ -1,0 +1,13 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+recipes:
+    label: 'hjp.brouwerbouwer::lang.recipes.name'
+    manage:
+        form: $/hjp/brouwerbouwer/models/recipes/fields.yaml
+        list:  $/hjp/brouwerbouwer/models/recipes/columns.yaml
+        
+    view:
+        list: $/hjp/brouwerbouwer/models/recipes/columns.yaml
+        toolbarButtons: create|delete

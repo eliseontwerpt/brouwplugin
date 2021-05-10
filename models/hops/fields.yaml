@@ -1,0 +1,48 @@
+fields:
+    hop_list:
+        label: 'hjp.brouwerbouwer::lang.name.name'
+        nameFrom: variety
+        descriptionFrom: description
+        span: auto
+        type: relation
+    alpha:
+        label: 'hjp.brouwerbouwer::lang.alphaacid.name'
+        span: auto
+        type: number
+    time:
+        label: 'hjp.brouwerbouwer::lang.boil_time.name'
+        span: auto
+        type: number
+    hoptype:
+        label: Dropdown
+        options:
+            flowers: Flowers
+            pellets: Pellets
+        showSearch: true
+        span: auto
+        type: dropdown
+    dryhoptime:
+        label: 'Dryhop in days'
+        span: auto
+        disabled: 1
+        hidden: 0
+        dependsOn:
+            - dryhop
+        trigger:
+            action: enable
+            field: dryhop
+            condition: checked
+        type: number
+    dryhop:
+        label: Dryhop
+        span: auto
+        type: checkbox
+    ibu:
+        label: 'hjp.brouwerbouwer::lang.ibu.name'
+        span: auto
+        disabled: 0
+        readOnly: 0
+        dependsOn:
+            - dryhop
+            - grams
+        type: number

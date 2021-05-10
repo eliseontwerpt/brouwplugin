@@ -1,0 +1,12 @@
+list: $/hjp/brouwerbouwer/models/bjcpstyleguide/columns.yaml
+modelClass: Hjp\Brouwerbouwer\Models\BjcpStyleGuide
+title: BjcpStyleGuide
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'hjp/brouwerbouwer/bjcpstyleguide/update/:id'
