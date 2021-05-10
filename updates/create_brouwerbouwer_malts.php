@@ -1,13 +1,13 @@
-<?php namespace Hjp\Brouwerbouwer\Updates;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateHjpBrouwerbouwerMalts extends Migration
+class  Malts extends Migration
 {
     public function up()
     {
-        Schema::create('hjp_brouwerbouwer_malts', function($table)
+        Schema::create('eliseonwerpt_brouwerbouwer_malts', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -20,7 +20,7 @@ class BuilderTableCreateHjpBrouwerbouwerMalts extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('hjp_brouwerbouwer_malts');
+        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_malts');
     }
     
 }

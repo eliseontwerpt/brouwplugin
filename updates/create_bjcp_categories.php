@@ -1,13 +1,13 @@
-<?php namespace Hjp\Brouwerbouwer\Updates;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateHjpBrouwerbouwerBjcpCategories extends Migration
+class BjcpCategories extends Migration
 {
     public function up()
     {
-        Schema::create('hjp_brouwerbouwer_bjcp_categories', function($table)
+        Schema::create('eliseonwerpt_brouwerbouwer_bjcp_categories', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -19,6 +19,6 @@ class BuilderTableCreateHjpBrouwerbouwerBjcpCategories extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('hjp_brouwerbouwer_bjcp_categories');
+        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_bjcp_categories');
     }
 }

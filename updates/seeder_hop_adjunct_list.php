@@ -1,13 +1,13 @@
-<?php namespace Hjp\Brouwerbouwer\Updates;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Updates;
 
 use Seeder;
 use Db;
 
-class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
+class Seeder_eliseontwerpt_brouwerbouwer_hop_adjunct_list extends Seeder
 	{
 	public function run()
 	{
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"1",
 			'variety'			=>	"Ahtanum®",
 			'alpha_min'			=>	"5.7",
@@ -19,7 +19,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Pale Ale, Heffeweisen, American Ales, Lagers, Californian Common, Bitters",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"2",
 			'variety'			=>	"Amarillo®",
 			'alpha_min'			=>	"8.0",
@@ -31,7 +31,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Wheat, American Pale Ale, American IPA, Amber Wheat Beers",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"3",
 			'variety'			=>	"Aramis",
 			'alpha_min'			=>	"7.9",
@@ -43,7 +43,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Lager, Wheat, Saison, India Pale Ale, Belgian Ales, Pale Ale, Porter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"4",
 			'variety'			=>	"Aurora",
 			'alpha_min'			=>	"7.0",
@@ -55,7 +55,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale, Dark Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"5",
 			'variety'			=>	"Hallertau Blanc",
 			'alpha_min'			=>	"9.0",
@@ -67,7 +67,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American IPAs, American Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"6",
 			'variety'			=>	"Bobek",
 			'alpha_min'			=>	"3.5",
@@ -79,7 +79,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Ale, Extra Special Bitter, Lager, Pilsner",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"7",
 			'variety'			=>	"Brewers Gold",
 			'alpha_min'			=>	"5.5",
@@ -91,7 +91,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ale, American Pale Ale, Bitter, Barley Wine, Imperial Stout",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"8",
 			'variety'			=>	"Cascade",
 			'alpha_min'			=>	"5.5",
@@ -103,7 +103,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale ale, IPA, porter, barleywine	",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"9",
 			'variety'			=>	"Citra®",
 			'alpha_min'			=>	"11.0",
@@ -115,7 +115,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale, American IPA, Double IPA, Amber Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"10",
 			'variety'			=>	"Crystal",
 			'alpha_min'			=>	"2.0",
@@ -127,7 +127,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, Pilsner, Light Lager, Golden Ale, Nut Brown Ale, Pale Ale, India Pale Ale, Stout, Chocolate Stout, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"11",
 			'variety'			=>	"East Kent Goldings",
 			'alpha_min'			=>	"4.4",
@@ -139,7 +139,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ales, English Bitters, English Milds, English IPA, English Borwn Ales, English Barleywine, Stouts & Porters, Saisons, Christmas Ales, Golden Ales, Belgian Triple, Belgian Golden/Blonde, Irish Red, Scottish Ales,",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"12",
 			'variety'			=>	"Ekuanot™",
 			'alpha_min'			=>	"13.0",
@@ -151,7 +151,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ales, IPAs",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"13",
 			'variety'			=>	"Falconers Flight 7Cs®",
 			'alpha_min'			=>	"9.0",
@@ -163,7 +163,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"US-Style IPAs, Pale Ales, Lagers, IBAs, Black IPAs, APAs",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"14",
 			'variety'			=>	"Falconers Flight®",
 			'alpha_min'			=>	"9.5",
@@ -175,7 +175,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Pale Ale, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"15",
 			'variety'			=>	"Fuggle",
 			'alpha_min'			=>	"4.0",
@@ -187,7 +187,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Pale Ale, Belgian India Pale Ale, Extra Special Bitter, Brown Ale, Red Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"16",
 			'variety'			=>	"Gold",
 			'alpha_min'			=>	"3.5",
@@ -199,7 +199,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Belgian Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"17",
 			'variety'			=>	"Golding",
 			'alpha_min'			=>	"4.0",
@@ -211,7 +211,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Winter Ale, Bitter, English Pale Ale, English Ale, Strong Ale, Copper Ale, Brown Ale, Summer Ale, Belgian Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"18",
 			'variety'			=>	"Golding",
 			'alpha_min'			=>	"3.0",
@@ -223,7 +223,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, Pale Ale, Belgian Ale, Belgian IPA, Barley Wine, Imperial Stout, Red Ale, Irish Stout, American Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"19",
 			'variety'			=>	"Hallertau",
 			'alpha_min'			=>	"3.5",
@@ -235,7 +235,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"German Pilsner, Pale Ale, Wheat, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"20",
 			'variety'			=>	"Hallertauer Mittelfrüh",
 			'alpha_min'			=>	"3.5",
@@ -247,7 +247,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"traditional lagers, belgian ales, European ales.",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"21",
 			'variety'			=>	"Hallertauer Tradition",
 			'alpha_min'			=>	"5.0",
@@ -259,7 +259,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"German/European Bocks, Wheat, Hefeweizen, Pilsner, Weissbier",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"22",
 			'variety'			=>	"HBC 472",
 			'alpha_min'			=>	"9.0",
@@ -269,7 +269,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Aroma",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"23",
 			'variety'			=>	"Hersbrucker",
 			'alpha_min'			=>	"3.0",
@@ -281,7 +281,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Dunkel, Strong Ale, Pilsner, Altbier, Weizenbock, Golden Ale, Marzen, Pale Ale, Wheat, Specialty Ale, Hefeweizen, Light Ale, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"24",
 			'variety'			=>	"Hersbrucker Pure",
 			'alpha_min'			=>	"4.2",
@@ -293,7 +293,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Hefeweizen, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"25",
 			'variety'			=>	"Huell Melon",
 			'alpha_min'			=>	"6.9",
@@ -305,7 +305,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Belgian Ales, Hefeweizens",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"26",
 			'variety'			=>	"Liberty",
 			'alpha_min'			=>	"3.0",
@@ -317,7 +317,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bock, Lager, Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"27",
 			'variety'			=>	"Lublin/Lubelski",
 			'alpha_min'			=>	"3.0",
@@ -329,7 +329,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"28",
 			'variety'			=>	"Mandarina Bavaria",
 			'alpha_min'			=>	"7.0",
@@ -341,7 +341,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Belgian Ale, French Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"29",
 			'variety'			=>	"Mosaic®",
 			'alpha_min'			=>	"10.5",
@@ -353,7 +353,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Pale Ale, Double IPAs",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"30",
 			'variety'			=>	"Motueka",
 			'alpha_min'			=>	"6.5",
@@ -365,7 +365,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"European Ale, English Ale, Dark Lager, Pilsner, Belgian Ales, Lager, Maibock, Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"31",
 			'variety'			=>	"Mount Hood",
 			'alpha_min'			=>	"5.0",
@@ -377,7 +377,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Hefeweizen, Doppelbock, Russian Imperial Stout, Brown Ale, Golden Ale, Pale Ale, Amber Ale, Weizenbock, India Pale Ale, Holiday Lager, Bock, American Wheat, Alt Munich Helles, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"32",
 			'variety'			=>	"Pacific Hallertau",
 			'alpha_min'			=>	"5.0",
@@ -389,7 +389,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Porter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"33",
 			'variety'			=>	"Pacifica",
 			'alpha_min'			=>	"5.0",
@@ -401,7 +401,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Porter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"34",
 			'variety'			=>	"Palisade®",
 			'alpha_min'			=>	"6.5",
@@ -413,7 +413,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Golden Ale, Pale Ale, English Ales, American Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"35",
 			'variety'			=>	"Riwaka",
 			'alpha_min'			=>	"4.5",
@@ -425,7 +425,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Pilsner, American Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"36",
 			'variety'			=>	"Saaz",
 			'alpha_min'			=>	"3.0",
@@ -437,7 +437,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bohemian-style beers, Continental lagers, Wheats, Pilsener lagers.",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"37",
 			'variety'			=>	"Saaz Triploid B",
 			'alpha_min'			=>	"6.5",
@@ -449,7 +449,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"European Ale, English Ale, Dark Lager, Pilsner, Belgian Ales, Lager, Maibock, Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"38",
 			'variety'			=>	"Santiam",
 			'alpha_min'			=>	"5.0",
@@ -461,7 +461,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Blonde Ale, American Lager, India Pale Ale, American Pale Ale, Wheat, Bock",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"39",
 			'variety'			=>	"Saphir",
 			'alpha_min'			=>	"2.0",
@@ -473,7 +473,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsners, German lagers, Belgian whites",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"40",
 			'variety'			=>	"Savinjski Golding",
 			'alpha_min'			=>	"4.5",
@@ -485,7 +485,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Extra Special Bitter, Ale, Lager, Belgian Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"41",
 			'variety'			=>	"Select",
 			'alpha_min'			=>	"3.0",
@@ -497,7 +497,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Kolsch, Marzen, Lager, Pilsner, Alt, Helles, Bock",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"42",
 			'variety'			=>	"Spalt",
 			'alpha_min'			=>	"3.0",
@@ -509,7 +509,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"German Ale, Lager, Pilsner, Bock, Kolsch",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"43",
 			'variety'			=>	"Spalter",
 			'alpha_min'			=>	"3.5",
@@ -521,7 +521,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"German Ale, Lager, Pilsner, Bock, Kolsch",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"44",
 			'variety'			=>	"Spalter Select",
 			'alpha_min'			=>	"4.0",
@@ -533,7 +533,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Kölsch, Belgian Ale, French Ale, Lager, Bock, Helles, Alt, Pilsner, Marzen",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"45",
 			'variety'			=>	"Strisselspalt",
 			'alpha_min'			=>	"3.0",
@@ -545,7 +545,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, Saison, Blonde Ale, Amber Ale, Belgian Ale, Bock, Maibock, Golden Ale, Belgian Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"46",
 			'variety'			=>	"Styrian Golding",
 			'alpha_min'			=>	"4.5",
@@ -557,7 +557,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Extra Special Bitter, Ale, Lager, Belgian Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"47",
 			'variety'			=>	"Summer",
 			'alpha_min'			=>	"5.6",
@@ -567,7 +567,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Aroma",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"48",
 			'variety'			=>	"Sussex",
 			'alpha_min'			=>	"4.3",
@@ -579,7 +579,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Ale, Pale Ale, Belgian Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"49",
 			'variety'			=>	"Sylva",
 			'alpha_min'			=>	"5.6",
@@ -591,7 +591,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Lager, California Common, Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"50",
 			'variety'			=>	"Tahoma",
 			'alpha_min'			=>	"6.0",
@@ -603,7 +603,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Blonde Ale, Wheat, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"51",
 			'variety'			=>	"Tettnanger",
 			'alpha_min'			=>	"4.0",
@@ -615,7 +615,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, Blonde Ale, Red Ale, Pilsner, Lager, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"52",
 			'variety'			=>	"Tettnanger",
 			'alpha_min'			=>	"3.5",
@@ -627,7 +627,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, California Blonde Ale, Red Ale, Pilsner, Lager, American Amber Ale, Winter Ale, Pale Ale, Wheat Beer, Bavarian Hefeweizen, Cream Ale, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"53",
 			'variety'			=>	"Tradition",
 			'alpha_min'			=>	"4.0",
@@ -639,7 +639,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Aroma",
 			'descriptions'			=>	"Lagers, Pilsner, Bock, Wheat, Weizen ",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"54",
 			'variety'			=>	"Triplepearl",
 			'alpha_min'			=>	"10.3",
@@ -649,7 +649,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Aroma",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"55",
 			'variety'			=>	"Triskel",
 			'alpha_min'			=>	"8.0",
@@ -661,7 +661,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Belgian Ale, Saison, Kolsch, Pilsner, Pale Ale, India Pale Ale, Lager, Wheat",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"56",
 			'variety'			=>	"Ultra",
 			'alpha_min'			=>	"2.0",
@@ -673,7 +673,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Oktoberfest, Blonde Ale, Harvest Ale, Lager, Pilsner, Pale Ale, American Lager, Bock",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"57",
 			'variety'			=>	"Vanguard",
 			'alpha_min'			=>	"4.0",
@@ -685,7 +685,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lagers, Pilsners, Bocks, Kolsch, Wheats, Munich Helles, Belgian-Style Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"58",
 			'variety'			=>	"Wai-iti",
 			'alpha_min'			=>	"2.5",
@@ -697,7 +697,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, India Pale Ale, Wheat Beer",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"59",
 			'variety'			=>	"Whitbread Golding",
 			'alpha_min'			=>	"5.4",
@@ -709,7 +709,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ale, Pale Ale, Bitter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"60",
 			'variety'			=>	"Zythos®",
 			'alpha_min'			=>	"10.0",
@@ -721,7 +721,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Ale, IPAs, Pale Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"61",
 			'variety'			=>	"Admiral",
 			'alpha_min'			=>	"13.5",
@@ -733,7 +733,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"pleasant, resinous hop aroma with hints of citrus (orange) and herbal flavors.",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"62",
 			'variety'			=>	"Bravo",
 			'alpha_min'			=>	"15.0",
@@ -745,7 +745,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, American Pale Ale, Extra Special Bitter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"63",
 			'variety'			=>	"Brewers Gold",
 			'alpha_min'			=>	"8.0",
@@ -757,7 +757,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"IPA",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"64",
 			'variety'			=>	"Chelan",
 			'alpha_min'			=>	"12.0",
@@ -769,7 +769,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"65",
 			'variety'			=>	"Columbus",
 			'alpha_min'			=>	"14.0",
@@ -781,7 +781,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale, IPAs & Imperial IPAs, Imperial Red Ale, Imperial Brown Ale, Barley Wine, Stout, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"66",
 			'variety'			=>	"Comet",
 			'alpha_min'			=>	"8.0",
@@ -793,7 +793,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, American Ale, India Pale Ale, Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"67",
 			'variety'			=>	"Galena",
 			'alpha_min'			=>	"12.0",
@@ -805,7 +805,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Imperial Stout, Stout, India Pale Ale, Barley Wine",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"68",
 			'variety'			=>	"Green Bullet",
 			'alpha_min'			=>	"13.0",
@@ -817,7 +817,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bock, Saison, India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"69",
 			'variety'			=>	"Hallertauer Taurus",
 			'alpha_min'			=>	"12.0",
@@ -829,7 +829,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Schwarzbier, Oktoberfest",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"70",
 			'variety'			=>	"HBC 682",
 			'alpha_min'			=>	"18.0",
@@ -839,7 +839,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Bittering",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"71",
 			'variety'			=>	"Herkules",
 			'alpha_min'			=>	"12.0",
@@ -850,7 +850,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"German ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"72",
 			'variety'			=>	"Magnum",
 			'alpha_min'			=>	"12.0",
@@ -862,7 +862,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"*India Pilsner, Belgian India Pale Ale, American Ale, Blonde Ale, Pale Ale, Nut Brown Ale, Dark Ale, Pilsner, Bright Ale, Hefeweizen",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"73",
 			'variety'			=>	"Magnum",
 			'alpha_min'			=>	"12.0",
@@ -874,7 +874,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale, American India Pale Ale, Strong Ale, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"74",
 			'variety'			=>	"Merkur",
 			'alpha_min'			=>	"12.0",
@@ -886,7 +886,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"IPAs, Lagers, Belgian Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"75",
 			'variety'			=>	"Millennium",
 			'alpha_min'			=>	"15.5",
@@ -898,7 +898,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Stout, Ale, American Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"76",
 			'variety'			=>	"Newport",
 			'alpha_min'			=>	"13.5",
@@ -910,7 +910,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"77",
 			'variety'			=>	"Nugget",
 			'alpha_min'			=>	"11.5",
@@ -922,7 +922,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"IPA, Pale Ale, Blonde, American Wheat, ESB, APA, Imperial IPA, Irish Stout, Oktoberfest, Rye Ale, Best Bitter, EPA, Barley Wine, Strong Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"78",
 			'variety'			=>	"Nugget",
 			'alpha_min'			=>	"12.0",
@@ -934,7 +934,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Imperial India Pale Ale, Ales, Stouts, Barley Wines, Saisons, Biere de Garde",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"79",
 			'variety'			=>	"Pacific Gem",
 			'alpha_min'			=>	"14.0",
@@ -946,7 +946,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Strong Ale, European Lagers",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"80",
 			'variety'			=>	"Pacific Sunrise",
 			'alpha_min'			=>	"12.5",
@@ -958,7 +958,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager ",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"81",
 			'variety'			=>	"Southern Star",
 			'alpha_min'			=>	"12.0",
@@ -970,7 +970,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, Pale Ale, IPA, Stout, Barley Wine",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"82",
 			'variety'			=>	"Summit™",
 			'alpha_min'			=>	"15.0",
@@ -982,7 +982,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"IPAs, Imperial IPAs, Pale Ales, Stouts, Barley Wines",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"83",
 			'variety'			=>	"Sun",
 			'alpha_min'			=>	"12.0",
@@ -994,7 +994,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Barley Wine, Imperial Stout",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"84",
 			'variety'			=>	"Target",
 			'alpha_min'			=>	"9.5",
@@ -1006,7 +1006,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, Pale Ale, Kentish Bitter, India Pale Ale, Brown Ale, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"85",
 			'variety'			=>	"Tomahawk®",
 			'alpha_min'			=>	"15.0",
@@ -1018,7 +1018,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"US IPAs, US Pale Ales, Stouts, Barley Wines, Lagers",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"86",
 			'variety'			=>	"Victoria",
 			'alpha_min'			=>	"14.0",
@@ -1030,7 +1030,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, IPA, Stout, Porter, Red Ale, Barley Wine, Imperial IPA, Extra Pale Ale, Golden Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"87",
 			'variety'			=>	"Warrior®",
 			'alpha_min'			=>	"15.0",
@@ -1042,7 +1042,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, American Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"88",
 			'variety'			=>	"Zeus",
 			'alpha_min'			=>	"12.0",
@@ -1054,7 +1054,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"*US IPAs, US Pale Ales, Stouts, Barley Wines, Lagers",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"89",
 			'variety'			=>	"Bitter Gold",
 			'alpha_min'			=>	"12.0",
@@ -1066,7 +1066,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ale, Lager, Pilsner, Bitter, India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"90",
 			'variety'			=>	"Bramling Cross",
 			'alpha_min'			=>	"6.0",
@@ -1078,7 +1078,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"ESB, bitter, pale ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"91",
 			'variety'			=>	"Celeia",
 			'alpha_min'			=>	"3.0",
@@ -1090,7 +1090,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Ale, Lager, American Lager, Pilsner, English Ale, Extra Special Bitter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"92",
 			'variety'			=>	"Centennial",
 			'alpha_min'			=>	"9.5",
@@ -1102,7 +1102,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, Amber Ale, American IPA, American Blonde, American Stout, American Wheat, Double IPA, Barley Wine, Red Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"93",
 			'variety'			=>	"Challenger",
 			'alpha_min'			=>	"6.5",
@@ -1114,7 +1114,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Golden Ale, Barley Wine, Imperial Stout",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"94",
 			'variety'			=>	"Chinook",
 			'alpha_min'			=>	"12.0",
@@ -1125,7 +1125,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale & India Pale Ale, American Stout & Porter, American Amber, American Brown, American Barley Wine, American Lagers, Winter Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"95",
 			'variety'			=>	"Cluster",
 			'alpha_min'			=>	"5.5",
@@ -1137,7 +1137,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Barley Wine, Porter, English Pale Ale, Amber Ale, Honey Ale, Cream Ale, American Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"96",
 			'variety'			=>	"Dr. Rudi",
 			'alpha_min'			=>	"10.0",
@@ -1149,7 +1149,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"97",
 			'variety'			=>	"Ella",
 			'alpha_min'			=>	"13.3",
@@ -1161,7 +1161,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, Pilsner, Pale Ale, Stout",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"98",
 			'variety'			=>	"First Gold",
 			'alpha_min'			=>	"5.6",
@@ -1173,7 +1173,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Porter, English Bitter, Wheat Beer, Celtic Ale, Summer Ale, Amber Ale, Dark Amber Ale, India Pale Ale, Imperial India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"99",
 			'variety'			=>	"Fuggle",
 			'alpha_min'			=>	"3.0",
@@ -1185,7 +1185,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Ale, Porter, Mild Ale, Bitter, Extra Special Bitter, Lambic, Amber Ale, Cask Ale, Stout, Oatmeal Stout, Strong Ale, Nut Brown Ale, Golden Ale, Christmas Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"100",
 			'variety'			=>	"Galaxy",
 			'alpha_min'			=>	"11.6",
@@ -1197,7 +1197,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, India Pale Ale, ESB",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"101",
 			'variety'			=>	"Glacier",
 			'alpha_min'			=>	"3.3",
@@ -1209,7 +1209,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Extra Special Bitter, India Pale Ale, Wheat Beer, American Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"102",
 			'variety'			=>	"Hallertau Aroma",
 			'alpha_min'			=>	"7.0",
@@ -1221,7 +1221,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, Pilsner, Lager, Bitter, Bock",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"103",
 			'variety'			=>	"HBC 431",
 			'alpha_min'			=>	"14.0",
@@ -1231,7 +1231,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Dual Purpose",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"104",
 			'variety'			=>	"HBC 438",
 			'alpha_min'			=>	"12.4",
@@ -1241,7 +1241,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'substitutions'			=>	'["exceptionally distinct and pleasant."]',
 			'styles'			=>	"Dual Purpose",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"105",
 			'variety'			=>	"Helga",
 			'alpha_min'			=>	"5.4",
@@ -1253,7 +1253,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"106",
 			'variety'			=>	"Herald",
 			'alpha_min'			=>	"11.0",
@@ -1265,7 +1265,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, Golden Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"107",
 			'variety'			=>	"Horizon",
 			'alpha_min'			=>	"10.2",
@@ -1277,7 +1277,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Light Ale, Red Ale, Pumpkin Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"108",
 			'variety'			=>	"Hüller Bitterer",
 			'alpha_min'			=>	"5.0",
@@ -1288,7 +1288,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Schwarzbier, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"109",
 			'variety'			=>	"Kohatu",
 			'alpha_min'			=>	"6.0",
@@ -1300,7 +1300,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ale, Pale Ale, India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"110",
 			'variety'			=>	"Loral®",
 			'alpha_min'			=>	"11.3",
@@ -1311,7 +1311,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"IPA, APA, American Wheat Ales",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"111",
 			'variety'			=>	"Marynka",
 			'alpha_min'			=>	"9.0",
@@ -1323,7 +1323,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, India Pale Ale, Pale Ale, Pilsner",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"112",
 			'variety'			=>	"Mount Rainier",
 			'alpha_min'			=>	"5.0",
@@ -1335,7 +1335,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, American Ale, Porter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"113",
 			'variety'			=>	"Nelson Sauvin",
 			'alpha_min'			=>	"12.0",
@@ -1347,7 +1347,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale, India Pale Ale, Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"114",
 			'variety'			=>	"Northdown",
 			'alpha_min'			=>	"6.8",
@@ -1359,7 +1359,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Blonde Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"115",
 			'variety'			=>	"Northern Brewer",
 			'alpha_min'			=>	"6.0",
@@ -1371,7 +1371,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Steam Beer, German Ale, German Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"116",
 			'variety'			=>	"Northern Brewer",
 			'alpha_min'			=>	"7.0",
@@ -1383,7 +1383,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Porters, Ales, Kolsch, Munich Helles, ESBs, German Lagers, Steam beers,",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"117",
 			'variety'			=>	"Opal",
 			'alpha_min'			=>	"13.0",
@@ -1395,7 +1395,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Hefeweizen, Helles, Lager, Brown Ale, Saison, Tripel, Wheat, Kolsch, Blonde Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"118",
 			'variety'			=>	"Orion",
 			'alpha_min'			=>	"6.0",
@@ -1406,7 +1406,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Helles, Dunkel",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"119",
 			'variety'			=>	"Outeniqua",
 			'alpha_min'			=>	"12.0",
@@ -1418,7 +1418,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"120",
 			'variety'			=>	"Pacific Jade",
 			'alpha_min'			=>	"12.0",
@@ -1430,7 +1430,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lagers, Ales,Pale Ale, India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"121",
 			'variety'			=>	"Perle",
 			'alpha_min'			=>	"5.0",
@@ -1442,7 +1442,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Hefeweizen, Belgian Strong Ale, Lager, Pilsner, Kölsch",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"122",
 			'variety'			=>	"Perle",
 			'alpha_min'			=>	"7.0",
@@ -1454,7 +1454,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Hefeweizen, Belgian Strong Ale, Lager, Pilsner, Kölsch",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"123",
 			'variety'			=>	"Phoenix",
 			'alpha_min'			=>	"12.0",
@@ -1466,7 +1466,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Bitter, Golden Ale, Triple India Pale Ale, English Ale, Extra Special Bitter, Stout, Brown Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"124",
 			'variety'			=>	"Pilgrim",
 			'alpha_min'			=>	"10.0",
@@ -1478,7 +1478,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Pale Ale, India Pale Ale, Wheat Beer, Stout, Barley Wine, Imperial Stout",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"125",
 			'variety'			=>	"Pioneer",
 			'alpha_min'			=>	"8.0",
@@ -1490,7 +1490,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Red Ale, Specialty Ale, Strong Bitter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"126",
 			'variety'			=>	"Polaris",
 			'alpha_min'			=>	"18.0",
@@ -1502,7 +1502,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ales, Pale Ales, India Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"127",
 			'variety'			=>	"Premiant",
 			'alpha_min'			=>	"7.0",
@@ -1514,7 +1514,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Ale, Pale Ale, Belgian Ales, Belgian Pilsners",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"128",
 			'variety'			=>	"Pride of Ringwood",
 			'alpha_min'			=>	"9.0",
@@ -1526,7 +1526,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Amber Ale, Lager, Fruit Lambic, Pale Ale, Australian Lager, Strong Ale, Golden Ale, American Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"129",
 			'variety'			=>	"Progress",
 			'alpha_min'			=>	"6.0",
@@ -1538,7 +1538,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"English Bitters, Pale Ale, Porter, Stout, Czech Pilsner, Bock, Cask Ale, Wheat",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"130",
 			'variety'			=>	"Rakau",
 			'alpha_min'			=>	"10.0",
@@ -1550,7 +1550,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, Lager, Belgian Ales, IPAs",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"131",
 			'variety'			=>	"Simcoe®",
 			'alpha_min'			=>	"12.0",
@@ -1562,7 +1562,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"US-Style Ales, Pale Ales, IPAs, Double IPAs",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"132",
 			'variety'			=>	"Smaragd",
 			'alpha_min'			=>	"4.0",
@@ -1574,7 +1574,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ale, Amber, Pilsners, German Ales, German Lagers, Belgian Styles, Weissbier",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"133",
 			'variety'			=>	"Sorachi Ace",
 			'alpha_min'			=>	"11.5",
@@ -1586,7 +1586,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Saison",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"134",
 			'variety'			=>	"Southern Brewer",
 			'alpha_min'			=>	"9.0",
@@ -1597,7 +1597,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pilsner, Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"135",
 			'variety'			=>	"Southern Cross",
 			'alpha_min'			=>	"12.0",
@@ -1608,7 +1608,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Pale Ale, IPA, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"136",
 			'variety'			=>	"Southern Promise",
 			'alpha_min'			=>	"9.5",
@@ -1620,7 +1620,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"137",
 			'variety'			=>	"Sovereign",
 			'alpha_min'			=>	"4.5",
@@ -1632,7 +1632,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Lager, American Pale Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"138",
 			'variety'			=>	"Status ",
 			'alpha_min'			=>	"12.5",
@@ -1641,7 +1641,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Dual Purpose",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"139",
 			'variety'			=>	"Sterling",
 			'alpha_min'			=>	"6.0",
@@ -1653,7 +1653,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"IPA",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"140",
 			'variety'			=>	"Sticklebract",
 			'alpha_min'			=>	"13.0",
@@ -1665,7 +1665,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"ESB",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"141",
 			'variety'			=>	"Super Alpha",
 			'alpha_min'			=>	"12.5",
@@ -1677,7 +1677,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lagers, Pilsners, Bitters",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"142",
 			'variety'			=>	"Super Pride",
 			'alpha_min'			=>	"14.0",
@@ -1689,7 +1689,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Imperial Pale Ale, Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"143",
 			'variety'			=>	"Super Styrian (Aurora)",
 			'alpha_min'			=>	"7.5",
@@ -1701,7 +1701,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"American Pale Ale, Dark Lager",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"144",
 			'variety'			=>	"Waimea",
 			'alpha_min'			=>	"16.0",
@@ -1713,7 +1713,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"India Pale Ale, Pale Ale, Lagers",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"145",
 			'variety'			=>	"Wakatu",
 			'alpha_min'			=>	"6.5",
@@ -1725,7 +1725,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Lager, Pale Ale, Belgian Ale",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"146",
 			'variety'			=>	"WGV",
 			'alpha_min'			=>	"5.4",
@@ -1737,7 +1737,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Bitter, Scottish Ale, Pale Ale, Best Bitter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"147",
 			'variety'			=>	"Willamette",
 			'alpha_min'			=>	"4.0",
@@ -1749,7 +1749,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'styles'			=>	"Ale, American Ales, Pale Ale, Brown Ale, English Ales, Porter",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"148",
 			'variety'			=>	"Azacca",
 			'alpha_min'			=>	"12.0",
@@ -1759,7 +1759,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Dual Purpose",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"149",
 			'variety'			=>	"Jarrylo",
 			'alpha_min'			=>	"15.0",
@@ -1769,7 +1769,7 @@ class Seeder_hjp_brouwerbouwer_hop_adjunct_list extends Seeder
 			'purpose'			=>	"Dual Purpose",
 			'descriptions'			=>	"null",
 		]);
-		DB::table('hjp_brouwerbouwer_hop_adjunct_list')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_hop_adjunct_list')->insert([
 			'id'			=>	"150",
 			'variety'			=>	"Coconut Flakes",
 			'alpha_min'			=>	"0.0",

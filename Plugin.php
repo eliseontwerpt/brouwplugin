@@ -8,8 +8,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'hjp.brouwerbouwer::lang.component.name',
-            'description' => 'hjp.brouwerbouwer::lang.component.description',
+            'name' => 'eliseontwerpt.brouwerbouwer::lang.component.name',
+            'description' => 'eliseontwerpt.brouwerbouwer::lang.component.description',
             'author' => 'Harm Jan Plat',
             'icon' => 'icon-beer'
         ];

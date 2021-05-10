@@ -1,13 +1,13 @@
-<?php namespace Hjp\Brouwerbouwer\Updates;
+<?php namespace Eliseontwerpt\Brouwerbouwer\Updates;
 
 use Seeder;
 use Db;
 
-class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
+class Seeder_eliseontwerpt_brouwerbouwer_bjcp_guide extends Seeder
 	{
 	public function run()
 	{
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"1",
 			'categories_id'			=>	"77",
 			'style_family_id'			=>	"60",
@@ -36,7 +36,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"01A",
 			'styles'			=>	"American Light Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"2",
 			'categories_id'			=>	"77",
 			'style_family_id'			=>	"60",
@@ -65,7 +65,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"01B",
 			'styles'			=>	"American Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"3",
 			'categories_id'			=>	"77",
 			'style_family_id'			=>	"55",
@@ -94,7 +94,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"01C",
 			'styles'			=>	"Cream Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"4",
 			'categories_id'			=>	"77",
 			'style_family_id'			=>	"88",
@@ -123,7 +123,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"01D",
 			'styles'			=>	"American Wheat Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"5",
 			'categories_id'			=>	"48",
 			'style_family_id'			=>	"60",
@@ -152,7 +152,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"02A",
 			'styles'			=>	"International Pale Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"6",
 			'categories_id'			=>	"48",
 			'style_family_id'			=>	"5",
@@ -182,7 +182,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"02B",
 			'styles'			=>	"International Amber Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"7",
 			'categories_id'			=>	"48",
 			'style_family_id'			=>	"30",
@@ -211,7 +211,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"02C",
 			'styles'			=>	"International Dark Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"8",
 			'categories_id'			=>	"25",
 			'style_family_id'			=>	"60",
@@ -240,7 +240,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"03A",
 			'styles'			=>	"Czech Pale Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"9",
 			'categories_id'			=>	"25",
 			'style_family_id'			=>	"62",
@@ -269,7 +269,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"03B",
 			'styles'			=>	"Czech Premium Pale Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"10",
 			'categories_id'			=>	"25",
 			'style_family_id'			=>	"5",
@@ -298,7 +298,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"03C",
 			'styles'			=>	"Czech Amber Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"11",
 			'categories_id'			=>	"25",
 			'style_family_id'			=>	"30",
@@ -327,7 +327,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"03D",
 			'styles'			=>	"Czech Dark Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"12",
 			'categories_id'			=>	"61",
 			'style_family_id'			=>	"60",
@@ -356,7 +356,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"04A",
 			'styles'			=>	"Munich Helles",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"13",
 			'categories_id'			=>	"61",
 			'style_family_id'			=>	"60",
@@ -386,7 +386,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"04B",
 			'styles'			=>	"Festbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"14",
 			'categories_id'			=>	"61",
 			'style_family_id'			=>	"20",
@@ -415,7 +415,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"04C",
 			'styles'			=>	"Helles Bock",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"15",
 			'categories_id'			=>	"58",
 			'style_family_id'			=>	"60",
@@ -444,7 +444,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"05A",
 			'styles'			=>	"German Leichtbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"16",
 			'categories_id'			=>	"58",
 			'style_family_id'			=>	"55",
@@ -473,7 +473,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"05B",
 			'styles'			=>	"Kölsch",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"17",
 			'categories_id'			=>	"58",
 			'style_family_id'			=>	"60",
@@ -502,7 +502,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"05C",
 			'styles'			=>	"German Helles Exportbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"18",
 			'categories_id'			=>	"58",
 			'style_family_id'			=>	"62",
@@ -531,7 +531,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"05D",
 			'styles'			=>	"German Pils",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"19",
 			'categories_id'			=>	"7",
 			'style_family_id'			=>	"5",
@@ -560,7 +560,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"06A",
 			'styles'			=>	"Märzen",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"20",
 			'categories_id'			=>	"7",
 			'style_family_id'			=>	"5",
@@ -589,7 +589,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"06B",
 			'styles'			=>	"Rauchbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"21",
 			'categories_id'			=>	"7",
 			'style_family_id'			=>	"20",
@@ -618,7 +618,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"06C",
 			'styles'			=>	"Dunkles Bock",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"22",
 			'categories_id'			=>	"4",
 			'style_family_id'			=>	"5",
@@ -647,7 +647,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"07A",
 			'styles'			=>	"Vienna Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"23",
 			'categories_id'			=>	"4",
 			'style_family_id'			=>	"2",
@@ -676,7 +676,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"07B",
 			'styles'			=>	"Altbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"24",
 			'categories_id'			=>	"4",
 			'style_family_id'			=>	"60",
@@ -706,7 +706,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"07C",
 			'styles'			=>	"Pale Kellerbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"25",
 			'categories_id'			=>	"4",
 			'style_family_id'			=>	"5",
@@ -736,7 +736,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"07C",
 			'styles'			=>	"Amber Kellerbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"26",
 			'categories_id'			=>	"29",
 			'style_family_id'			=>	"30",
@@ -765,7 +765,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"08A",
 			'styles'			=>	"Munich Dunkel",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"27",
 			'categories_id'			=>	"29",
 			'style_family_id'			=>	"30",
@@ -794,7 +794,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"08B",
 			'styles'			=>	"Schwarzbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"28",
 			'categories_id'			=>	"84",
 			'style_family_id'			=>	"20",
@@ -823,7 +823,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"09A",
 			'styles'			=>	"Doppelbock",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"29",
 			'categories_id'			=>	"84",
 			'style_family_id'			=>	"20",
@@ -852,7 +852,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"09B",
 			'styles'			=>	"Eisbock",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"30",
 			'categories_id'			=>	"84",
 			'style_family_id'			=>	"65",
@@ -881,7 +881,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"09C",
 			'styles'			=>	"Baltic Porter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"31",
 			'categories_id'			=>	"43",
 			'style_family_id'			=>	"88",
@@ -909,7 +909,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"10A",
 			'styles'			=>	"Weissbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"32",
 			'categories_id'			=>	"43",
 			'style_family_id'			=>	"88",
@@ -938,7 +938,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"10B",
 			'styles'			=>	"Dunkles Weissbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"33",
 			'categories_id'			=>	"43",
 			'style_family_id'			=>	"88",
@@ -967,7 +967,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"10C",
 			'styles'			=>	"Weizenbock",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"34",
 			'categories_id'			=>	"22",
 			'style_family_id'			=>	"2",
@@ -996,7 +996,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"11A",
 			'styles'			=>	"Ordinary Bitter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"35",
 			'categories_id'			=>	"22",
 			'style_family_id'			=>	"2",
@@ -1025,7 +1025,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"11B",
 			'styles'			=>	"Best Bitter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"36",
 			'categories_id'			=>	"22",
 			'style_family_id'			=>	"2",
@@ -1054,7 +1054,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"11C",
 			'styles'			=>	"Strong Bitter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"37",
 			'categories_id'			=>	"59",
 			'style_family_id'			=>	"55",
@@ -1083,7 +1083,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"12A",
 			'styles'			=>	"British Golden Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"38",
 			'categories_id'			=>	"59",
 			'style_family_id'			=>	"55",
@@ -1112,7 +1112,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"12B",
 			'styles'			=>	"Australian Sparkling Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"39",
 			'categories_id'			=>	"59",
 			'style_family_id'			=>	"50",
@@ -1141,7 +1141,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"12C",
 			'styles'			=>	"English IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"40",
 			'categories_id'			=>	"24",
 			'style_family_id'			=>	"23",
@@ -1170,7 +1170,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"13A",
 			'styles'			=>	"Dark Mild",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"41",
 			'categories_id'			=>	"24",
 			'style_family_id'			=>	"23",
@@ -1201,7 +1201,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bugu_min'			=>	"0.38",
 			'bugu_max'			=>	"0.5",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"42",
 			'categories_id'			=>	"24",
 			'style_family_id'			=>	"65",
@@ -1231,7 +1231,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"13C",
 			'styles'			=>	"English Porter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"43",
 			'categories_id'			=>	"69",
 			'style_family_id'			=>	"2",
@@ -1258,7 +1258,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"14A",
 			'styles'			=>	"Scottish Light",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"44",
 			'categories_id'			=>	"69",
 			'style_family_id'			=>	"2",
@@ -1285,7 +1285,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"14B",
 			'styles'			=>	"Scottish Heavy",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"45",
 			'categories_id'			=>	"69",
 			'style_family_id'			=>	"2",
@@ -1312,7 +1312,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"14C",
 			'styles'			=>	"Scottish Export",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"46",
 			'categories_id'			=>	"52",
 			'style_family_id'			=>	"2",
@@ -1341,7 +1341,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"15A",
 			'styles'			=>	"Irish Red Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"47",
 			'categories_id'			=>	"52",
 			'style_family_id'			=>	"78",
@@ -1370,7 +1370,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"15B",
 			'styles'			=>	"Irish Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"48",
 			'categories_id'			=>	"52",
 			'style_family_id'			=>	"78",
@@ -1399,7 +1399,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"15C",
 			'styles'			=>	"Irish Extra Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"49",
 			'categories_id'			=>	"28",
 			'style_family_id'			=>	"78",
@@ -1428,7 +1428,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"16A",
 			'styles'			=>	"Sweet Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"50",
 			'categories_id'			=>	"28",
 			'style_family_id'			=>	"78",
@@ -1457,7 +1457,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"16B",
 			'styles'			=>	"Oatmeal Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"51",
 			'categories_id'			=>	"28",
 			'style_family_id'			=>	"78",
@@ -1486,7 +1486,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"16C",
 			'styles'			=>	"Tropical Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"52",
 			'categories_id'			=>	"28",
 			'style_family_id'			=>	"78",
@@ -1515,7 +1515,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"16D",
 			'styles'			=>	"Foreign Extra Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"53",
 			'categories_id'			=>	"83",
 			'style_family_id'			=>	"79",
@@ -1544,7 +1544,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"17A",
 			'styles'			=>	"British Strong Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"54",
 			'categories_id'			=>	"83",
 			'style_family_id'			=>	"79",
@@ -1573,7 +1573,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"17B",
 			'styles'			=>	"Old Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"55",
 			'categories_id'			=>	"83",
 			'style_family_id'			=>	"79",
@@ -1601,7 +1601,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"17C",
 			'styles'			=>	"Wee Heavy",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"56",
 			'categories_id'			=>	"83",
 			'style_family_id'			=>	"79",
@@ -1630,7 +1630,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"17D",
 			'styles'			=>	"English Barleywine",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"57",
 			'categories_id'			=>	"57",
 			'style_family_id'			=>	"55",
@@ -1659,7 +1659,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"18A",
 			'styles'			=>	"Blonde Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"58",
 			'categories_id'			=>	"57",
 			'style_family_id'			=>	"55",
@@ -1688,7 +1688,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"18B",
 			'styles'			=>	"American Pale Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"59",
 			'categories_id'			=>	"3",
 			'style_family_id'			=>	"2",
@@ -1717,7 +1717,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"19A",
 			'styles'			=>	"American Amber Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"60",
 			'categories_id'			=>	"3",
 			'style_family_id'			=>	"5",
@@ -1746,7 +1746,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"19B",
 			'styles'			=>	"California Common ",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"61",
 			'categories_id'			=>	"3",
 			'style_family_id'			=>	"23",
@@ -1775,7 +1775,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"19C",
 			'styles'			=>	"American Brown Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"62",
 			'categories_id'			=>	"10",
 			'style_family_id'			=>	"65",
@@ -1804,7 +1804,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"20A",
 			'styles'			=>	"American Porter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"63",
 			'categories_id'			=>	"10",
 			'style_family_id'			=>	"78",
@@ -1833,7 +1833,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"20B",
 			'styles'			=>	"American Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"64",
 			'categories_id'			=>	"10",
 			'style_family_id'			=>	"78",
@@ -1862,7 +1862,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"20C",
 			'styles'			=>	"Imperial Stout",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"65",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -1893,7 +1893,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bugu_min'			=>	"0.83",
 			'bugu_max'			=>	"0.93",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"66",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -1923,7 +1923,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"21B",
 			'styles'			=>	"Specialty IPA - Belgian IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"67",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -1953,7 +1953,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"21B",
 			'styles'			=>	"Specialty IPA - Black IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"68",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -1983,7 +1983,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"21B",
 			'styles'			=>	"Specialty IPA - Brown IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"69",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -2013,7 +2013,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"21B",
 			'styles'			=>	"Specialty IPA - Red IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"70",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -2043,7 +2043,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"21B",
 			'styles'			=>	"Specialty IPA - Rye IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"71",
 			'categories_id'			=>	"49",
 			'style_family_id'			=>	"50",
@@ -2073,7 +2073,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"21B",
 			'styles'			=>	"Specialty IPA - White IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"72",
 			'categories_id'			=>	"81",
 			'style_family_id'			=>	"50",
@@ -2102,7 +2102,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"22A",
 			'styles'			=>	"Double IPA",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"73",
 			'categories_id'			=>	"81",
 			'style_family_id'			=>	"79",
@@ -2132,7 +2132,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"22B",
 			'styles'			=>	"American Strong Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"74",
 			'categories_id'			=>	"81",
 			'style_family_id'			=>	"79",
@@ -2161,7 +2161,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"22C",
 			'styles'			=>	"American Barleywine",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"75",
 			'categories_id'			=>	"81",
 			'style_family_id'			=>	"79",
@@ -2190,7 +2190,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"22D",
 			'styles'			=>	"Wheatwine",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"76",
 			'categories_id'			=>	"39",
 			'style_family_id'			=>	"88",
@@ -2219,7 +2219,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"23A",
 			'styles'			=>	"Berliner Weisse",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"77",
 			'categories_id'			=>	"39",
 			'style_family_id'			=>	"71",
@@ -2248,7 +2248,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"23B",
 			'styles'			=>	"Flanders Red Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"78",
 			'categories_id'			=>	"39",
 			'style_family_id'			=>	"71",
@@ -2277,7 +2277,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"23C",
 			'styles'			=>	"Oud Bruin",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"79",
 			'categories_id'			=>	"39",
 			'style_family_id'			=>	"88",
@@ -2306,7 +2306,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"23D",
 			'styles'			=>	"Lambic",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"80",
 			'categories_id'			=>	"39",
 			'style_family_id'			=>	"88",
@@ -2335,7 +2335,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"23E",
 			'styles'			=>	"Gueuze ",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"81",
 			'categories_id'			=>	"39",
 			'style_family_id'			=>	"88",
@@ -2364,7 +2364,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"23F",
 			'styles'			=>	"Fruit Lambic",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"82",
 			'categories_id'			=>	"15",
 			'style_family_id'			=>	"88",
@@ -2393,7 +2393,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"24A",
 			'styles'			=>	"Witbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"83",
 			'categories_id'			=>	"15",
 			'style_family_id'			=>	"55",
@@ -2422,7 +2422,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"24B",
 			'styles'			=>	"Belgian Pale Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"84",
 			'categories_id'			=>	"15",
 			'style_family_id'			=>	"2",
@@ -2451,7 +2451,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"24C",
 			'styles'			=>	"Bière de Garde",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"85",
 			'categories_id'			=>	"82",
 			'style_family_id'			=>	"55",
@@ -2480,7 +2480,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"25A",
 			'styles'			=>	"Belgian Blond Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"86",
 			'categories_id'			=>	"82",
 			'style_family_id'			=>	"55",
@@ -2509,7 +2509,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"25B",
 			'styles'			=>	"Saison",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"87",
 			'categories_id'			=>	"82",
 			'style_family_id'			=>	"79",
@@ -2538,7 +2538,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"25C",
 			'styles'			=>	"Belgian Golden Strong Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"88",
 			'categories_id'			=>	"86",
 			'style_family_id'			=>	"55",
@@ -2567,7 +2567,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"26A",
 			'styles'			=>	"Trappist Single",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"89",
 			'categories_id'			=>	"86",
 			'style_family_id'			=>	"2",
@@ -2596,7 +2596,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"26B",
 			'styles'			=>	"Belgian Dubbel",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"90",
 			'categories_id'			=>	"86",
 			'style_family_id'			=>	"79",
@@ -2625,7 +2625,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"26C",
 			'styles'			=>	"Belgian Tripel",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"91",
 			'categories_id'			=>	"86",
 			'style_family_id'			=>	"79",
@@ -2654,7 +2654,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"26D",
 			'styles'			=>	"Belgian Dark Strong Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"92",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"88",
@@ -2683,7 +2683,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Gose",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"93",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"2",
@@ -2712,7 +2712,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Kentucky Common",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"94",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"88",
@@ -2741,7 +2741,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Lichtenhainer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"95",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"23",
@@ -2769,7 +2769,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"London Brown Ale",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"96",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"88",
@@ -2798,7 +2798,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Piwo Grodziskie",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"97",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"62",
@@ -2827,7 +2827,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Pre-Prohibition Lager",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"98",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"65",
@@ -2856,7 +2856,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Pre-Prohibition Porter",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"99",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"88",
@@ -2885,7 +2885,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Roggenbier",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"100",
 			'categories_id'			=>	"45",
 			'style_family_id'			=>	"88",
@@ -2914,7 +2914,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"27A",
 			'styles'			=>	"Sahti",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"101",
 			'categories_id'			=>	"11",
 			'style_family_id'			=>	"74",
@@ -2943,7 +2943,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"28A",
 			'styles'			=>	"Brett Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"102",
 			'categories_id'			=>	"11",
 			'style_family_id'			=>	"74",
@@ -2973,7 +2973,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"28B",
 			'styles'			=>	"Mixed-Fermentation Sour Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"103",
 			'categories_id'			=>	"11",
 			'style_family_id'			=>	"74",
@@ -3002,7 +3002,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"28C",
 			'styles'			=>	"Wild Specialty Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"104",
 			'categories_id'			=>	"41",
 			'style_family_id'			=>	"74",
@@ -3029,7 +3029,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"29A",
 			'styles'			=>	"Fruit Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"105",
 			'categories_id'			=>	"41",
 			'style_family_id'			=>	"74",
@@ -3054,7 +3054,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"29B",
 			'styles'			=>	"Fruit and Spice Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"106",
 			'categories_id'			=>	"41",
 			'style_family_id'			=>	"74",
@@ -3081,7 +3081,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"29C",
 			'styles'			=>	"Specialty Fruit Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"107",
 			'categories_id'			=>	"76",
 			'style_family_id'			=>	"74",
@@ -3107,7 +3107,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"30A",
 			'styles'			=>	"Spice, Herb, or Vegetable Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"108",
 			'categories_id'			=>	"76",
 			'style_family_id'			=>	"74",
@@ -3135,7 +3135,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"30B",
 			'styles'			=>	"Autumn Seasonal Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"109",
 			'categories_id'			=>	"76",
 			'style_family_id'			=>	"74",
@@ -3164,7 +3164,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"30C",
 			'styles'			=>	"Winter Seasonal Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"110",
 			'categories_id'			=>	"1",
 			'style_family_id'			=>	"74",
@@ -3191,7 +3191,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"31A",
 			'styles'			=>	"Alternative Grain Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"111",
 			'categories_id'			=>	"1",
 			'style_family_id'			=>	"74",
@@ -3218,7 +3218,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"31B",
 			'styles'			=>	"Alternative Sugar Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"112",
 			'categories_id'			=>	"70",
 			'style_family_id'			=>	"74",
@@ -3246,7 +3246,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"32A",
 			'styles'			=>	"Classic Style Smoked Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"113",
 			'categories_id'			=>	"70",
 			'style_family_id'			=>	"74",
@@ -3273,7 +3273,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"32B",
 			'styles'			=>	"Specialty Smoked Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"114",
 			'categories_id'			=>	"90",
 			'style_family_id'			=>	"74",
@@ -3302,7 +3302,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"33A",
 			'styles'			=>	"Wood-Aged Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"115",
 			'categories_id'			=>	"90",
 			'style_family_id'			=>	"74",
@@ -3331,7 +3331,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"33B",
 			'styles'			=>	"Specialty Wood-Aged Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"116",
 			'categories_id'			=>	"72",
 			'style_family_id'			=>	"74",
@@ -3357,7 +3357,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"34A",
 			'styles'			=>	"Clone Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"117",
 			'categories_id'			=>	"72",
 			'style_family_id'			=>	"74",
@@ -3383,7 +3383,7 @@ class Seeder_hjp_brouwerbouwer_bjcp_guide extends Seeder
 			'bjcp_categories_id'			=>	"34B",
 			'styles'			=>	"Mixed-Style Beer",
 		]);
-		DB::table('hjp_brouwerbouwer_bjcp_guide')->insert([
+		DB::table('eliseontwerpt_brouwerbouwer_bjcp_guide')->insert([
 			'id'			=>	"118",
 			'categories_id'			=>	"72",
 			'style_family_id'			=>	"74",
