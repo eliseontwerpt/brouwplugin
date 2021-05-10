@@ -3,11 +3,6 @@
 use Seeder;
 use Db;
 
-<?php namespace Hjp\Brewersapp\Updates;
-
-use Seeder;
-use Db;
-
 class Seeder_hjp_brewersapp_bjcp_categories extends Seeder
 	{
 	public function run()
