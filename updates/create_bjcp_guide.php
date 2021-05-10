@@ -16,7 +16,7 @@ class BjcpGuide extends Migration
             $table->integer('style_family_id');
             $table->integer('style_history_id')->nullable();
             $table->integer('origin_id');
-            $table->integer('bjcp_categories_id');
+            $table->string('bjcp_categories_id');
             $table->decimal('abv_min',10,2);
             $table->decimal('abv_max',10,2);
             $table->integer('ibu_min');
