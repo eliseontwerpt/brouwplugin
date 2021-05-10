@@ -25,41 +25,29 @@
     - 'Created table malt_adjunct_list'
     - create_malt_adjunct_list.php
 1.0.10:
-    - 'Created table bjcp_values'
-    - create_bjcp_values.php
-1.0.11:
     - 'Created table bjcp_guide'
     - create_bjcp_guide.php
-1.0.12:
+1.0.11:
     - 'Created table waterprofiles'
     - create_waterprofiles.php
-1.0.13:
+1.0.12:
     - 'Created table color_palette'
     - create_color_palette.php
-1.0.14:
-    - 'Created seeder bjcp_values'
-    - seeder_bjcp_values.php
-1.0.15:
+1.0.13:
     - 'Created seeder bjcp_guide'
     - seeder_bjcp_guide.php
-1.0.16:
+1.0.14:
     - 'Created seeder malt_adjunct_list'
     - seeder_malt_adjunct_list.php
-1.0.17:
+1.0.15:
     - 'Created seeder hop_adjunct_list'
     - seeder_hop_adjunct_list.php
-1.0.18:
+1.0.16:
     - 'Created seeder waterprofiles'
     - seeder_waterprofiles.php
-1.0.19:
+1.0.17:
     - 'Created seeder color_palatte'
     - seeder_color_palette.php
-1.0.20:
+1.0.18:
     - 'Updated table hops'
     - update_hops.php
-1.0.21:
-    - 'Created table bjcp_categories'
-    - create_bjcp_categories.php
-1.0.22:
-    - 'Created Seeder bjcp_categories'
-    - seeder_bjcp_categories.php

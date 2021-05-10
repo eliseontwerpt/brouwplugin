@@ -19,7 +19,7 @@ class BjcpValues extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'eliseontwerpt_brouwerbouwer_bjcp_values';
+    public $table = 'eliseontwerpt_brouwerbouwer_bjcp_data';
 
     /**
      * @var array Validation rules

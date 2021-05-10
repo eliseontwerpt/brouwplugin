@@ -19,7 +19,7 @@ class BjcpStyleGuide extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'eliseontwerpt_brouwerbouwer_bjcp_guide';
+    public $table = 'eliseontwerpt_brouwerbouwer_bjcp_sub_categories';
 
     /**
      * @var array Validation rules
@@ -27,7 +27,7 @@ class BjcpStyleGuide extends Model
     public $rules = [
     ];
     
-    public $belongsTo =[ 
+    /** public $belongsTo =[ 
         'style_family' => [
             'Eliseontwerpt\Brouwerbouwer\Models\BjcpValues',            
             'key' => 'style_family_id',
@@ -52,6 +52,6 @@ class BjcpStyleGuide extends Model
             'otherKey'=>'id',
             'conditions' => 'subcategories = "origin"',
         ],
-    ];
+    ];*/
     
 }
