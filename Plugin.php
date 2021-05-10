@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer;
+<?php namespace Eliseontwerpt\Brouwerbouwer;
 
 use System\Classes\PluginBase;
 
@@ -18,10 +18,10 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Hjp\Brouwerbouwer\Components\Recipes' => 'BrewRecipes',
-            'Hjp\Brouwerbouwer\Components\BjcpGuide' => 'BeerStyles',
-            'Hjp\Brouwerbouwer\Components\Hops' => 'HopsList',
-            'Hjp\Brouwerbouwer\Components\Brewday' => 'BrewDay'
+            'Eliseontwerpt\Brouwerbouwer\Components\Recipes' => 'BrewRecipes',
+            'Eliseontwerpt\Brouwerbouwer\Components\BjcpGuide' => 'BeerStyles',
+            'Eliseontwerpt\Brouwerbouwer\Components\Hops' => 'HopsList',
+            'Eliseontwerpt\Brouwerbouwer\Components\Brewday' => 'BrewDay'
         ];
     }
 

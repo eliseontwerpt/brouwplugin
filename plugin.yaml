@@ -1,40 +1,40 @@
 plugin:
-    name: 'hjp.brouwerbouwer::lang.plugin.name'
-    description: 'hjp.brouwerbouwer::lang.plugin.description'
-    author: hjp
+    name: 'eliseontwerpt.brouwerbouwer::lang.plugin.name'
+    description: 'eliseontwerpt.brouwerbouwer::lang.plugin.description'
+    author: eliseontwerpt
     icon: oc-icon-beer
     homepage: ''
 navigation:
     main-menu-item:
-        label: 'hjp.brouwerbouwer::lang.plugin.name'
-        url: hjp/brouwerbouwer/recipes
+        label: 'eliseontwerpt.brouwerbouwer::lang.plugin.name'
+        url: eliseontwerpt/brouwerbouwer/recipes
         icon: icon-beer
         sideMenu:
             side-menu-item7:
-                label: 'hjp.brouwerbouwer::lang.brewday.name'
-                url: hjp/brouwerbouwer/brewday
+                label: 'eliseontwerpt.brouwerbouwer::lang.brewday.name'
+                url: eliseontwerpt/brouwerbouwer/brewday
                 icon: icon-calendar
             side-menu-item5:
                 label: Recipes
-                url: hjp/brouwerbouwer/recipes
+                url: eliseontwerpt/brouwerbouwer/recipes
                 icon: icon-beer
             side-menu-item:
                 label: 'List of Malts and Adjucts'
-                url: hjp/brouwerbouwer/listofmalts
+                url: eliseontwerpt/brouwerbouwer/listofmalts
                 icon: icon-tencent-weibo
             side-menu-item3:
-                label: 'hjp.brouwerbouwer::lang.hops.name'
-                url: hjp/brouwerbouwer/listofhops
+                label: 'eliseontwerpt.brouwerbouwer::lang.hops.name'
+                url: eliseontwerpt/brouwerbouwer/listofhops
                 icon: icon-tree
             side-menu-item2:
                 label: 'Brewing gear'
-                url: hjp/brouwerbouwer/gear
+                url: eliseontwerpt/brouwerbouwer/gear
                 icon: icon-trash-o
             side-menu-item4:
                 label: 'Bjcp Style Guide'
-                url: hjp/brouwerbouwer/bjcpstyleguide
+                url: eliseontwerpt/brouwerbouwer/bjcpstyleguide
                 icon: icon-sitemap
             side-menu-item6:
                 label: Waterprofiles
-                url: hjp/brouwerbouwer/waterprofiles
+                url: eliseontwerpt/brouwerbouwer/waterprofiles
                 icon: icon-tint
