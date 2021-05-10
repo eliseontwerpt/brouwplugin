@@ -1,4 +1,4 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer;
+<?php namespace EliseOntwerpt\Brouwerbouwer;
 
 use System\Classes\PluginBase;
 
