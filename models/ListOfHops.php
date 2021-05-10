@@ -19,7 +19,7 @@ class ListOfHops extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_hop_adjunct_list';
+    public $table = 'eliseontwerpt_brouwerbouwer_hop_adjunct_list';
 
 
     /**

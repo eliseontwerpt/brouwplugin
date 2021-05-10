@@ -7,7 +7,7 @@ class HopAdjunctList extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_hop_adjunct_list', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_hop_adjunct_list', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -25,6 +25,6 @@ class HopAdjunctList extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_hop_adjunct_list');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_hop_adjunct_list');
     }
 }

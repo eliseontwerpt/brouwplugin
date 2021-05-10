@@ -7,7 +7,7 @@ class  Hops extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_hops', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_hops', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -23,7 +23,7 @@ class  Hops extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_hops');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_hops');
     }
     
 }

@@ -19,7 +19,7 @@ class MashScheme extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_mash_scheme';
+    public $table = 'eliseontwerpt_brouwerbouwer_mash_scheme';
 
     /**
      * @var array Validation rules

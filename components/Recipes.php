@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Components;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Lang;
 use Redirect;
@@ -7,7 +7,7 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use October\Rain\Database\Model;
 use October\Rain\Database\Collection;
-use Hjp\Brouwerbouwer\Models\Recipes as BrewRecipes;
+use EliseOntwerpt\Brouwerbouwer\Models\Recipes as BrewRecipes;
 
 
 class Recipes extends \Cms\Classes\ComponentBase
@@ -15,8 +15,8 @@ class Recipes extends \Cms\Classes\ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'hjp.brouwerbouwer::lang.component.recipes.name',
-            'description' => 'hjp.brouwerbouwer::lang.component.recipes.description'
+            'name' => 'eliseontwerpt.brouwerbouwer::lang.component.recipes.name',
+            'description' => 'eliseontwerpt.brouwerbouwer::lang.component.recipes.description'
         ];
     }
 

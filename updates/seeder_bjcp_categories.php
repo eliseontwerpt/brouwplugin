@@ -1,4 +1,4 @@
-<?php namespace Eliseonwerpt\Brouwerbouwer\Updates;
+<?php namespace eliseontwerpt\Brouwerbouwer\Updates;
 
 use Seeder;
 use Db;

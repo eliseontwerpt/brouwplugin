@@ -1,4 +1,4 @@
-<?php namespace Eliseonwerpt\Brouwerbouwer\Updates;
+<?php namespace eliseontwerpt\Brouwerbouwer\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -7,7 +7,7 @@ class MaltAdjunctList extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_malt_adjunct_list', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_malt_adjunct_list', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -21,6 +21,6 @@ class MaltAdjunctList extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_malt_adjunct_list');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_malt_adjunct_list');
     }
 }

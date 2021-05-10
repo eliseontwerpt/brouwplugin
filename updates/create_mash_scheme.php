@@ -1,4 +1,4 @@
-<?php namespace Eliseonwerpt\Brouwerbouwer\Updates;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -7,7 +7,7 @@ class MashScheme extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_mash_scheme', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_mash_scheme', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -20,6 +20,6 @@ class MashScheme extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_mash_scheme');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_mash_scheme');
     }
 }

@@ -7,7 +7,7 @@ class Recipes extends Migration
 {    
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_recipes', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_recipes', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -27,7 +27,7 @@ class Recipes extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_recipes');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_recipes');
     }
 
 }

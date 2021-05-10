@@ -19,7 +19,7 @@ class Gear extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_brewing_gear';
+    public $table = 'eliseontwerpt_brouwerbouwer_brewing_gear';
 
     public $belongsTo =[  
         'waterprofile' => [

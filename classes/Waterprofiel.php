@@ -1,8 +1,8 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Classes;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Classes;
 
 use DB;
 use Calculations;
-use Eliseontwerpt\Brouwerbouwer\Models\Recipes;
+use EliseOntwerpt\Brouwerbouwer\Models\Recipes;
 
 class Waterprofiel{
 

@@ -7,7 +7,7 @@ class  Malts extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_malts', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_malts', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -20,7 +20,7 @@ class  Malts extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_malts');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_malts');
     }
     
 }

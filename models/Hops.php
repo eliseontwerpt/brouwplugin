@@ -20,7 +20,7 @@ class Hops extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_hops';
+    public $table = 'eliseontwerpt_brouwerbouwer_hops';
 
     /**
      * @var array Validation rules

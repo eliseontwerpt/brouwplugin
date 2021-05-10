@@ -19,7 +19,7 @@ class WaterProfiles extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_waterprofiles';
+    public $table = 'eliseontwerpt_brouwerbouwer_waterprofiles';
 
     /**
      * @var array Validation rules

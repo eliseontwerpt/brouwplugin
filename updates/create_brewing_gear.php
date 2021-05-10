@@ -7,7 +7,7 @@ class BrewingGear extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_brewing_gear', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_brewing_gear', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -21,6 +21,6 @@ class BrewingGear extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_brewing_gear');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_brewing_gear');
     }
 }

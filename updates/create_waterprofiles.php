@@ -1,4 +1,4 @@
-<?php namespace Eliseonwerpt\Brouwerbouwer\Updates;
+<?php namespace eliseontwerpt\Brouwerbouwer\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -7,7 +7,7 @@ class Waterprofiles extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_waterprofiles', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_waterprofiles', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -24,6 +24,6 @@ class Waterprofiles extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_waterprofiles');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_waterprofiles');
     }
 }

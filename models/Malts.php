@@ -21,7 +21,7 @@ class Malts extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_malts';
+    public $table = 'eliseontwerpt_brouwerbouwer_malts';
 
     /**
      * @var array Validation rules

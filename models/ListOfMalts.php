@@ -19,7 +19,7 @@ class ListOfMalts extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_malt_adjunct_list';
+    public $table = 'eliseontwerpt_brouwerbouwer_malt_adjunct_list';
 
     /**
      * @var array Validation rules

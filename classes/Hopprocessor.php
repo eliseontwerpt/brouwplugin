@@ -1,4 +1,4 @@
-<?php namespace Eliseontwerpt\Brouwerbouwer\Classes;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Classes;
 
 use Eliseontwerpt\Brouwerbouwer\Models\Hops;
 

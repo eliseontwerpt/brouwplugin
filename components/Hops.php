@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Components;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Lang;
 use Redirect;
@@ -7,7 +7,7 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use October\Rain\Database\Model;
 use October\Rain\Database\Collection;
-use Hjp\Brouwerbouwer\Models\ListOfHops as Hopslist;
+use EliseOntwerpt\Brouwerbouwer\Models\ListOfHops as Hopslist;
 
 
 
@@ -16,8 +16,8 @@ class Hops extends \Cms\Classes\ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'hjp.brouwerbouwer::lang.component.hops.name',
-            'description' => 'hjp.brouwerbouwer::lang.component.hops.description'
+            'name' => 'eliseontwerpt.brouwerbouwer::lang.component.hops.name',
+            'description' => 'eliseontwerpt.brouwerbouwer::lang.component.hops.description'
         ];
     }
 

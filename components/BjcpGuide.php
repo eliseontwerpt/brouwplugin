@@ -1,4 +1,4 @@
-<?php namespace Hjp\Brouwerbouwer\Components;
+<?php namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Db;
 use Lang;
@@ -8,16 +8,16 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use October\Rain\Database\Model;
 use October\Rain\Database\Collection;
-use Hjp\Brouwerbouwer\Models\BjcpStyleGuide as StyleGuide;
-use Hjp\Brouwerbouwer\Classes\ComponentClass as ComClass;
+use EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide as StyleGuide;
+use EliseOntwerpt\Brouwerbouwer\Classes\ComponentClass as ComClass;
 
 class BjcpGuide extends \Cms\Classes\ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name' => 'hjp.brouwerbouwer::lang.component.styles.name',
-            'description' => 'hjp.brouwerbouwer::lang.component.styles.description'
+            'name' => 'eliseontwerpt.brouwerbouwer::lang.component.styles.name',
+            'description' => 'eliseontwerpt.brouwerbouwer::lang.component.styles.description'
         ];
     }
 

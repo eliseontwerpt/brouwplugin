@@ -7,7 +7,7 @@ class Brewday extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_brewday', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_brewday', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -36,6 +36,6 @@ class Brewday extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_brewday');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_brewday');
     }
 }

@@ -7,7 +7,7 @@ class  ColorPalette extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_color_palette', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_color_palette', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -21,6 +21,6 @@ class  ColorPalette extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_color_palette');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_color_palette');
     }
 }

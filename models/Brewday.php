@@ -14,7 +14,7 @@ class Brewday extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_brewday';
+    public $table = 'eliseontwerpt_brouwerbouwer_brewday';
 
     /**
      * @var array Validation rules

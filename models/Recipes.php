@@ -24,7 +24,7 @@ class Recipes extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'Eliseontwerpt_brouwerbouwer_recipes';
+    public $table = 'eliseontwerpt_brouwerbouwer_recipes';
     
     /**
      * @var array Validation rules

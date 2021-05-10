@@ -7,7 +7,7 @@ class BjcpCategories extends Migration
 {
     public function up()
     {
-        Schema::create('eliseonwerpt_brouwerbouwer_bjcp_categories', function($table)
+        Schema::create('eliseontwerpt_brouwerbouwer_bjcp_categories', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
@@ -19,6 +19,6 @@ class BjcpCategories extends Migration
     
     public function down()
     {
-        Schema::dropIfExists('eliseonwerpt_brouwerbouwer_bjcp_categories');
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_bjcp_categories');
     }
 }
