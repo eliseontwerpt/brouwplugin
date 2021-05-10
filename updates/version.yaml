@@ -1,65 +1,65 @@
 1.0.1:
     - 'Initialize plugin.'
 1.0.2:
-    - 'Created table hjp_brouwerbouwer_recipes'
-    - builder_table_create_hjp_brouwerbouwer_recipes.php
+    - 'Created table recipes'
+    - create_recipes.php
 1.0.3:
-    - 'Created table hjp_brouwerbouwer_malts'
-    - builder_table_create_hjp_brouwerbouwer_malts.php
+    - 'Created table malts'
+    - create_malts.php
 1.0.4:
-    - 'Created table hjp_brouwerbouwer_hops'
-    - builder_table_create_hjp_brouwerbouwer_hops.php
+    - 'Created table hops'
+    - create_hops.php
 1.0.5:
-    - 'Created table hjp_brouwerbouwer_brewing_gear'
-    - builder_table_create_hjp_brouwerbouwer_brewing_gear.php
+    - 'Created table brewing_gear'
+    - create_brewing_gear.php
 1.0.6:
-    - 'Created table hjp_brouwerbouwer_mash_scheme'
-    - builder_table_create_hjp_brouwerbouwer_mash_scheme.php
+    - 'Created table mash_scheme'
+    - create_mash_scheme.php
 1.0.7:
-    - 'Created table hjp_brouwerbouwer_brewday'
-    - builder_table_create_hjp_brouwerbouwer_brewday.php
+    - 'Created table brewday'
+    - create_brewday.php
 1.0.8:
-    - 'Created table hjp_brouwerbouwer_hop_adjunct_list'
-    - builder_table_create_hjp_brouwerbouwer_hop_adjunct_list.php
+    - 'Created table hop_adjunct_list'
+    - create_hop_adjunct_list.php
 1.0.9:
-    - 'Created table hjp_brouwerbouwer_malt_adjunct_list'
-    - builder_table_create_hjp_brouwerbouwer_malt_adjunct_list.php
+    - 'Created table malt_adjunct_list'
+    - create_malt_adjunct_list.php
 1.0.10:
-    - 'Created table hjp_brouwerbouwer_bjcp_values'
-    - builder_table_create_hjp_brouwerbouwer_bjcp_values.php
+    - 'Created table bjcp_values'
+    - create_bjcp_values.php
 1.0.11:
-    - 'Created table hjp_brouwerbouwer_bjcp_guide'
-    - builder_table_create_hjp_brouwerbouwer_bjcp_guide.php
+    - 'Created table bjcp_guide'
+    - create_bjcp_guide.php
 1.0.12:
-    - 'Created table hjp_brouwerbouwer_waterprofiles'
-    - builder_table_create_hjp_brouwerbouwer_waterprofiles.php
+    - 'Created table waterprofiles'
+    - create_waterprofiles.php
 1.0.13:
-    - 'Created table hjp_brouwerbouwer_color_palette'
-    - builder_table_create_hjp_brouwerbouwer_color_palette.php
+    - 'Created table color_palette'
+    - create_color_palette.php
 1.0.14:
-    - 'Created seeder hjp_brouwerbouwer_bjcp_values'
-    - seeder_hjp_brouwerbouwer_bjcp_values.php
+    - 'Created seeder bjcp_values'
+    - seeder_bjcp_values.php
 1.0.15:
-    - 'Created seeder hjp_brouwerbouwer_bjcp_guide'
-    - seeder_hjp_brouwerbouwer_bjcp_guide.php
+    - 'Created seeder bjcp_guide'
+    - seeder_bjcp_guide.php
 1.0.16:
-    - 'Created seeder hjp_brouwerbouwer_malt_adjunct_list'
-    - seeder_hjp_brouwerbouwer_malt_adjunct_list.php
+    - 'Created seeder malt_adjunct_list'
+    - seeder_malt_adjunct_list.php
 1.0.17:
-    - 'Created seeder hjp_brouwerbouwer_hop_adjunct_list'
-    - seeder_hjp_brouwerbouwer_hop_adjunct_list.php
+    - 'Created seeder hop_adjunct_list'
+    - seeder_hop_adjunct_list.php
 1.0.18:
-    - 'Created seeder hjp_brouwerbouwer_waterprofiles'
-    - seeder_hjp_brouwerbouwer_waterprofiles.php
+    - 'Created seeder waterprofiles'
+    - seeder_waterprofiles.php
 1.0.19:
-    - 'Created seeder hjp_brouwerbouwer_color_palatte'
-    - seeder_hjp_brouwerbouwer_color_palette.php
+    - 'Created seeder color_palatte'
+    - seeder_color_palette.php
 1.0.20:
-    - 'Updated table hjp_brouwerbouwer_hops'
-    - builder_table_update_hjp_brouwerbouwer_hops.php
+    - 'Updated table hops'
+    - update_hops.php
 1.0.21:
-    - 'Created table hjp_brouwerbouwer_bjcp_categories'
-    - builder_table_create_hjp_brouwerbouwer_bjcp_categories.php
+    - 'Created table bjcp_categories'
+    - create_bjcp_categories.php
 1.0.22:
-    - 'Created Seeder hjp_brouwerbouwer_bjcp_categories'
-    - seeder_hjp_brouwerbouwer_bjcp_categories.php
+    - 'Created Seeder bjcp_categories'
+    - seeder_bjcp_categories.php
