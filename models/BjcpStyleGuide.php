@@ -27,31 +27,12 @@ class BjcpStyleGuide extends Model
     public $rules = [
     ];
     
-    public $belongsTo =[ 
-        'style_family' => [
+    public $hasMany =[ 
+        'comments' => [
             'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
-            'key' => 'style_family_id',
-            'otherKey'=>'id',
-            'conditions' => 'subcategories = "style_family"',
-        ],
-        'style_history' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
-            'key' => 'style_history_id',
-            'otherKey'=>'id',
-            'conditions' => 'subcategories = "style_history"',
-        ],
-        'categories' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
-            'key' => 'categories_id',
-            'otherKey'=>'id',
-            'conditions' => 'subcategories = "categories"',
-        ],
-        'origin' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
-            'key' => 'origin_id',
-            'otherKey'=>'id',
-            'conditions' => 'subcategories = "origin"',
-        ],
+            'key' => 'sub_categories_id',
+            'otherKey'=>'sub_categorie_id'
+        ]
     ];
     
 }
