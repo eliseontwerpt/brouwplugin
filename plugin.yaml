@@ -1,5 +1,5 @@
 plugin:
-    name: 'eliseontwerpt.brouwerbouwer::lang.plugin.name'
+    name: 'Brouwplugin'
     description: 'eliseontwerpt.brouwerbouwer::lang.plugin.description'
     author: EliseOntwerpt
     icon: oc-icon-beer
