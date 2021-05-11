@@ -1,33 +1,49 @@
 columns:
-    bjcp_categories_id:
+    id:
         label: id
+        type: number
+    categorie_id:
+        label: categorie_id
         type: text
-    styles:
-        label: styles
+    sub_categorie_id:
+        label: sub_categorie_id
         type: text
-        searchable: true
-    style_family:
-        label: 'Style family'
+    name:
+        label: name
         type: text
-        searchable: true
-        select: value
-        relation: style_family
-    'style history':
-        label: 'Style history'
+    abv_min:
+        label: abv_min
         type: text
-        searchable: true
-        select: value
-        relation: style_history
-    category:
-        label: Category
+    abv_max:
+        label: abv_max
         type: text
-        searchable: true
-        select: value
-        relation: categories
-    country:
-        label: Country
+    ibu_min:
+        label: ibu_min
+        type: number
+    ibu_max:
+        label: ibu_max
+        type: number
+    ebc_min:
+        label: ebc_min
+        type: number
+    ebc_max:
+        label: ebc_max
+        type: number
+    og_min:
+        label: og_min
         type: text
-        searchable: true
-        sortable: true
-        select: value
-        relation: origin
+    og_max:
+        label: og_max
+        type: text
+    fg_min:
+        label: fg_min
+        type: text
+    fg_max:
+        label: fg_max
+        type: text
+    bugu_min:
+        label: bugu_min
+        type: text
+    bugu_max:
+        label: bugu_max
+        type: text

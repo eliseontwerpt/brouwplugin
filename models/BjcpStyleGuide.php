@@ -28,10 +28,10 @@ class BjcpStyleGuide extends Model
     ];
     
     public $hasMany =[ 
-        'comments' => [
+        'values' => [
             'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',            
-            'key' => 'sub_categories_id',
-            'otherKey'=>'sub_categorie_id'
+            'key' => 'sub_categorie_id',
+            'otherKey'=>'sub_categories_id'
         ]
     ];
     

@@ -1,7 +1,13 @@
 columns:
-    id:
-        label: id
-        type: number
-    value:
-        label: value
+    locale:
+        label: locale
+        type: text
+    sub_categories_id:
+        label: sub_categories_id
+        type: text
+    name:
+        label: name
+        type: text
+    description:
+        label: description
         type: text
