@@ -49,5 +49,5 @@
     - 'Created seeder color_palatte'
     - seeder_color_palette.php
 1.0.18:
-    - 'Updated table hops'
-    - update_hops.php
+    - 'Created seeder Brewing gear'
+    - seeder_brewing_gear.php

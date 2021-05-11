@@ -8,7 +8,7 @@ columns:
     bjcp:
         label: bjcp
         type: text
-        select: styles
+        select: name
         relation: bjcp
     waterprofile:
         label: waterprofile
