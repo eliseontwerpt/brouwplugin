@@ -7,6 +7,7 @@ class BjcpCategories extends Migration
 {
     public function up()
     {
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_bjcp_categories');
         Schema::create('eliseontwerpt_brouwerbouwer_bjcp_categories', function($table)
         {
             $table->engine = 'InnoDB';
@@ -15,7 +16,7 @@ class BjcpCategories extends Migration
             $table->string('name');
             $table->text('description');
         });
-        
+        Schema::dropIfExists('eliseontwerpt_brouwerbouwer_bjcp_sub_categories');
         Schema::create('eliseontwerpt_brouwerbouwer_bjcp_sub_categories', function($table)
         {
             $table->engine = 'InnoDB';
@@ -35,17 +36,18 @@ class BjcpCategories extends Migration
             $table->decimal('fg_max',10,3)->default(0);
             $table->decimal('bugu_min',10,2)->default(0);
             $table->decimal('bugu_max',10,2)->default(0);
-        });
-        
-        Schema::create('eliseontwerpt_brouwerbouwer_bjcp_data', function($table)
-        {
-            $table->engine = 'InnoDB';
-            $table->increments('id')->unsigned();
-            $table->string('locale')->default('nl');
-            $table->string('sub_categories_id');
-            $table->string('name');
-            $table->text('description')->nullable();
-        });       
+            $table->text('overall impression')->nullable();
+            $table->text('aroma')->nullable();
+            $table->text('appearance')->nullable();
+            $table->text('flavor')->nullable();
+            $table->text('mouthfeel')->nullable();
+            $table->text('comments')->nullable();
+            $table->text('history')->nullable();
+            $table->text('style comparison')->nullable();
+            $table->text('commercial examples')->nullable();
+            $table->text('tags')->nullable();
+        });   
+             
     }
 
     public function down()
