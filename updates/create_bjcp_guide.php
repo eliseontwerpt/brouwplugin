@@ -36,16 +36,16 @@ class BjcpCategories extends Migration
             $table->decimal('fg_max',10,3)->default(0);
             $table->decimal('bugu_min',10,2)->default(0);
             $table->decimal('bugu_max',10,2)->default(0);
-            $table->text('overall impression')->nullable();
+            $table->text('overall_impression')->nullable();
             $table->text('aroma')->nullable();
             $table->text('appearance')->nullable();
             $table->text('flavor')->nullable();
             $table->text('mouthfeel')->nullable();
             $table->text('comments')->nullable();
             $table->text('history')->nullable();
-            $table->text('characteristic ingredients')->nullable();
-            $table->text('style comparison')->nullable();
-            $table->text('commercial examples')->nullable();           
+            $table->text('characteristic_ingredients')->nullable();
+            $table->text('style_comparison')->nullable();
+            $table->text('commercial_examples')->nullable();           
             $table->text('tags')->nullable();
         });   
              
