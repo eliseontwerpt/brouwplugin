@@ -43,8 +43,9 @@ class BjcpCategories extends Migration
             $table->text('mouthfeel')->nullable();
             $table->text('comments')->nullable();
             $table->text('history')->nullable();
+            $table->text('characteristic ingredients')->nullable();
             $table->text('style comparison')->nullable();
-            $table->text('commercial examples')->nullable();
+            $table->text('commercial examples')->nullable();           
             $table->text('tags')->nullable();
         });   
              
