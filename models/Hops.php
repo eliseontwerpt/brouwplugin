@@ -50,17 +50,19 @@ class Hops extends Model
 
     public function getGramsAttribute($value){
         $value = 0;
+        
         if (is_null($this->recipe) === false){
 
-            $this->calculations = new Hopprocessor;
-            $this->calculations->set_val(
+            $calculations = new Hopprocessor;
+            $calculations->set_val(
                 array(  'alfaacid' => $this->alpha ,
                         'volume' => $this->recipe->flameout_volume() , 
                         'og' => $this->recipe->og,
-                        'ibu' => $this->recipe->ibu,
+                        'ibu' => $this->ibu,
                         'time' => $this->time )
                 );            
-            return round($this->calculations->grams);
+            return round($calculations->grams());
+            
         }     
     }
 
