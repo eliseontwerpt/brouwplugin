@@ -61,7 +61,7 @@ class Hops extends Model
                         'ibu' => $this->ibu,
                         'time' => $this->time )
                 );            
-            return round($calculations->grams());
+            return round($calculations->grams);
             
         }     
     }
