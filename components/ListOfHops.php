@@ -6,18 +6,17 @@ namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Cms\Classes\CodeBase;
 use Cms\Classes\Page;
-use EliseOntwerpt\Brouwerbouwer\Models\Recipes as RecipesModel;
+use EliseOntwerpt\Brouwerbouwer\Models\ListOfHops as ListOfHopsModel;
 use October\Rain\Database\Collection;
 
-class Recipes extends AbstractComponent
+class ListOfHops extends AbstractComponent
 {
 
-    protected const NUMBER_OF_COLUMNS = 3;
-    protected const SORT_DEFAULT = 'id';
+    protected const NUMBER_OF_COLUMNS = 4;
+    protected const SORT_DEFAULT = 'variety';
     protected const SORTING_OPTIONS = [
-        'id'=>'Id',
-        'bjcp_id'=>'Style',
-        'name' => 'Name'
+        'id' => 'ID',
+        'variety' => 'Variety',
     ];
 
     protected $properties = [];
@@ -27,38 +26,35 @@ class Recipes extends AbstractComponent
     {
         parent::__construct($cmsObject, $properties);
         $this->properties = $properties;
-        $this->model = RecipesModel::class;
+        $this->model = ListOfHopsModel::class;
     }
 
     public function componentDetails(): array
     {
         return [
-            'name' => 'Recipes',
-            'description' => 'eliseontwerpt.brouwerbouwer::lang.component.recipes.description'
+            'name' => 'Hops',
+            'description' => 'eliseontwerpt.brouwerbouwer::lang.component.listofhops.description'
         ];
     }
 
-    public function getRecipesPageOptions(): Page
+    public function getListOfHopsOptions(): Page
     {
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
     }
 
-    public function recipes(): Collection
+    public function hops(): Collection
     {
         return $this->getModelData();
     }
 
-    public function recipe(): Collection
+    public function variety(): Collection
     {
+        $postId = $this->param('id');
+        $val = 'id';
+        if (is_numeric($postId) === false){
+            $val = 'variety';
+        }
         return $this->getSingleItem();
     }
-
-
-    public function bugu(): float
-    {
-        /** @var RecipesModel $recipe */
-        $recipe = $this->getSingleItem()->first();
-        return (float)$recipe->og;
-    }
-
 }
+

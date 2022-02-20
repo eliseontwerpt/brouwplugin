@@ -1,17 +1,30 @@
-<?php namespace EliseOntwerpt\Brouwerbouwer\Components;
+<?php
 
-use Lang;
-use Redirect;
-use BackendAuth;
+declare(strict_types = 1);
+
+namespace EliseOntwerpt\Brouwerbouwer\Components;
+
+use Cms\Classes\CodeBase;
 use Cms\Classes\Page;
-use Cms\Classes\ComponentBase;
-use October\Rain\Database\Model;
+use EliseOntwerpt\Brouwerbouwer\Models\Brewday as BrewdayModel;
 use October\Rain\Database\Collection;
-use EliseOntwerpt\Brouwerbouwer\Models\Brewday as Brew;
 
-
-class Brewday extends \Cms\Classes\ComponentBase
+class Brewday extends AbstractComponent
 {
+    protected const NUMBER_OF_COLUMNS = 2;
+    protected const SORT_DEFAULT = 'id';
+//    protected const SORTING_OPTIONS = [];
+
+    protected $properties = [];
+    protected string $model;
+
+    public function __construct(CodeBase $cmsObject = null, $properties = [])
+    {
+        parent::__construct($cmsObject, $properties);
+        $this->properties = $properties;
+        $this->model = BrewdayModel::class;
+    }
+
     public function componentDetails()
     {
         return [
@@ -20,60 +33,18 @@ class Brewday extends \Cms\Classes\ComponentBase
         ];
     }
 
-    public function defineProperties()
-    {
-        return [
-            'sorting' => [
-                'title' => 'Sort on',
-                'type' => 'dropdown',
-                'default' => 'date',
-                
-            ],
-            'direction' => [
-                'title' => 'Direction',
-                'type'  => 'dropdown',
-                'default' => 'desc'
-            ],
-            'numberofitems' => [
-                'title' => 'Number of items',
-                'description' => 'The most amount of todo items allowed',
-                'type' => 'string',
-                'default' => 0,
-                'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'The Number of items property can contain only numeric symbols'
-            ]
-        ];
-    }
-
-    public function getSortingOptions()
-    {
-        return [    'date_brewday'=> 'Date',
-                    'date_bottle'=>'Bottle Date', 
-                    'score'=>'Score'
-                ];
-    }
-    public function getDirectionOptions()
-    {
-        return [    'asc'=> 'Ascending',
-                    'desc'=>'Descending'
-                ];
-    }
-
-    public function getBjcpStyleGuideOptions()    
+    public function getBrewDayOptions(): Page
     {
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
     }
 
-    // This array becomes available on the page as {{ component.recipes }}
-    public function alldays()
+    public function brewDays(): Collection
     {
-        return Brew::orderBy($this->property('sorting'), $this->property('direction'))->Paginate($this->property('numberofitems'));
+        return $this->getModelData();
     }
 
-    public function day()
+    public function singleDay(): Collection
     {
-        $postId = $this->param('id');
-        return Brew::where('id', $postId )->orderBy('id', $this->property('direction'))->get();
+        return $this->getSingleItem();
     }
 }
-
