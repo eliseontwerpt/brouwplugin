@@ -7,7 +7,7 @@
     - 'Created table malts'
     - create_malts.php
 1.0.4:
-    - 'Created table hops'
+    - 'Created table listofhops'
     - create_hops.php
 1.0.5:
     - 'Created table brewing_gear'

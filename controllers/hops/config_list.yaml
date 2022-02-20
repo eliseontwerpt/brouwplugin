@@ -1,4 +1,4 @@
-list: $/eliseontwerpt/brouwerbouwer/models/hops/columns.yaml
+list: $/eliseontwerpt/brouwerbouwer/models/listofhops/columns.yaml
 modelClass: Eliseontwerpt\Brouwerbouwer\Models\Hops
 title: Hops
 noRecordsMessage: 'backend::lang.list.no_records'
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'eliseontwerpt/brouwerbouwer/hops/update/:id'
+recordUrl: 'eliseontwerpt/brouwerbouwer/listofhops/update/:id'

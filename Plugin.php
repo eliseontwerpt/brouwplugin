@@ -1,7 +1,10 @@
 <?php namespace EliseOntwerpt\Brouwerbouwer;
 
+use EliseOntwerpt\Brouwerbouwer\Components\BjcpStyleGuide;
+use EliseOntwerpt\Brouwerbouwer\Components\Brewday;
+use EliseOntwerpt\Brouwerbouwer\Components\ListOfHops;
+use EliseOntwerpt\Brouwerbouwer\Components\Recipes;
 use System\Classes\PluginBase;
-
 
 class Plugin extends PluginBase
 {
@@ -13,15 +16,15 @@ class Plugin extends PluginBase
             'author' => 'EliseOntwerpt',
             'icon' => 'icon-beer'
         ];
-    }   
+    }
 
     public function registerComponents()
     {
         return [
-            'Eliseontwerpt\Brouwerbouwer\Components\Recipes' => 'BrewRecipes',
-            'Eliseontwerpt\Brouwerbouwer\Components\BjcpGuide' => 'BeerStyles',
-            'Eliseontwerpt\Brouwerbouwer\Components\Hops' => 'HopsList',
-            'Eliseontwerpt\Brouwerbouwer\Components\Brewday' => 'BrewDay'
+            BjcpStyleGuide::class => 'BeerStyles',
+            ListOfHops::class => 'Hops',
+            Brewday::class => 'BrewDay',
+            Recipes::class => 'BrewRecipes',
         ];
     }
 
@@ -30,15 +33,15 @@ class Plugin extends PluginBase
         return [
             'hoptype' => function($value) {
                 $map = [
-                    0 => 'flowers',       
-                    1 => 'pellets',       
+                    0 => 'flowers',
+                    1 => 'pellets',
                 ];
             return $map[$value];
             },
             'dryhop' => function($value) {
                 $map = [
-                    0 => 'regular',       
-                    1 => 'add as dryhop',       
+                    0 => 'regular',
+                    1 => 'add as dryhop',
                 ];
             return $map[$value];
             }

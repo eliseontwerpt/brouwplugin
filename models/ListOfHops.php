@@ -8,7 +8,7 @@ use Db;
 class ListOfHops extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -32,16 +32,16 @@ class ListOfHops extends Model
     {
     if ($fieldName == 'substitute') {
         /**
-        *  Fill the datafield 'substitute' with hops from the list. The same name will be ignored. 
-        */        
+        *  Fill the datafield 'substitute' with listofhops from the list. The same name will be ignored.
+        */
         $list = ['' => '--empty--'];
         $all = ListOfHops::all();
         foreach( $all as $one){
-            if ($this->id != $one->id){ 
+            if ($this->id != $one->id){
                 $list += [ $one->id => $one->name ];
-            }           
+            }
         }
-        
+
         return $list;
     }
     else {

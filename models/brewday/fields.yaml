@@ -152,7 +152,7 @@ secondaryTabs:
             tab: 'eliseontwerpt.brouwerbouwer::lang.mash.name'
         hops:
             span: full
-            path: hops
+            path: listofhops
             context:
                 - update
                 - preview

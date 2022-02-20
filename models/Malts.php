@@ -3,14 +3,14 @@
 use Model;
 use Flash;
 use EliseOntwerpt\Brouwerbouwer\Classes\Maltsprocessor;
-//use Eliseontwerpt\Brouwerbouwer\Models\Recipes;
+//use Eliseontwerpt\Brouwerbouwer\Models\RecipesComponent;
 /**
  * Model
  */
 class Malts extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -29,27 +29,27 @@ class Malts extends Model
     public $rules = [
     ];
 
-    public $belongsTo =[ 
+    public $belongsTo =[
         'malt_list' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\ListOfMalts',            
+            'EliseOntwerpt\Brouwerbouwer\Models\ListOfMalts',
             'key' => 'malt_list_id',
             'otherKey'=>'id'
         ]
     ];
 
-    public $hasOne =[ 
+    public $hasOne =[
         'recipe' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
+            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
         'brewday' => [
-                'Eliseontwerpt\Brouwerbouwer\Models\Brewday',            
+                'Eliseontwerpt\Brouwerbouwer\Models\Brewday',
                 'key' => 'recipe_id',
                 'otherKey'=>'recipe_id'
         ],
     ];
-    
+
     private function set_calculations(){
         if (is_null($this->recipe) === false){
             $this->calculations = new Maltsprocessor($this->recipe);
@@ -62,24 +62,24 @@ class Malts extends Model
         return $this->get_mass();
     }
 
-    public function getTotalPercentageAttribute($value){        
-        return $this->get_total_percentage();        
+    public function getTotalPercentageAttribute($value){
+        return $this->get_total_percentage();
     }
 
-    public function getPercentageWeightAttribute($value){ 
-        
-        if (is_null($this->recipe) === false AND is_null($this->malt_list) === false ) { 
+    public function getPercentageWeightAttribute($value){
+
+        if (is_null($this->recipe) === false AND is_null($this->malt_list) === false ) {
             return $this->massa / $this->recipe->mash_loss() *100;
         }
-                
+
     }
-    
+
 /**
 *   Functions
-*/    
+*/
     private function get_mass(){
         $this->set_calculations();
-        if (is_null($this->malt_list) === false){            
+        if (is_null($this->malt_list) === false){
             return $this->calculations->get_malt_mass($this->percentage, $this->malt_list->extraction);
         }
     }

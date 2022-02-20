@@ -3,8 +3,8 @@ fields:
         span: right
         path: graph_data
         type: partial
-    styles:
-        label: 'eliseontwerpt.brouwerbouwer::lang.style.name'
+    name:
+        label: Name
         span: auto
         type: text
     style_history:

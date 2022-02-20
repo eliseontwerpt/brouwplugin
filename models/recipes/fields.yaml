@@ -43,7 +43,7 @@ fields:
             - update
             - preview
         dependsOn:
-            - hops
+            - listofhops
             - volume
         type: number
     ebc:
@@ -117,7 +117,7 @@ tabs:
             tab: Adjuncts
         hops:
             span: left
-            path: hops
+            path: listofhops
             context:
                 - update
                 - preview

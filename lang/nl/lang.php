@@ -27,7 +27,7 @@
         'name' => 'Moutsoorten',
         'description' => ''
     ],
-    'hops' => [
+    'listofhops' => [
         'name' => 'Hoppen',
         'description' => ''
     ],
@@ -42,11 +42,11 @@
     'mass' => [
         'name' => 'Gewicht',
         'description' => ''
-    ],    
+    ],
     'efficiency' => [
         'name' => 'Brouwzaalrendement (%)',
         'description' => ''
-    ],    
+    ],
     'evaporation' => [
         'name' => 'Verdamping (ml/min)',
         'description' => ''
@@ -139,11 +139,11 @@
         'name' => 'Aroma',
         'description' => ''
     ],
-    
+
     'variety' => [
         'name' => 'Variant',
         'description' => ''
-    ],    
+    ],
     'beerstyles' => [
         'name' => 'Bier stijlen',
         'description' => ''
@@ -184,7 +184,7 @@
     'recipes' => [
         'name' => 'Recepten',
         'description' => ''
-    ],    
+    ],
     'date_brewday' => [
         'name' => 'Datum brouwdag',
         'description' => ''

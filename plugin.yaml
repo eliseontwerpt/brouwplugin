@@ -23,7 +23,7 @@ navigation:
                 url: eliseontwerpt/brouwerbouwer/listofmalts
                 icon: icon-tencent-weibo
             side-menu-item3:
-                label: 'eliseontwerpt.brouwerbouwer::lang.hops.name'
+                label: 'eliseontwerpt.brouwerbouwer::lang.listofhops.name'
                 url: eliseontwerpt/brouwerbouwer/listofhops
                 icon: icon-tree
             side-menu-item2:

@@ -7,19 +7,19 @@ malts:
     manage:
         form: $/eliseontwerpt/brouwerbouwer/models/malts/fields.yaml
         list:  $/eliseontwerpt/brouwerbouwer/models/malts/columns.yaml
-        
+
     view:
         list: $/eliseontwerpt/brouwerbouwer/models/malts/columns.yaml
         toolbarButtons: create|delete
 
 hops:
-    label: 'eliseontwerpt.brouwerbouwer::lang.hops.name'
+    label: 'eliseontwerpt.brouwerbouwer::lang.listofhops.name'
     manage:
-        form: $/eliseontwerpt/brouwerbouwer/models/hops/fields.yaml
-        list:  $/eliseontwerpt/brouwerbouwer/models/hops/columns.yaml
-        
+        form: $/eliseontwerpt/brouwerbouwer/models/listofhops/fields.yaml
+        list:  $/eliseontwerpt/brouwerbouwer/models/listofhops/columns.yaml
+
     view:
-        list: $/eliseontwerpt/brouwerbouwer/models/hops/columns.yaml
+        list: $/eliseontwerpt/brouwerbouwer/models/listofhops/columns.yaml
         toolbarButtons: create|delete
 
 mashscheme:
@@ -27,7 +27,7 @@ mashscheme:
     manage:
         form: $/eliseontwerpt/brouwerbouwer/models/mashscheme/fields.yaml
         list:  $/eliseontwerpt/brouwerbouwer/models/mashscheme/columns.yaml
-        
+
     view:
         list: $/eliseontwerpt/brouwerbouwer/models/mashscheme/columns.yaml
         toolbarButtons: create|delete

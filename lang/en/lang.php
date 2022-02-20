@@ -14,9 +14,9 @@
             'name' => 'Beerstyles',
             'description' => 'Overview of all beerstyles categorized by the BJCP',
         ],
-        'hops' => [
+        'listofhops' => [
             'name' => 'List of Hops',
-            'description' => 'Overview of all listed hops.',
+            'description' => 'Overview of all listed listofhops.',
         ],
         'brewday' => [
             'name' => 'Brewday',
@@ -47,7 +47,7 @@
         'name' => 'Fermentables',
         'description' => '',
     ],
-    'hops' => [
+    'listofhops' => [
         'name' => 'Hops',
         'description' => '',
     ],
@@ -193,7 +193,7 @@
     ],
     'dryhop' => [
         'name' => 'Dryhop',
-        'description' => 'Hopping technique where hops are added during 3rd or 4th day of fermentation.',
+        'description' => 'Hopping technique where listofhops are added during 3rd or 4th day of fermentation.',
     ],
     'brewday' => [
         'name' => 'Brewday',
@@ -241,7 +241,7 @@
     ],
     'hoptype' => [
         'name' => 'Type of Hop',
-        'description' => 'Hop Flowers of Hop pellets? This has influence on the amount of hops needed.',
+        'description' => 'Hop Flowers of Hop pellets? This has influence on the amount of listofhops needed.',
     ],
     'overall_impression' => [
         'name' => 'Overall',
