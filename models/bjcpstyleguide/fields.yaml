@@ -7,24 +7,6 @@ fields:
         label: Name
         span: auto
         type: text
-    style_history:
-        label: 'eliseontwerpt.brouwerbouwer::lang.style_history.name'
-        nameFrom: value
-        descriptionFrom: description
-        span: left
-        type: relation
-    origin:
-        label: 'eliseontwerpt.brouwerbouwer::lang.origin.name'
-        nameFrom: value
-        descriptionFrom: description
-        span: left
-        type: relation
-    style_family:
-        label: 'eliseontwerpt.brouwerbouwer::lang.style_family.name'
-        nameFrom: value
-        descriptionFrom: description
-        span: left
-        type: relation
 tabs:
     fields:
         overall_impression:
@@ -33,6 +15,19 @@ tabs:
             span: auto
             type: textarea
             comment: 'eliseontwerpt.brouwerbouwer::lang.overall_impression.description'
+            tab: 'eliseontwerpt.brouwerbouwer::lang.overall_impression.name'
+        photos:
+            label: 'File upload'
+            mode: image
+            imageWidth: '800'
+            imageHeight: '800'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: png
+            maxFiles: '1'
+            span: auto
+            type: fileupload
             tab: 'eliseontwerpt.brouwerbouwer::lang.overall_impression.name'
         aroma:
             label: 'eliseontwerpt.brouwerbouwer::lang.aroma.name'
@@ -95,7 +90,7 @@ tabs:
             type: taglist
             comment: 'eliseontwerpt.brouwerbouwer::lang.commercial_examples.description'
             tab: 'eliseontwerpt.brouwerbouwer::lang.commercial_examples.name'
-        notes:
+        tags:
             label: 'eliseontwerpt.brouwerbouwer::lang.notes.name'
             size: large
             span: auto

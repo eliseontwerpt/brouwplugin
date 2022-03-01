@@ -12,12 +12,8 @@ use October\Rain\Database\Collection;
 class ListOfHops extends AbstractComponent
 {
 
-    protected const NUMBER_OF_COLUMNS = 4;
+    protected const NUMBER_OF_COLUMNS = 1;
     protected const SORT_DEFAULT = 'variety';
-    protected const SORTING_OPTIONS = [
-        'id' => 'ID',
-        'variety' => 'Variety',
-    ];
 
     protected $properties = [];
     protected string $model;
@@ -44,7 +40,7 @@ class ListOfHops extends AbstractComponent
 
     public function hops(): Collection
     {
-        return $this->getModelData();
+        return $this->getModelData();;
     }
 
     public function variety(): Collection

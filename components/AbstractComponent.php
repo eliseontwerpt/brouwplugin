@@ -6,6 +6,7 @@ namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Cms\Classes\CodeBase;
 use Cms\Classes\ComponentBase;
+use EliseOntwerpt\Brouwerbouwer\Services\RelationParserService;
 use JetBrains\PhpStorm\ArrayShape;
 use October\Rain\Database\Collection;
 
@@ -14,17 +15,19 @@ abstract class AbstractComponent extends ComponentBase
 
     protected const NUMBER_OF_COLUMNS = 1;
     protected const SORT_DEFAULT = 'id';
-    protected const SORTING_OPTIONS = [
-        'id'=>'Id',
-    ];
 
     protected $properties = [];
     protected string $model;
+    /**
+     * @var RelationParserService
+     */
+    protected RelationParserService $relationParser;
 
-    public function __construct(CodeBase $cmsObject = null, $properties = [])
+    public function __construct(CodeBase $cmsObject = null, $properties = [], )
     {
         parent::__construct($cmsObject, $properties);
         $this->properties = $properties;
+        $this->relationParser = new RelationParserService();
         $this->model = '';
     }
 
@@ -44,13 +47,13 @@ abstract class AbstractComponent extends ComponentBase
         return [
             'sorting' => [
                 'title' => 'Sort on',
-                'type' => 'dropdown',
+                'type' => 'set',
                 'default' => static::SORT_DEFAULT,
             ],
             'direction' => [
                 'title' => 'Direction',
                 'type'  => 'dropdown',
-                'default' => 'asc'
+                'default' => 'Ascending'
             ],
             'numberOfItems' => [
                 'title' => 'Number of items',
@@ -61,11 +64,16 @@ abstract class AbstractComponent extends ComponentBase
                 'validationMessage' => 'The Number of items property can contain only numeric symbols'
             ],
         ];
-
     }
 
-    public function getSortingOptions(): array {
-        return static::SORTING_OPTIONS;
+    public function getSortingOptions(): array
+    {
+        $relationData = $this->relationParser->getSortingOptions($this->model);
+
+        $values = array_map('ucfirst', $relationData);
+        $combinedValues = array_combine($relationData, preg_replace('/_/', ' ', $values));
+
+        return $combinedValues;
     }
 
     #[ArrayShape(['asc' => "string", 'desc' => "string"])] public function getDirectionOptions(): array
@@ -81,14 +89,21 @@ abstract class AbstractComponent extends ComponentBase
         $sortOn = $this->param('sorteer');
         $filter = $this->param('filteren');
         $numberOfItems = $this->property('numberOfItems');
-        $sortingOrientation = $this->property('sorting');
 
         if ($numberOfItems === null || $numberOfItems <= 0) {
             $numberOfItems = $this->model::count();
         }
 
         if ($sortOn === null) {
-            return $this->model::orderBy($sortingOrientation)->get();
+            return $this->model::orderBy('id')->get();
+        }
+
+        if (str_contains($sortOn, '.')) {
+            $splitRelationField = explode('.' ,$sortOn);
+            $relation = $splitRelationField[0];
+            $field = $splitRelationField[1];
+            $collection = $this->model::all();
+            return $collection;
         }
 
         if ($filter === null) {
@@ -96,27 +111,41 @@ abstract class AbstractComponent extends ComponentBase
         }
 
         $result = $this->model::Where($sortOn, $filter)
-            ->orderBy($sortingOrientation)
+            ->orderBy($sortOn)
             ->get();
 
         if ($result === null) {
-            return $this->model::orderBy($sortingOrientation)->get();
+            return $this->model::orderBy('id')->get();
         }
 
         return $result;
     }
+    function getRelationElement($a, $b){
 
+    }
     public function getSingleItem(): Collection
     {
-        return $this->model::where('id', $this->param('id') )->orderBy($this->property('sorting'))->get();
+        return $this->model::where('id', $this->param('id') )->get();
     }
 
-    public function getFilterFields(): array
+    public function getSortingFields(): array
     {
-        $keys = array_keys($this->model::all()->find(1)->getAttributes());
-        $values = array_map('ucfirst', $keys);
-        $combinedValues = array_combine($keys, preg_replace('/_/', ' ', $values));
-
-        return array_slice($combinedValues, 0, self::NUMBER_OF_COLUMNS);
+        $filterList = $this->property('sorting');
+        if ($filterList === null || !is_array($filterList)) {
+            return [];
+        }
+        $filterLabels = array_map('ucfirst', $filterList);
+        return array_combine($filterList, preg_replace('/_/', ' ', $filterLabels));
     }
+
+    protected function getModelDataWithRelationSorting(string $relationField): Collection
+    {
+        $splitRelationField = explode('.' ,$relationField);
+        $relation = $splitRelationField[0];
+        $field = $splitRelationField[1];
+        $models = $this->model::all();
+        $model = $models[1];
+        return $model->$relation()->orderBy($field, 'asc')->get();
+    }
+
 }

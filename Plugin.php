@@ -1,5 +1,6 @@
 <?php namespace EliseOntwerpt\Brouwerbouwer;
 
+use EliseOntwerpt\Brouwerbouwer\Components\BjcpCategoriesGuide;
 use EliseOntwerpt\Brouwerbouwer\Components\BjcpStyleGuide;
 use EliseOntwerpt\Brouwerbouwer\Components\Brewday;
 use EliseOntwerpt\Brouwerbouwer\Components\ListOfHops;
@@ -21,7 +22,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            BjcpStyleGuide::class => 'BeerStyles',
+            BjcpCategoriesGuide::class => 'BJCPBeerCategories',
+            BjcpStyleGuide::class => 'BJCPBeerStyles',
             ListOfHops::class => 'Hops',
             Brewday::class => 'BrewDay',
             Recipes::class => 'BrewRecipes',

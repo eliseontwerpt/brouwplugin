@@ -1,0 +1,11 @@
+name: BjcpCategoriesGuide
+modelClass: EliseOntwerpt\Brouwerbouwer\Models\BjcpCategoriesGuide
+form: $/eliseontwerpt/brouwerbouwer/models/bjcpcategoriesguide/fields.yaml
+defaultRedirect: eliseontwerpt/brouwerbouwer/bjcpcategoriesguide
+create:
+    redirect: 'eliseontwerpt/brouwerbouwer/bjcpcategoriesguide/update/:id'
+    redirectClose: eliseontwerpt/brouwerbouwer/bjcpcategoriesguide
+update:
+    redirect: eliseontwerpt/brouwerbouwer/bjcpcategoriesguide
+    redirectClose: eliseontwerpt/brouwerbouwer/bjcpcategoriesguide
+preview: {  }

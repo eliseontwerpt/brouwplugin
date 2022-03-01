@@ -1,5 +1,5 @@
 plugin:
-    name: 'Brouwplugin'
+    name: Brouwplugin
     description: 'eliseontwerpt.brouwerbouwer::lang.plugin.description'
     author: EliseOntwerpt
     icon: oc-icon-beer
@@ -30,11 +30,20 @@ navigation:
                 label: 'Brewing gear'
                 url: eliseontwerpt/brouwerbouwer/gear
                 icon: icon-trash-o
-            side-menu-item4:
-                label: 'Bjcp Style Guide'
-                url: eliseontwerpt/brouwerbouwer/bjcpstyleguide
-                icon: icon-sitemap
             side-menu-item6:
                 label: Waterprofiles
                 url: eliseontwerpt/brouwerbouwer/waterprofiles
                 icon: icon-tint
+    main-menu-item2:
+        label: 'Beer Categories'
+        url: eliseontwerpt/brouwerbouwer/bjcpcategoriesguide
+        icon: icon-beer
+        sideMenu:
+            side-menu-item2:
+                label: 'Beer Categories'
+                url: eliseontwerpt/brouwerbouwer/bjcpcategoriesguide
+                icon: icon-sitemap
+            side-menu-item:
+                label: 'Beer Styles'
+                url: eliseontwerpt/brouwerbouwer/bjcpstyleguide
+                icon: icon-sitemap

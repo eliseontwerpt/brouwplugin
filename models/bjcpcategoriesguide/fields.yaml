@@ -1,0 +1,22 @@
+fields:
+    name:
+        label: Name
+        span: full
+        required: 1
+        type: text
+    id:
+        label: Id
+        span: auto
+        required: 1
+        type: number
+    categorie_id:
+        label: 'Categorie id'
+        span: auto
+        required: 1
+        type: number
+    description:
+        label: Description
+        size: huge
+        span: full
+        required: 1
+        type: markdown

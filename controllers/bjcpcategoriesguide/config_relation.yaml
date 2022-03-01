@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+bjcpstyleguide:
+    label: 'eliseontwerpt.brouwerbouwer::lang.bjcpstyleguide.name'
+    manage:
+        form: $/eliseontwerpt/brouwerbouwer/models/bjcpstyleguide/fields.yaml
+        list:  $/eliseontwerpt/brouwerbouwer/models/bjcpstyleguide/columns.yaml
+
+    view:
+        list: $/eliseontwerpt/brouwerbouwer/models/bjcpstyleguide/columns.yaml
+        toolbarButtons: create|delete
+

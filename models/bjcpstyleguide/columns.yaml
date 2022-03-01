@@ -47,3 +47,8 @@ columns:
     bugu_max:
         label: bugu_max
         type: text
+    bjcp_category:
+        label: 'Bcjp Category'
+        type: text
+        select: name
+        relation: bjcpCategoriesGuide

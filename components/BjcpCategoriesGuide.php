@@ -6,12 +6,12 @@ namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Cms\Classes\CodeBase;
 use Cms\Classes\Page;
-use EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide as BjcpStyleGuideModel;
+use EliseOntwerpt\Brouwerbouwer\Models\BjcpCategoriesGuide as BjcpCategoriesGuideModel;
 use October\Rain\Database\Collection;
 
-class BjcpStyleGuide extends AbstractComponent
+class BjcpCategoriesGuide extends AbstractComponent
 {
-    protected const NUMBER_OF_COLUMNS = 16;
+    protected const NUMBER_OF_COLUMNS = 2;
     protected const SORT_DEFAULT = 'id';
 
     protected $properties = [];
@@ -21,13 +21,13 @@ class BjcpStyleGuide extends AbstractComponent
     {
         parent::__construct($cmsObject, $properties);
         $this->properties = $properties;
-        $this->model = BjcpStyleGuideModel::class;
+        $this->model = BjcpCategoriesGuideModel::class;
     }
 
     public function componentDetails()
     {
         return [
-            'name' => 'eliseontwerpt.brouwerbouwer::lang.component.styles.name',
+            'name' => 'Bjcp Categories',
             'description' => 'eliseontwerpt.brouwerbouwer::lang.component.styles.description'
         ];
     }
@@ -37,13 +37,15 @@ class BjcpStyleGuide extends AbstractComponent
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
     }
 
-    public function beerStyles(): Collection
+    public function beercategories(): Collection
     {
         return $this->getModelData();
+
     }
 
-    public function beerstyle(): Collection
+    public function beercategory(): Collection
     {
         return $this->getSingleItem();
     }
 }
+

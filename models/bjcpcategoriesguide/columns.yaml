@@ -1,0 +1,18 @@
+columns:
+    id:
+        label: id
+        type: number
+    categorie_id:
+        label: categorie_id
+        type: number
+    name:
+        label: name
+        type: text
+    description:
+        label: description
+        type: text
+    Style:
+        label: style
+        type: text
+        select: name
+        relation: bjcpStyleGuide

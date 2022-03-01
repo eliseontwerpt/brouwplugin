@@ -24,12 +24,16 @@ class BjcpStyleGuide extends Model
     public $rules = [
     ];
 
-    public $hasMany =[
-        'values' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpValues',
-            'key' => 'sub_categorie_id',
-            'otherKey'=>'categorie_id'
+    public $hasOne =[
+        'bjcpCategoriesGuide' => [
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpCategoriesGuide',
+            'key' => 'categorie_id',
+            'otherKey'=>'sub_categorie_id'
         ]
+    ];
+
+    public $attachMany = [
+        'photos' => 'System\Models\File'
     ];
 
 }

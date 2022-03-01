@@ -5,10 +5,10 @@ use Model;
 /**
  * Model
  */
-class BjcpValues extends Model
+class BjcpCategoriesGuide extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -19,11 +19,19 @@ class BjcpValues extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'eliseontwerpt_brouwerbouwer_bjcp_data';
+    public $table = 'eliseontwerpt_brouwerbouwer_bjcp_categories';
 
     /**
      * @var array Validation rules
      */
     public $rules = [
+    ];
+
+    public $hasMany =[
+        'bjcpStyleGuide' => [
+            'EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide',
+            'key' => 'sub_categorie_id',
+            'otherKey'=>'categorie_id'
+        ]
     ];
 }

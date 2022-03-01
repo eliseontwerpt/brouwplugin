@@ -3,7 +3,7 @@
         'name' => 'BrewerBuilder',
         'description' => 'Brewerbuilder is a plugin that supports homebrewers with building and maintaining there own brew recipes.',
     ],
-    'component' =>[
+    'component' => [
         'name' => 'BrewerComponent',
         'description' => 'Component for managing brew recipes and brewdays.',
         'recipes' => [
@@ -283,4 +283,5 @@
         'name' => 'Notes',
         'description' => 'Characteristic ingredients of the beerstyle',
     ],
+    'bjcpCategories' => 'BjcpCategories',
 ];
