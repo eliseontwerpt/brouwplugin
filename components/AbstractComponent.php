@@ -102,8 +102,7 @@ abstract class AbstractComponent extends ComponentBase
             $splitRelationField = explode('.' ,$sortOn);
             $relation = $splitRelationField[0];
             $field = $splitRelationField[1];
-            $collection = $this->model::all();
-            return $collection;
+            return $this->sortCollectionOnRelation($relation, $field);
         }
 
         if ($filter === null) {
@@ -138,14 +137,15 @@ abstract class AbstractComponent extends ComponentBase
         return array_combine($filterList, preg_replace('/_/', ' ', $filterLabels));
     }
 
-    protected function getModelDataWithRelationSorting(string $relationField): Collection
+    protected function sortCollectionOnRelation(string $relation, string $fieldName): Collection
     {
-        $splitRelationField = explode('.' ,$relationField);
-        $relation = $splitRelationField[0];
-        $field = $splitRelationField[1];
-        $models = $this->model::all();
-        $model = $models[1];
-        return $model->$relation()->orderBy($field, 'asc')->get();
+        $collection = $this->model::all();
+        $sortedRelations = $collection->pluck($relation)->sortBy($fieldName)->all();
+        $pluckedCollection = new Collection();
+        foreach($sortedRelations as $index1 => $model1) {
+            $model = $collection[$index1];
+            $pluckedCollection->add($model);
+        }
+        return $pluckedCollection;
     }
-
 }
