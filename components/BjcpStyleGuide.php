@@ -7,6 +7,7 @@ namespace EliseOntwerpt\Brouwerbouwer\Components;
 use Cms\Classes\CodeBase;
 use Cms\Classes\Page;
 use EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide as BjcpStyleGuideModel;
+use EliseOntwerpt\Brouwerbouwer\Services\SortingParserService;
 use October\Rain\Database\Collection;
 
 class BjcpStyleGuide extends AbstractComponent
@@ -35,15 +36,5 @@ class BjcpStyleGuide extends AbstractComponent
     public function getBjcpStyleGuidePageOptions()
     {
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
-    }
-
-    public function beerStyles(): Collection
-    {
-        return $this->getModelData();
-    }
-
-    public function beerstyle(): Collection
-    {
-        return $this->getSingleItem();
     }
 }

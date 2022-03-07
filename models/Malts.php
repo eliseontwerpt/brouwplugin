@@ -39,12 +39,12 @@ class Malts extends Model
 
     public $hasOne =[
         'recipe' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',
+            'EliseOntwerpt\Brouwerbouwer\Models\Recipes',
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
         'brewday' => [
-                'Eliseontwerpt\Brouwerbouwer\Models\Brewday',
+                'EliseOntwerpt\Brouwerbouwer\Models\Brewday',
                 'key' => 'recipe_id',
                 'otherKey'=>'recipe_id'
         ],

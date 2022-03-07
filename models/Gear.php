@@ -8,7 +8,7 @@ use Model;
 class Gear extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -21,12 +21,12 @@ class Gear extends Model
      */
     public $table = 'eliseontwerpt_brouwerbouwer_brewing_gear';
 
-    public $belongsTo =[  
+    public $belongsTo =[
         'waterprofile' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\WaterProfiles',            
+            'EliseOntwerpt\Brouwerbouwer\Models\WaterProfiles',
             'key' => 'waterprofile_id',
             'otherKey'=>'id'
-        ],    
+        ],
     ];
 
     /**

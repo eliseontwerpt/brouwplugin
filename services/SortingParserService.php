@@ -4,21 +4,28 @@ declare(strict_types = 1);
 
 namespace EliseOntwerpt\Brouwerbouwer\Services;
 
-use Model;
-use October\Rain\Database\Collection;
+use October\Rain\Database\Model;
 
-class RelationParserService
+class SortingParserService
 {
 
-    protected $intialModelName = '';
+    /**
+     * @var string[]
+     */
+    public array $parsedModels = [];
 
-    public function getSortingOptions(string $modelName): array
+    public function getSortingOptions(string $modelName, bool $nesting = false): array
     {
-        if ($this->intialModelName === '') {
-            $this->intialModelName = $modelName;
+        if (in_array($modelName, $this->parsedModels)) {
+            return [];
         }
+
+        $this->parsedModels[] = $modelName;
         $model = $modelName::find(1);
-        $modelData = $this->getModelData( $model);
+        if ($model === null) {
+            return [];
+        }
+        $modelData = $this->getModelData($model);
         $relationData = $this->getRelationData($model);
         if (count($relationData) > 1) {
             $relationData = $this->flattenRelationData($relationData);
@@ -38,11 +45,12 @@ class RelationParserService
         return $values;
     }
 
-    public function getRelationData(\Model $model): array
+    public function getRelationData(\Model $model): ?array
     {
         $relationDefinitions = $model::find(1)->getRelationDefinitions();
         $values = [];
         foreach ($relationDefinitions as $key => $relationDefinition) {
+
             if (count($relationDefinition) > 0) {
                 $values = array_merge($values, $this->getRelationDataFields($relationDefinition));
             }
@@ -54,12 +62,12 @@ class RelationParserService
     {
         $attributes = [];
         foreach ($relation as $key => $relationModel) {
-        $modelName  = reset($relationModel);
-        if ($modelName === $this->intialModelName || !$modelName) {
-            return [];
-        }
-        $attributes = [
-                $key => $this->getSortingOptions($modelName)
+            $modelName  = reset($relationModel);
+            if (!$modelName) {
+                return [];
+            }
+            $attributes = [
+                    $key => $this->getSortingOptions($modelName, true)
             ];
         }
         return $attributes;
@@ -68,7 +76,7 @@ class RelationParserService
     protected function getModelData(\Model $model): array
     {
         $modelData = array_keys($model->getAttributes());
-        $values = array_map('ucfirst', $modelData);
+        $values = array_map('lcfirst', $modelData);
         $result = array_combine(preg_replace('/_/', ' ', $values), $modelData);
         return $result;
     }

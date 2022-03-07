@@ -6,7 +6,7 @@ namespace EliseOntwerpt\Brouwerbouwer\Components;
 
 use Cms\Classes\CodeBase;
 use Cms\Classes\ComponentBase;
-use EliseOntwerpt\Brouwerbouwer\Services\RelationParserService;
+use EliseOntwerpt\Brouwerbouwer\Services\SortingParserService;
 use JetBrains\PhpStorm\ArrayShape;
 use October\Rain\Database\Collection;
 
@@ -15,20 +15,21 @@ abstract class AbstractComponent extends ComponentBase
 
     protected const NUMBER_OF_COLUMNS = 1;
     protected const SORT_DEFAULT = 'id';
+    protected const ACCEPTED_FIELDTYPES = ['integer', 'double', 'string'];
 
     protected $properties = [];
     protected string $model;
-    /**
-     * @var RelationParserService
-     */
-    protected RelationParserService $relationParser;
 
-    public function __construct(CodeBase $cmsObject = null, $properties = [], )
+    /**
+     * @var SortingParserService
+     */
+    protected SortingParserService $sortingParser;
+
+    public function __construct(CodeBase $cmsObject = null, $properties = [])
     {
         parent::__construct($cmsObject, $properties);
         $this->properties = $properties;
-        $this->relationParser = new RelationParserService();
-        $this->model = '';
+        $this->sortingParser = new SortingParserService();
     }
 
     /**
@@ -68,12 +69,10 @@ abstract class AbstractComponent extends ComponentBase
 
     public function getSortingOptions(): array
     {
-        $relationData = $this->relationParser->getSortingOptions($this->model);
+        $sortingData = $this->sortingParser->getSortingOptions($this->model);
 
-        $values = array_map('ucfirst', $relationData);
-        $combinedValues = array_combine($relationData, preg_replace('/_/', ' ', $values));
-
-        return $combinedValues;
+        $values = array_map('ucfirst', $sortingData);
+        return array_combine($sortingData, preg_replace('/_/', ' ', $values));
     }
 
     #[ArrayShape(['asc' => "string", 'desc' => "string"])] public function getDirectionOptions(): array
@@ -84,7 +83,7 @@ abstract class AbstractComponent extends ComponentBase
         ];
     }
 
-    protected function getModelData(): Collection
+    public function getModelData(): Collection
     {
         $sortOn = $this->param('sorteer');
         $filter = $this->param('filteren');
@@ -95,6 +94,8 @@ abstract class AbstractComponent extends ComponentBase
         }
 
         if ($sortOn === null) {
+
+            $a = $this->model::orderBy('id')->get();
             return $this->model::orderBy('id')->get();
         }
 
@@ -119,9 +120,7 @@ abstract class AbstractComponent extends ComponentBase
 
         return $result;
     }
-    function getRelationElement($a, $b){
 
-    }
     public function getSingleItem(): Collection
     {
         return $this->model::where('id', $this->param('id') )->get();
@@ -147,5 +146,55 @@ abstract class AbstractComponent extends ComponentBase
             $pluckedCollection->add($model);
         }
         return $pluckedCollection;
+    }
+
+    public function getCategoryFields(): array
+    {
+        $sortingField = $this->getParamField();
+        if ($sortingField === null) {
+            return [];
+        }
+        $models = $this->model::all();
+        $values = [];
+        foreach($models as $model){
+            $field = $sortingField['field'];
+            if (array_key_exists('relation', $sortingField)){
+                $relation = lcfirst($sortingField['relation']);
+                if ($model->$relation !== null) {
+                    $fieldValue = $model->$relation->getAttribute($field);
+                    if (in_array(gettype($fieldValue), self::ACCEPTED_FIELDTYPES )) {
+                        $values[$model->id] = $fieldValue;
+                    }
+                }
+                continue;
+            }
+            $fieldValue = $model->$field;
+            if (in_array(gettype($fieldValue), self::ACCEPTED_FIELDTYPES )) {
+                $values[$model->id] = $fieldValue;
+            }
+        }
+
+        return $values;
+    }
+
+    protected function getParamField(): ?array
+    {
+        $value = $this->param('sorteer');
+        if ($value === null) {
+            return null;
+        }
+
+        $values = [
+            'field' => $value,
+        ];
+        if (str_contains($value, '.')) {
+            $splitValue = explode('.' ,$value);
+            $values = [
+                'relation' => $splitValue[0],
+                'field' => $splitValue[1],
+            ];
+        }
+
+        return $values;
     }
 }

@@ -51,3 +51,6 @@
 1.0.18:
     - 'Created seeder Brewing gear'
     - seeder_brewing_gear.php
+1.0.19:
+    - 'Updated table eliseontwerpt_brouwerbouwer_hop_adjunct_list'
+    - builder_table_update_eliseontwerpt_brouwerbouwer_hop_adjunct_list.php

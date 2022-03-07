@@ -9,7 +9,7 @@ use EliseOntwerpt\Brouwerbouwer\Classes\Hopprocessor;
 class Hops extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -28,17 +28,17 @@ class Hops extends Model
     public $rules = [
     ];
 
-    public $belongsTo =[ 
+    public $belongsTo =[
         'hop_list' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\ListOfHops',            
+            'EliseOntwerpt\Brouwerbouwer\Models\ListOfHops',
             'key' => 'hop_list_id',
             'otherKey'=>'id'
         ],
     ];
 
-    public $hasOne =[ 
+    public $hasOne =[
         'recipe' => [
-            'Eliseontwerpt\Brouwerbouwer\Models\Recipes',            
+            'EliseOntwerpt\Brouwerbouwer\Models\Recipes',
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
@@ -50,20 +50,20 @@ class Hops extends Model
 
     public function getGramsAttribute($value){
         $value = 0;
-        
+
         if (is_null($this->recipe) === false){
 
             $calculations = new Hopprocessor;
             $calculations->set_val(
                 array(  'alfaacid' => $this->alpha ,
-                        'volume' => $this->recipe->flameout_volume() , 
+                        'volume' => $this->recipe->flameout_volume() ,
                         'og' => $this->recipe->og,
                         'ibu' => $this->ibu,
                         'time' => $this->time )
-                );            
+                );
             return round($calculations->grams);
-            
-        }     
+
+        }
     }
 
     public function filterFields($fields, $context = null)
@@ -80,5 +80,5 @@ class Hops extends Model
             //$fields->grams->disabled = true;
             $fields->ibu->disabled = false;
         }
-    } 
+    }
 }

@@ -7,18 +7,13 @@ namespace EliseOntwerpt\Brouwerbouwer\Components;
 use Cms\Classes\CodeBase;
 use Cms\Classes\Page;
 use EliseOntwerpt\Brouwerbouwer\Models\Recipes as RecipesModel;
-use October\Rain\Database\Collection;
+use EliseOntwerpt\Brouwerbouwer\Services\SortingParserService;
 
 class Recipes extends AbstractComponent
 {
 
-    protected const NUMBER_OF_COLUMNS = 3;
+    protected const NUMBER_OF_COLUMNS = 16;
     protected const SORT_DEFAULT = 'id';
-    protected const SORTING_OPTIONS = [
-        'id'=>'Id',
-        'bjcp_id'=>'Style',
-        'name' => 'Name'
-    ];
 
     protected $properties = [];
     protected string $model;
@@ -42,23 +37,4 @@ class Recipes extends AbstractComponent
     {
         return Page::sortBy('baseFileName')->lists('baseFileName', 'baseFileName');
     }
-
-    public function recipes(): Collection
-    {
-        return $this->getModelData();
-    }
-
-    public function recipe(): Collection
-    {
-        return $this->getSingleItem();
-    }
-
-
-    public function bugu(): float
-    {
-        /** @var RecipesModel $recipe */
-        $recipe = $this->getSingleItem()->first();
-        return (float)$recipe->og;
-    }
-
 }
