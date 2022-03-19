@@ -1,24 +1,14 @@
 <?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
-use Flash;
 use Db;
 use EliseOntwerpt\Brouwerbouwer\Classes\Waterprofiel;
 use EliseOntwerpt\Brouwerbouwer\Classes\Calculations;
 use EliseOntwerpt\Brouwerbouwer\Classes\Maltsprocessor;
 
-/**
- * Model
- */
-
 class Recipes extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
-     */
 
     public $timestamps = false;
     /**
@@ -34,31 +24,31 @@ class Recipes extends Model
 
     public $hasMany =[
         'malts' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\Malts',
+            Malts::class,
             'key'=>'recipe_id'
         ],
-        'listofhops' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\Hops',
+        'listOfHops' => [
+            Hops::class,
             'key' => 'recipe_id'
         ],
-        'mashscheme' =>[
-            'EliseOntwerpt\Brouwerbouwer\Models\MashScheme',
+        'mashScheme' =>[
+            MashScheme::class,
             'key' => 'recipe_id'
         ],
     ];
 
     public $belongsTo =[
         'gear' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\Gear'
+            Gear::class
         ],
         'bjcp' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide',
+            BjcpStyleGuide::class,
             'key' => 'bjcp_id',
             'otherKey'=>'id'
         ],
-        'waterprofile' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\WaterProfiles',
-            'key' => 'waterprofile_id',
+        'waterProfiles' => [
+            WaterProfiles::class,
+            'key' => 'waterProfiles_id',
             'otherKey'=>'id'
         ],
     ];
@@ -67,103 +57,109 @@ class Recipes extends Model
  * FIELD.YAML attributes
  */
 
-public function getPlatoAttribute($value){
-    return Calculations::SpecifGravity2pPlato($this->og);
-}
-
-public function getTotalPercentageAttribute($value){
-    return $this->gettotalpercentage();
-}
-
-public function getIBUAttribute($value){
-    $value = 0;
-    foreach ($this->hops as $hop) {
-        $value += $hop->ibu;
+    public function getPlatoAttribute($value): float
+    {
+        return Calculations::SpecifGravity2pPlato($this->og);
     }
-    return $value;
-}
 
-public function getEBCAttribute($value){
-
-    $mp = new Maltsprocessor($this);
-    return $mp->calculate_ebc();
-}
-
-public function getmashwaterAttribute($value){
-    $value = 0;
-    $value = $this->calculate_mash_water();
-    return $value;
-}
-
-public function getspargewaterAttribute($value){
-    $value = 0;
-    $value = $this->calculate_sparge_water();
-    return $value;
-
-}
-
-public function getSgBoilAttribute($value){
-    $value = 0;
-    if ($this->spargewater + $this->mashwater >0 ){
-        $sparge = ($this->og -1) / ($this->spargewater + $this->mashwater - ($this->mash_loss()/1000));
-        $value = ($sparge * $this->flameout_volume()) +1;
+    public function getTotalPercentageAttribute($value){
+        return $this->gettotalpercentage();
     }
-    return round($value, 3) ;
-}
 
-public function getSgMashAttribute($value){
-    $value = 0;
-    if ($this->mashwater > 0 ){
-        $mash = ($this->og -1) / $this->mashwater;
-        $value = ($mash * $this->flameout_volume()) +1;
+    public function getIBUAttribute($value): int
+    {
+        $value = 0;
+        if ($this->hops === null) {
+            return $value;
+        }
+        foreach ($this->hops as $hop) {
+            $value += $hop->ibu;
+        }
+        return $value;
     }
-    return round($value, 3) ;
-}
 
-public function getCalciumSulfaatAttribute($value){
-    return round($this->waterprofile("Ca", "SO4"), 2) ;
-}
+    public function getEBCAttribute($value): int
+    {
 
-public function getKaliumChlorideAttribute($value){
-    return round($this->waterprofile("K", "Cl"), 2) ;
-}
-
-public function getBakingSodaAttribute($value){
-    return round($this->waterprofile("Na", "HCO3"), 2) ;
-}
-
-public function gettotalpercentage(){
-    $value = 0;
-    $value = Calculations::mathAddingUp($this->malts, 'percentage');
-    return $value;
-}
-
-public function getSumAttribute($value){
-    return $this->spargewater + $this->mashwater;
-}
-
-public function get_waterprofiel(){
-    if (isset($this->waterprofile) == true) {
-        return $this->waterprofile;
+        $mp = new Maltsprocessor($this);
+        return $mp->calculate_ebc();
     }
-}
 
-public function get_waterprofiel_gear(){
-    if (isset($this->gear->waterprofile) == true) {
-        return $this->gear->waterprofile;
+    public function getmashwaterAttribute($value){
+        $value = 0;
+        $value = $this->calculate_mash_water();
+        return $value;
     }
-}
 
-private function waterprofile($var1, $var2){
-    if (isset($this->waterprofile) == true) {
-        $calc = new Waterprofiel($this);
-        return $calc->getMolElement($var1, $var2);
+    public function getspargewaterAttribute($value){
+        $value = 0;
+        $value = $this->calculate_sparge_water();
+        return $value;
+
     }
-    return 0;
-}
-/**
- * BREWING CALCULATIONS
- */
+
+    public function getSgBoilAttribute($value){
+        $value = 0;
+        if ($this->spargewater + $this->mashwater >0 ){
+            $sparge = ($this->og -1) / ($this->spargewater + $this->mashwater - ($this->mash_loss()/1000));
+            $value = ($sparge * $this->flameout_volume()) +1;
+        }
+        return round($value, 3) ;
+    }
+
+    public function getSgMashAttribute($value){
+        $value = 0;
+        if ($this->mashwater > 0 ){
+            $mash = ($this->og -1) / $this->mashwater;
+            $value = ($mash * $this->flameout_volume()) +1;
+        }
+        return round($value, 3) ;
+    }
+
+    public function getCalciumSulfaatAttribute($value){
+        return round($this->waterprofile("Ca", "SO4"), 2) ;
+    }
+
+    public function getKaliumChlorideAttribute($value){
+        return round($this->waterprofile("K", "Cl"), 2) ;
+    }
+
+    public function getBakingSodaAttribute($value){
+        return round($this->waterprofile("Na", "HCO3"), 2) ;
+    }
+
+    public function gettotalpercentage(){
+        $value = 0;
+        $value = Calculations::mathAddingUp($this->malts, 'percentage');
+        return $value;
+    }
+
+    public function getSumAttribute($value){
+        return $this->spargewater + $this->mashwater;
+    }
+
+    public function get_waterprofiel(){
+        if (isset($this->waterProfiles) == true) {
+            return $this->waterProfiles;
+        }
+    }
+
+    public function get_waterprofiel_gear(){
+        if (isset($this->gear->waterProfiles) == true) {
+            return $this->gear->waterProfiles;
+        }
+    }
+
+    private function waterProfiles($var1, $var2){
+        if (isset($this->waterProfiles) == true) {
+            $calc = new Waterprofiel($this);
+            return $calc->getMolElement($var1, $var2);
+        }
+        return 0;
+    }
+    /**
+     * BREWING CALCULATIONS
+     */
     public function rgb($palette = null){
         if (isset($this->ebc)==true){
             if (Db::table('eliseontwerpt_brouwerbouwer_color_palette')->where('ebc', $this->ebc)->exists()){
@@ -226,7 +222,5 @@ private function waterprofile($var1, $var2){
             return 0;
         }
     }
-
-
 }
 

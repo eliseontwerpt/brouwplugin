@@ -1,7 +1,7 @@
 fields:
     hop_list:
         label: 'eliseontwerpt.brouwerbouwer::lang.name.name'
-        nameFrom: variety
+        nameFrom: name
         descriptionFrom: description
         span: auto
         type: relation

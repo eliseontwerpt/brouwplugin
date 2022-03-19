@@ -26,7 +26,7 @@ class BjcpStyleGuide extends Model
 
     public $hasOne =[
         'bjcpCategoriesGuide' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpCategoriesGuide',
+            BjcpCategoriesGuide::class,
             'key' => 'categorie_id',
             'otherKey'=>'sub_categorie_id'
         ]

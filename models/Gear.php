@@ -23,7 +23,7 @@ class Gear extends Model
 
     public $belongsTo =[
         'waterprofile' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\WaterProfiles',
+            WaterProfiles::class,
             'key' => 'waterprofile_id',
             'otherKey'=>'id'
         ],

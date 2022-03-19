@@ -1,7 +1,7 @@
 <?php namespace EliseOntwerpt\Brouwerbouwer\Models;
 
 use Model;
-use EliseOntwerpt\Brouwerbouwer\Classes\Hopprocessor;
+use EliseOntwerpt\Brouwerbouwer\Classes\HopProcessor;
 
 /**
  * Model
@@ -10,12 +10,7 @@ class Hops extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
-     */
     public $timestamps = false;
-
 
     /**
      * @var string The database table used by the model.
@@ -30,7 +25,7 @@ class Hops extends Model
 
     public $belongsTo =[
         'hop_list' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\ListOfHops',
+            ListOfHops::class,
             'key' => 'hop_list_id',
             'otherKey'=>'id'
         ],
@@ -38,7 +33,7 @@ class Hops extends Model
 
     public $hasOne =[
         'recipe' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\Recipes',
+            Recipes::class,
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
@@ -51,17 +46,16 @@ class Hops extends Model
     public function getGramsAttribute($value){
         $value = 0;
 
-        if (is_null($this->recipe) === false){
+        if ($this->recipe !== null){
 
-            $calculations = new Hopprocessor;
-            $calculations->set_val(
-                array(  'alfaacid' => $this->alpha ,
-                        'volume' => $this->recipe->flameout_volume() ,
-                        'og' => $this->recipe->og,
-                        'ibu' => $this->ibu,
-                        'time' => $this->time )
-                );
-            return round($calculations->grams);
+            $hopProcessor = new Hopprocessor(
+                $this->alpha ,
+                $this->recipe->flameout_volume(),
+                $this->recipe->og,
+                $this->ibu,
+                $this->time
+            );
+            return round($hopProcessor->getGrams());
 
         }
     }

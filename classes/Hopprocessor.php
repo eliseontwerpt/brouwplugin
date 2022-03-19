@@ -4,16 +4,39 @@ use Eliseontwerpt\Brouwerbouwer\Models\Hops;
 
 class Hopprocessor {
 
+    protected float $alfaAcid;
+    protected float $volume;
+    protected float $og;
+    protected int $ibu;
+    protected int $time;
+
+    /**
+     * @param float $alfaAcid
+     * @param float $volume
+     * @param float $og
+     * @param int $ibu
+     * @param int $time
+     */
+    public function __construct(float $alfaAcid, float $volume, float $og, int $ibu, int $time)
+    {
+        $this->alfaAcid = $alfaAcid;
+        $this->volume = $volume;
+        $this->og = $og;
+        $this->ibu = $ibu;
+        $this->time = $time;
+    }
+
+
     public function __Get($name){
         try {
             return $this->$name();
         }
             catch (Throwable $t){
                 return 0;
-        }        
-    }    
+        }
+    }
 
-    public function set_val($arr){      
+    public function set_val($arr){
         try {
             foreach ($arr as $keys => $val){
                 if ($val == 0){
@@ -26,8 +49,8 @@ class Hopprocessor {
         }
     }
 
-    private function grams(){    
-        return ($this->volume * $this->C() * $this->ibu) / ( $this->U() * ($this->alfaacid / 100) * 1000) ;
+    private function grams(){
+        return ($this->volume * $this->C() * $this->ibu) / ( $this->U() * ($this->alfaAcid / 100) * 1000) ;
     }
 
     private function ibu(){
@@ -41,7 +64,7 @@ class Hopprocessor {
             return 1;
         }
     }
-    
+
     /** Bigness Factor */
     private function fG(){
         return 1.65 * pow(0.000125,  ($this->og - 1));

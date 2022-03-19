@@ -3,7 +3,7 @@
 use Model;
 use Flash;
 use EliseOntwerpt\Brouwerbouwer\Classes\Maltsprocessor;
-//use Eliseontwerpt\Brouwerbouwer\Models\RecipesComponent;
+
 /**
  * Model
  */
@@ -31,7 +31,7 @@ class Malts extends Model
 
     public $belongsTo =[
         'malt_list' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\ListOfMalts',
+            ListOfMalts::class,
             'key' => 'malt_list_id',
             'otherKey'=>'id'
         ]
@@ -39,12 +39,12 @@ class Malts extends Model
 
     public $hasOne =[
         'recipe' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\Recipes',
+            Recipes::class,
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
         'brewday' => [
-                'EliseOntwerpt\Brouwerbouwer\Models\Brewday',
+                Brewday::class,
                 'key' => 'recipe_id',
                 'otherKey'=>'recipe_id'
         ],

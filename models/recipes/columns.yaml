@@ -10,8 +10,8 @@ columns:
         type: text
         select: name
         relation: bjcp
-    waterprofile:
-        label: waterprofile
+    waterProfiles:
+        label: waterprofiles
         type: number
         select: name
-        relation: waterprofile
+        relation: waterProfiles

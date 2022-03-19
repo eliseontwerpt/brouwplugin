@@ -1,6 +1,6 @@
 fields:
-    variety:
-        label: 'eliseontwerpt.brouwerbouwer::lang.variety.name'
+    name:
+        label: Name
         span: left
         required: 1
         type: text

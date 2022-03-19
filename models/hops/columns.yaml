@@ -1,8 +1,8 @@
 columns:
-    variety:
+    name:
         label: 'eliseontwerpt.brouwerbouwer::lang.name.name'
         type: text
-        select: variety
+        select: name
         relation: hop_list
     alpha:
         label: 'eliseontwerpt.brouwerbouwer::lang.alpha-acid.name'

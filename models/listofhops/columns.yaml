@@ -1,6 +1,6 @@
 columns:
-    variety:
-        label: variety
+    name:
+        label: Name
         type: text
         searchable: true
     alpha_min:

@@ -29,7 +29,7 @@ class BjcpCategoriesGuide extends Model
 
     public $hasMany =[
         'bjcpStyleGuide' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\BjcpStyleGuide',
+            BjcpStyleGuide::class,
             'key' => 'sub_categorie_id',
             'otherKey'=>'categorie_id'
         ]

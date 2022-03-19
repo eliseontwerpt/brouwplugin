@@ -1,5 +1,5 @@
 name: WaterProfiles
-modelClass: Eliseontwerpt\Brouwerbouwer\Models\WaterProfiles
+modelClass: EliseOntwerpt\Brouwerbouwer\Models\WaterProfiles
 form: $/eliseontwerpt/brouwerbouwer/models/waterprofiles/fields.yaml
 defaultRedirect: eliseontwerpt/brouwerbouwer/waterprofiles
 create:
@@ -8,4 +8,3 @@ create:
 update:
     redirect: eliseontwerpt/brouwerbouwer/waterprofiles
     redirectClose: eliseontwerpt/brouwerbouwer/waterprofiles
-preview: {  }

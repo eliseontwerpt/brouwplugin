@@ -49,7 +49,7 @@ class ListOfHops extends Model
     }
 }
     public function getSubstitutionsOptions(){
-        $value = Db::table($this->table)->lists('variety', 'id');
+        $value = Db::table($this->table)->lists('name', 'id');
         return (array)$value;
     }
 }

@@ -8,7 +8,7 @@ use Model;
 class MashScheme extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
     /*
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
@@ -27,12 +27,12 @@ class MashScheme extends Model
     public $rules = [
     ];
 
-    public $hasOne =[ 
+    public $hasOne =[
         'recipe' => [
-            'EliseOntwerpt\Brouwerbouwer\Models\Recipes',            
+            Recipes::class,
             'key' => 'id',
             'otherKey'=>'recipe_id'
         ],
     ];
-   
+
 }
